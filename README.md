@@ -22,7 +22,7 @@
 | 구분        | 바로가기             |
 | ----------- | -------------------- |
 | Jihogrammer |                      |
-| LudaStar    |                      |
+| LudaStar    |[Link](https://ludastar.tistory.com/51)|
 | seongaeee   |                      |
 | Mulgyeol    | [Link](Mulgyeol/DFS) |
 | cse96       |                      |
@@ -34,7 +34,7 @@
 | 구분        | 바로가기 |
 | ----------- | -------- |
 | Jihogrammer |          |
-| LudaStar    |          |
+| LudaStar    |[Link](https://ludastar.tistory.com/51)|
 | seongaeee   |          |
 | Mulgyeol    |          |
 | cse96       |          |
