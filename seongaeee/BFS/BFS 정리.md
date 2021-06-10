@@ -14,6 +14,8 @@ BFS는 Breadth-First-Search 약자로, `넓이 우선 탐색`이라고도 한다
 
 <img src="https://user-images.githubusercontent.com/62600984/121535403-1b041400-ca3d-11eb-8cdf-9b1a043dce03.png" width=700px>
 
+<br>
+
 ## 2-1. BFS의 구현 - 인접리스트 & 큐
 
 ```java
@@ -44,6 +46,8 @@ public static void bfs(int start, LinkedList<Integer>[] adj, boolean[][] visited
   }
 }
 ```
+
+<br>
 
 ## 2-2. BFS의 구현 - 인접행렬 & 큐
 
