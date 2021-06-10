@@ -21,11 +21,11 @@
 
 | 구분        | 바로가기                                                                                                                      |
 | ----------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| Jihogrammer | [Link](Mulgyeol/DFS)                                                                                                          |
+| Jihogrammer |                                                                                                                               |
 | LudaStar    | [Link](https://ludastar.tistory.com/51)                                                                                       |
 | seongaeee   | [Link](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/seongaeee/DFS/DFS%20%EC%A0%95%EB%A6%AC.md) |
 | Mulgyeol    | [Link](Mulgyeol/DFS)                                                                                                          |
-| cse96       |                                                                                                                               |
+| cse96       | [Link](cse96/DFS)                                                                                                             |
 
 ---
 
@@ -37,7 +37,7 @@
 | LudaStar    | [Link](https://ludastar.tistory.com/51) |
 | seongaeee   |                                         |
 | Mulgyeol    | [Link](Mulgyeol/BFS)                    |
-| cse96       | [Link](Mulgyeol/BFS)                    |
+| cse96       | [Link](cse96/BFS)                       |
 
 ---
 
