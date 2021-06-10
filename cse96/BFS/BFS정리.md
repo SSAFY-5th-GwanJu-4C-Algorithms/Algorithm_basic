@@ -1,5 +1,5 @@
 # BFS
-참고:https://engineering-skcc.github.io/github%20pages/github-pages-desktop/
+참고:https://cse96.github.io/algorithm-bfs/
 
 그래프 탐색에서 사용되는 방법
 
