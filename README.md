@@ -24,20 +24,20 @@
 | Jihogrammer |                                                                                                                               |
 | LudaStar    | [Link](https://ludastar.tistory.com/51)                                                                                       |
 | seongaeee   | [Link](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/seongaeee/DFS/DFS%20%EC%A0%95%EB%A6%AC.md) |
-| Mulgyeol    | [Link](Mulgyeol/DFS)                                                                                                          |
+| Mulgyeol    | [Link](https://mulgyeol.github.io/TIL/algorithms/DFS.html)                                                                    |
 | cse96       | [Link](cse96/DFS)                                                                                                             |
 
 ---
 
 ## :pushpin: BFS
 
-| 구분        | 바로가기                                |
-| ----------- | --------------------------------------- |
-| Jihogrammer |                                         |
-| LudaStar    | [Link](https://ludastar.tistory.com/51) |
+| 구분        | 바로가기                                                                                                                      |
+| ----------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| Jihogrammer |                                                                                                                               |
+| LudaStar    | [Link](https://ludastar.tistory.com/51)                                                                                       |
 | seongaeee   | [Link](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/seongaeee/BFS/BFS%20%EC%A0%95%EB%A6%AC.md) |
-| Mulgyeol    | [Link](Mulgyeol/BFS)                    |
-| cse96       | [Link](cse96/BFS)                       |
+| Mulgyeol    | [Link](https://mulgyeol.github.io/TIL/algorithms/BFS.html)                                                                    |
+| cse96       | [Link](cse96/BFS)                                                                                                             |
 
 ---
 

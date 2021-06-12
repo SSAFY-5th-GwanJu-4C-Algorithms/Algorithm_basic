@@ -34,7 +34,7 @@
 | -------- | ---- |
 | 개념정리 | [BFS 개념, 구현, 시간복잡도, 장단점](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/seongaeee/BFS/BFS%20%EC%A0%95%EB%A6%AC.md)     |
 | 문제1    | [백준_실버1_미로탐색](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/seongaeee/BFS/%EB%B0%B1%EC%A4%80_%EC%8B%A4%EB%B2%841_%EB%AF%B8%EB%A1%9C%ED%83%90%EC%83%89.md)     |
-| 문제2    |      |
+| 문제2    | [백준_실버1_숨바꼭질](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/seongaeee/BFS/%EB%B0%B1%EC%A4%80_%EC%8B%A4%EB%B2%841_%EC%88%A8%EB%B0%94%EA%BC%AD%EC%A7%88.md)     |
 | 문제3    |      |
 
 ---
