@@ -3,11 +3,7 @@ package jiho.algo.ps.boj1012;
 import java.util.LinkedList;
 import java.util.Queue;
 
-import jiho.algo.ps.JihoDebug;
-
-class Main {
-
-    private static final JihoDebug J = new JihoDebug();
+class DFSBasic {
 
     private static final int BIT = 7, MASK = ~(-1 << BIT);
 
@@ -44,9 +40,12 @@ class Main {
                 int x = state >> BIT;
                 int y = state & MASK;
 
-                boolean isVisited = resultDFS(x, y, M, N, map, visited);
-                if (isVisited)
-                    earthwormNum += 1;
+                if ((visited[y] & (1L << x)) != 0)
+                    continue;
+
+                dfs(x, y, M, N, map, visited);
+
+                earthwormNum += 1;
 
             }
 
@@ -91,38 +90,6 @@ class Main {
             dfs(nx, ny, M, N, map, visited);
 
         }
-
-    }
-
-    private static boolean resultDFS(int x, int y, int M, int N, long[] map, long[] visited) {
-
-        if ((visited[y] & (1L << x)) != 0)
-            return false;
-
-        visited[y] |= 1L << x;
-
-        for (int d = 0; d < 4; d++) {
-
-            int nx = x + dx[d];
-            int ny = y + dy[d];
-
-            // 맵을 벗어나는 경우
-            if (nx < 0 || ny < 0 || nx == M || ny == N)
-                continue;
-
-            // 이미 방문한 경우
-            if ((visited[ny] & (1L << nx)) != 0)
-                continue;
-
-            // 빈 곳일 경우
-            if ((map[ny] & (1L << nx)) == 0)
-                continue;
-
-            resultDFS(nx, ny, M, N, map, visited);
-
-        }
-
-        return true;
 
     }
 
