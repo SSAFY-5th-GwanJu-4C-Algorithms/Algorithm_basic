@@ -41,11 +41,39 @@ public class Baekjoon_16173_점프왕쪨리2 {
 	}
 
 	private static void dfs() {
+		Stack<Node2> stack = new Stack<>();
+		stack.push(new Node2(0,0,map[0][0]));
+		check[0][0] = true;
 		
-		
+		while(!stack.isEmpty()) {
+			Node2 node = stack.pop();
+			int x = node.x;
+			int y = node.y;
+			int dis = node.distance;
+			// 도착지점 
+			if(x == N-1 && y == N-1) {
+				System.out.println("HaruHaru");
+				return;
+			}
+			
+			// 오른쪽과 아래방향으로만 이동
+			if(x+dis > 0 && x+dis < N) {
+				if(check[x+dis][y] == true) continue;
+				else {
+					stack.push(new Node2(x+dis, y, map[x+dis][y]));
+					check[x+dis][y] = true;
+				}
+			}
+			if(y+dis > 0 && y+dis < N) {
+				if(check[x][y+dis] == true) continue;
+				else {
+					stack.push(new Node2(x, y+dis, map[x][y+dis]));
+					check[x][y+dis] = true;
+				}
+			}		
+		}
+		System.out.println("Hing");
 	}
-
-	
 	
 
 }
