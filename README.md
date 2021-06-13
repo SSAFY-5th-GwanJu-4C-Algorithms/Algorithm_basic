@@ -2,18 +2,18 @@
 
 ## List
 
-- [DFS](#pushpin-dfs)
-- [BFS](#pushpin-bfs)
-- [Dijkstra](#pushpin-dijkstra)
-- [Floyd-Warshall](#pushpin-floyd-warshall)
-- [Sliding Window](#pushpin-sliding-window)
-- [Two Point](#pushpin-tow-point)
-- [Prim](#pushpin-prim)
-- [Kruskal](#pushpin-kruskal)
-- [Binary Search](#pushpin-binary-search)
-- [Heap](#pushpin-heap)
-- [DP](#pushpin-dp)
-- [Bracktracking](#pushpin-backtracking)
+-   [DFS](#pushpin-dfs)
+-   [BFS](#pushpin-bfs)
+-   [Dijkstra](#pushpin-dijkstra)
+-   [Floyd-Warshall](#pushpin-floyd-warshall)
+-   [Sliding Window](#pushpin-sliding-window)
+-   [Two Point](#pushpin-tow-point)
+-   [Prim](#pushpin-prim)
+-   [Kruskal](#pushpin-kruskal)
+-   [Binary Search](#pushpin-binary-search)
+-   [Heap](#pushpin-heap)
+-   [DP](#pushpin-dp)
+-   [Bracktracking](#pushpin-backtracking)
 
 ---
 
@@ -21,7 +21,7 @@
 
 | 구분        | 바로가기                                                                                                                      |
 | ----------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| Jihogrammer |                                                                                                                               |
+| Jihogrammer | [Link](https://blog.naver.com/jihogrammer/222396465961)                                                                       |
 | LudaStar    | [Link](https://ludastar.tistory.com/51)                                                                                       |
 | seongaeee   | [Link](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/seongaeee/DFS/DFS%20%EC%A0%95%EB%A6%AC.md) |
 | Mulgyeol    | [Link](https://mulgyeol.github.io/TIL/algorithms/DFS.html)                                                                    |
