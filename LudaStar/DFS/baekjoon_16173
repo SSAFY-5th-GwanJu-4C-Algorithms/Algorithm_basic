@@ -1,0 +1,79 @@
+package DFS_BFS;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.StringTokenizer;
+
+class Node2 {
+	int x, y, distance;
+
+	public Node2(int x, int y, int distance) {
+		this.x = x;
+		this.y = y;
+		this.distance = distance;
+	}
+}
+
+public class Baekjoon_16173_점프왕쪨리2 {
+	
+	static int[][] map;
+	static boolean[][] check;
+	static int N;
+	
+	public static void main(String[] args) throws Exception {
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		N = Integer.parseInt(br.readLine());
+		map = new int[N][N];
+		check = new boolean[N][N];
+		
+		for(int i = 0; i < N; i++) {
+			StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+			for(int j = 0; j < N; j++) {
+				map[i][j] = Integer.parseInt(st.nextToken());
+			}
+		}
+		
+		dfs();
+	
+	}
+
+	private static void dfs() {
+		Stack<Node2> stack = new Stack<>();
+		stack.push(new Node2(0,0,map[0][0]));
+		check[0][0] = true;
+		
+		while(!stack.isEmpty()) {
+			Node2 node = stack.pop();
+			int x = node.x;
+			int y = node.y;
+			int dis = node.distance;
+			// 도착지점 
+			if(x == N-1 && y == N-1) {
+				System.out.println("HaruHaru");
+				return;
+			}
+			
+			// 오른쪽과 아래방향으로만 이동
+			if(x+dis > 0 && x+dis < N) {
+				if(check[x+dis][y] == true) continue;
+				else {
+					stack.push(new Node2(x+dis, y, map[x+dis][y]));
+					check[x+dis][y] = true;
+				}
+			}
+			if(y+dis > 0 && y+dis < N) {
+				if(check[x][y+dis] == true) continue;
+				else {
+					stack.push(new Node2(x, y+dis, map[x][y+dis]));
+					check[x][y+dis] = true;
+				}
+			}		
+		}
+		System.out.println("Hing");
+	}
+	
+
+}
