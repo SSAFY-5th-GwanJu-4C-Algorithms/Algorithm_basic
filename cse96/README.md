@@ -24,7 +24,7 @@
 | 개념정리 | [Link](DFS/DFS정리.md) |
 | 문제1    | [Link](DFS/BJ_16173_jump_small.java) |
 | 문제2    | [Link](DFS/BJ_2606_바이러스.java)     |
-| 문제3    |      |
+| 문제3    | [Link](DFS/BJ_1012_유기농배추.java)     |
 
 ---
 
