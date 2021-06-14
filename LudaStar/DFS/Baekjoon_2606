@@ -1,0 +1,59 @@
+package DFS_BFS;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.Stack;
+import java.util.StringTokenizer;
+
+public class Baekjoon_2606_바이러스2 {
+	
+	static int N, cnt;
+	static int[][] adjArray;
+	static boolean[] visited;
+	
+	public static void main(String[] args) throws Exception {
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = null;
+		
+		N = Integer.parseInt(br.readLine());
+		cnt = Integer.parseInt(br.readLine());
+		adjArray = new int[N+1][N+1];
+		visited = new boolean[N+1];
+		
+		for(int i = 0; i < cnt; i++) {
+			st = new StringTokenizer(br.readLine(), " ");
+			int a = Integer.parseInt(st.nextToken());
+			int b = Integer.parseInt(st.nextToken());
+			
+			adjArray[a][b] = 1;
+			adjArray[b][a] = 1;
+		}
+		
+		dfs();
+
+	}
+	
+	// 인접행렬 사용
+	private static void dfs() {
+		Stack<Integer> stack = new Stack<>();
+		// 1번 컴퓨터가 웜바이러스 걸렸으므로
+		stack.add(1);
+		visited[1] = true;
+		int cnt = 0; // 웜바이러스 걸리는 총 컴퓨터 수
+		
+		while(!stack.isEmpty()) {
+			int node =  stack.pop();
+			
+			for(int i = 1; i <= N; i++) {
+				if(adjArray[node][i] == 1 && !visited[i]) {
+					stack.add(i);
+					visited[i] = true;
+					cnt++;
+				}
+			}
+		}
+		System.out.println(cnt);
+		
+	}
+}
