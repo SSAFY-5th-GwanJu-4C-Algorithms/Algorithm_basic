@@ -22,7 +22,7 @@
 | 구분     | 링크 |
 | -------- | ---- |
 | 개념정리 | [DFS 개념, 구현, 시간복잡도, 장단점](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/seongaeee/DFS/DFS%20%EC%A0%95%EB%A6%AC.md)     |
-| 문제1    |      |
+| 문제1    | [백준_실버2_](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/seongaeee/DFS/%EB%B0%B1%EC%A4%80_%EC%8B%A4%EB%B2%842_%EC%B4%8C%EC%88%98%EA%B3%84%EC%82%B0.md)     |
 | 문제2    |      |
 | 문제3    |      |
 
