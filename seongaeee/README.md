@@ -24,7 +24,7 @@
 | 개념정리 | [DFS 개념, 구현, 시간복잡도, 장단점](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/seongaeee/DFS/DFS%20%EC%A0%95%EB%A6%AC.md)     |
 | 문제1    | [백준_실버2_촌수계산](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/seongaeee/DFS/%EB%B0%B1%EC%A4%80_%EC%8B%A4%EB%B2%842_%EC%B4%8C%EC%88%98%EA%B3%84%EC%82%B0.md)     |
 | 문제2    | [백준_실버2_연결요소의개수](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/seongaeee/DFS/%EB%B0%B1%EC%A4%80_%EC%8B%A4%EB%B2%842_%EC%97%B0%EA%B2%B0%EC%9A%94%EC%86%8C%EC%9D%98%EA%B0%9C%EC%88%98.md)     |
-| 문제3    |      |
+| 문제3    | [백준_골드5_적록색약](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/seongaeee/DFS/%EB%B0%B1%EC%A4%80_%EA%B3%A8%EB%93%9C5_%EC%A0%81%EB%A1%9D%EC%83%89%EC%95%BD.md)     |
 
 ---
 
