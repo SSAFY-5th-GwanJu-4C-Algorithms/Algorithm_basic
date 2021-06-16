@@ -100,12 +100,12 @@
 
 ## :pushpin: BFS
 
-| 구분                  | 링크                                                      |
-| --------------------- | --------------------------------------------------------- |
-| 개념정리              |                                                           |
-| BOJ 17086 아기 상어 2 | [Code - BFS](src\jiho\algo\ps\boj17086\BabySharkBFS.java) |
-| 문제2                 |                                                           |
-| 문제3                 |                                                           |
+| 구분                  | 링크                                                    |
+| --------------------- | ------------------------------------------------------- |
+| 개념정리              | [Blog](https://blog.naver.com/jihogrammer/222400554338) |
+| BOJ 17086 아기 상어 2 | [Code](src\jiho\algo\ps\boj17086\BabySharkBFS.java)     |
+| BOJ 2178 미로 탐색    | [Code](src\jiho\algo\ps\boj2178\MazeBFS.java)           |
+| BOJ 17244 아맞다우산  | [Code](src\jiho\algo\ps\boj17244\Umbrella.java)         |
 
 ---
 
