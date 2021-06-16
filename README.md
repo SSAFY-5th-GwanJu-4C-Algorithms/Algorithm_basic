@@ -33,7 +33,7 @@
 
 | 구분        | 바로가기                                                                                                                      |
 | ----------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| Jihogrammer |                                                                                                                               |
+| Jihogrammer | [Link](https://blog.naver.com/jihogrammer/222400554338)                                                                       |
 | LudaStar    | [Link](https://ludastar.tistory.com/51)                                                                                       |
 | seongaeee   | [Link](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/seongaeee/BFS/BFS%20%EC%A0%95%EB%A6%AC.md) |
 | Mulgyeol    | [Link](https://mulgyeol.github.io/TIL/algorithms/BFS.html)                                                                    |
