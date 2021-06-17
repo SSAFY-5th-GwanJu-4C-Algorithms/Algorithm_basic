@@ -35,7 +35,7 @@
 | 개념정리 |[Link](https://ludastar.tistory.com/51)|
 | 문제1    | [백준 16173 점프왕쩰리](./BFS/Baekjoon_16173)|
 | 문제2    | [백준 2606 바이러스](./BFS/Baekjoon_2606)|
-| 문제3    | [백준 1202 유기농배추](./BFS/Baekjoon_1012) |
+| 문제3    | [백준 17836 공주님을 구해라!](./BFS/Baekjoon_17836) |
 
 ---
 
