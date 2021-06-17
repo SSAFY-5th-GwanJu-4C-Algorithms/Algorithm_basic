@@ -84,8 +84,6 @@ public class Baekjoon_17836_공주님을구해라 {
 				if(sword == 1) {
 					q.offer(new Loc(nx,ny,time+1,sword));
 					visited[nx][ny][sword] = true;
-					continue;
-					
 				}
 				// 칼이 없는 상태
 				else {
