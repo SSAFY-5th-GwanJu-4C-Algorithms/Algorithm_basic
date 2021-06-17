@@ -43,7 +43,7 @@
 
 | 구분     | 링크 |
 | -------- | ---- |
-| 개념정리 |      |
+| 개념정리 | [다익스트라 개념, 구현, 시간복잡도](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/seongaeee/Dijkstra/Dijkstra%20%EC%A0%95%EB%A6%AC.md)    |
 | 문제1    |      |
 | 문제2    |      |
 | 문제3    |      |
