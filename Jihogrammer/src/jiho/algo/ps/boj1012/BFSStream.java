@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-import jiho.algo.ps.JihoDebug;
+import jiho.debug.JihoDebug;
 
 class BFSStream {
 

@@ -1,6 +1,6 @@
 package jiho.algo.ps.boj17244;
 
-import jiho.algo.ps.JihoDebug;
+import jiho.debug.JihoDebug;
 
 class Umbrella {
 
