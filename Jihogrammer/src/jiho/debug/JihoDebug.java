@@ -1,4 +1,4 @@
-package jiho.algo.ps;
+package jiho.debug;
 
 import java.util.Arrays;
 
