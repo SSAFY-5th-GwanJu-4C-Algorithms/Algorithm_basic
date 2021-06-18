@@ -1,0 +1,73 @@
+package Dijkstra;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.StringTokenizer;
+
+public class Baekjoon_18352_특정거리의도시찾기 {
+
+	static int N, M, K, X;
+	static ArrayList<Integer>[] list;
+	static int[] distance;
+	
+	public static void main(String[] args) throws Exception {
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+		N = Integer.parseInt(st.nextToken()); // 도시의 개수
+		M = Integer.parseInt(st.nextToken()); // 도로의 개수
+		K = Integer.parseInt(st.nextToken()); // 최단 거리가 K인 도시 찾기(오름차순으로 출력, 없으면 -1출력)
+		X = Integer.parseInt(st.nextToken()); // 출발 도시의 번호
+		
+		distance = new int[N+1];
+		Arrays.fill(distance, Integer.MAX_VALUE);
+		
+		list = new ArrayList[N+1];
+		for(int i = 1; i <= N; i++) list[i] = new ArrayList<>(); // 초기화
+		
+		for(int i = 0; i < M; i++) {
+			st = new StringTokenizer(br.readLine(), " ");
+			int a= Integer.parseInt(st.nextToken());
+			int b = Integer.parseInt(st.nextToken());
+			list[a].add(b);
+		}
+		
+		dijkstra();
+		
+		ArrayList<Integer> result = new ArrayList<>();
+		for(int i = 1; i <= N; i++) {
+			if(distance[i] == K) result.add(i);
+		}
+		
+		if(result.size() == 0) System.out.println(-1);
+		else {
+			for(int n : result)
+				System.out.println(n);
+		}
+			
+		
+	}
+
+	private static void dijkstra() {
+		Queue<Integer> q = new LinkedList<>();
+		
+		// 출발위치
+		distance[X] = 0;
+		q.offer(X);
+		
+		while(!q.isEmpty()) {
+			int current = q.poll();
+			for(int m : list[current]) {
+				if(distance[m] > distance[current] + 1) {
+					distance[m] = distance[current] + 1;
+					q.offer(m);
+				}
+			}
+		}
+	}
+
+}

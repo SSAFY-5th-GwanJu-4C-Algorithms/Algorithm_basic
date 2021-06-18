@@ -43,8 +43,8 @@
 
 | 구분     | 링크 |
 | -------- | ---- |
-| 개념정리 |      |
-| 문제1    |      |
+| 개념정리 | [다익스트라 개념, 구현, 시간복잡도](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/seongaeee/Dijkstra/Dijkstra%20%EC%A0%95%EB%A6%AC.md)    |
+| 문제1    | [백준_실버2_특정거리의도시찾기](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/seongaeee/Dijkstra/%EB%B0%B1%EC%A4%80_%EC%8B%A4%EB%B2%842_%ED%8A%B9%EC%A0%95%EA%B1%B0%EB%A6%AC%EC%9D%98%EB%8F%84%EC%8B%9C%EC%B0%BE%EA%B8%B0.md)     |
 | 문제2    |      |
 | 문제3    |      |
 
