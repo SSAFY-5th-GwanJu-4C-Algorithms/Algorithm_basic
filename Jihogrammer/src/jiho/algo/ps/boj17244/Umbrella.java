@@ -1,10 +1,6 @@
 package jiho.algo.ps.boj17244;
 
-import jiho.debug.JihoDebug;
-
 class Umbrella {
-
-    private static JihoDebug J = new JihoDebug();
 
     private static int N, M, E;
     private static final int BIT = 6, MASK = ~(-1 << BIT);

@@ -5,11 +5,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-import jiho.debug.JihoDebug;
-
 class BFSStream {
-
-    private static JihoDebug J = new JihoDebug();
 
     private static final int BIT = 6, MASK = ~(-1 << BIT), RES = 50;
     private static int N, M;
