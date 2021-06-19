@@ -109,11 +109,10 @@ while ( !pq.isEmpty() ) {
     int dist=curNode.distance;
     int cur=curNode.idx; //min 최소비용에 해당하는 정점 번호
 
-    //이미 처리된 적 있으면 넘어감
-    if(distance[cur] < dist) continue;
+    visited[cur] = true;
 
-    for (int j = 0; j < N; j++) {
-        if(adMatrix[cur][j]!=0 && distance[j] > dist+adMatrix[cur][j]) {
+    for (int j : adj[cur]) {
+        if(!visited[j] && distance[j] > dist+adMatrix[cur][j]) {
             distance[j]=dist+adMatrix[cur][j];
             pq.offer(new Node(j, distance[j]));
         }
