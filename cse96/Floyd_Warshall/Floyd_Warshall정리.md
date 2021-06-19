@@ -24,8 +24,8 @@ for(int k = 0; k < number; k++){
     //j = 도착노드
     for(int j = 0; j < number; j++){
 
-      if(d[i][k] + d[k][j] < d[i][j]){
-        d[i][j] = d[i][k] = d[k][j];
+      if(d[i][j] > d[i][k] + d[k][j]){
+        d[i][j] = d[i][k] + d[k][j];
       }
     }
   })
