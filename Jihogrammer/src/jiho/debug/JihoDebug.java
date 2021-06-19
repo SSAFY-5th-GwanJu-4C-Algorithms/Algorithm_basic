@@ -9,6 +9,28 @@ import java.util.Arrays;
  */
 public class JihoDebug {
 
+    public <T> String[] printArray(T[][] t) {
+
+        String[] array = new String[t.length];
+
+        for (int i = 0; i < t.length; i++)
+            array[i] = printLine(t[i]);
+
+        return array;
+
+    }
+
+    public <T> String[] printArray(int[][] t) {
+
+        String[] array = new String[t.length];
+
+        for (int i = 0; i < t.length; i++)
+            array[i] = Arrays.toString(t[i]);
+
+        return array;
+
+    }
+
     public <T> String pl(T t) {
         return printLine(t);
     }
