@@ -1,0 +1,67 @@
+package Dijkstra;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.StringTokenizer;
+
+public class Baekjoon_14496_그대그머가되어 {
+
+	static int a, b, N, M;
+	static int[] distance;
+	static ArrayList<Integer>[] list;
+	
+	public static void main(String[] args) throws Exception {
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+		a = Integer.parseInt(st.nextToken()); // a에서 b로 가는 것
+		b = Integer.parseInt(st.nextToken());
+		
+		st = new StringTokenizer(br.readLine(), " ");
+		N = Integer.parseInt(st.nextToken()); // 전체 문자 수
+		M = Integer.parseInt(st.nextToken()); // 주어지는 문자쌍의 수
+		
+		distance = new int[N+1];
+		Arrays.fill(distance, Integer.MAX_VALUE);
+		
+		list = new ArrayList[N+1];
+		for(int i = 0; i < N+1; i++) list[i] = new ArrayList<Integer>();
+		
+		for(int i = 0; i < M; i++) {
+			st = new StringTokenizer(br.readLine(), " ");
+			int a= Integer.parseInt(st.nextToken());
+			int b = Integer.parseInt(st.nextToken());
+			list[a].add(b);
+		}
+		
+		dijkstra();
+		
+		if(distance[b] == Integer.MAX_VALUE) 
+			System.out.println(-1);
+		else
+			System.out.println(distance[b]);
+		
+	}
+	private static void dijkstra() {
+		Queue<Integer> q = new LinkedList<>();
+		
+		// 출발위치
+		distance[a] = 0;
+		q.offer(a);
+		
+		while(!q.isEmpty()) {
+			int current = q.poll();
+			for(int m : list[current]) {
+				if(distance[m] > distance[current] + 1) {
+					distance[m] = distance[current] + 1;
+					q.offer(m);
+				}
+			}
+		}
+	}
+
+}
