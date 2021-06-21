@@ -64,7 +64,6 @@ for (int via = 0; via < N; via++) { //경유지
       }
     }
   }
-  print();
 }
 ```
 
