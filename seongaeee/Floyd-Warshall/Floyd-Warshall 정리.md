@@ -39,6 +39,14 @@ for문이 연속적으로 나오는데 각자 for은 다음을 의미한다.
 - 세번째 for: 도착점
 ```
 
+<br>
+
+### 사이클 x
+
+사이클을 고려하지 않는다는 것은 자기자신에 대한 경로를 생각하지 않는다는 뜻이다.
+
+즉, 자기자신에 대한 거리 값은 항상 0이다.
+
 - 초기화
 ```java
 for (int i = 0; i < N; i++) {
@@ -59,6 +67,38 @@ for (int via = 0; via < N; via++) { //경유지
     for (int to = 0; to < N; to++) { //도착지
       if(from==to || via==to) continue;
       
+      if(adjMatrix[from][to]>adjMatrix[from][via]+adjMatrix[via][to]) {
+        adjMatrix[from][to]=adjMatrix[from][via]+adjMatrix[via][to];
+      }
+    }
+  }
+}
+```
+
+<br>
+
+### 사이클 o
+
+사이클을 고려한다는 것은 자기자신에 대한 경로를 생각한다는 뜻이다.
+
+즉, 자기자신에 대한 거리 값은 유한한 값이 될수도, 무한한 값이 될 수도 있다.
+
+- 초기화
+```java
+for (int i = 0; i < N; i++) {
+  for (int j = 0; j < N; j++) {
+    if( adj[i][j] == 0 ) {
+      adj[i][j] = INF;
+    }
+  }
+}
+```
+
+- 최단 경로
+```java
+for (int via = 0; via < N; via++) { //경유지
+  for (int from = 0; from < N; from++) { //출발지
+    for (int to = 0; to < N; to++) { //도착지
       if(adjMatrix[from][to]>adjMatrix[from][via]+adjMatrix[via][to]) {
         adjMatrix[from][to]=adjMatrix[from][via]+adjMatrix[via][to];
       }
