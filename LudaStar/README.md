@@ -46,7 +46,7 @@
 | 개념정리 | [Link](https://ludastar.tistory.com/57)  |
 | 문제1    |  [백준 18352 특정 거리의 도시찾기](./Dijkstra/Baekjoon_18352)|
 | 문제2    |  [백준 14496 그대, 그머가 되어](./Dijkstra/Baekjoon_14496)|
-| 문제3    |      |
+| 문제3    |  [백준 1753 최단경로](./Dijkstra/Baekjoon_1753) |
 
 ---
 
@@ -55,7 +55,7 @@
 | 구분     | 링크 |
 | -------- | ---- |
 | 개념정리 |   [Link](https://ludastar.tistory.com/57)    |
-| 문제1    |  |
+| 문제1    | [백준 9205 맥주 마시면서 걸어가기](./Floyd_Warshall/Baekjoon_9205) |
 | 문제2    |      |
 | 문제3    |      |
 

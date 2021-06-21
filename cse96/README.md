@@ -45,7 +45,7 @@
 | -------- | ---- |
 | 개념정리 |  [Link](Dijkstra/Dijkstra정리.md)    |
 | 문제1    |  [Link](Dijkstra/BJ_1504_특정한최단경로.java)    |
-| 문제2    |      |
+| 문제2    |  [보류한문제](Dijkstra/BJ_9370_미확인도착지.java)    |
 | 문제3    |      |
 
 ---
