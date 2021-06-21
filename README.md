@@ -61,7 +61,7 @@
 | LudaStar    |          |
 | seongaeee   | [Link](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/seongaeee/Floyd-Warshall/Floyd-Warshall%20%EC%A0%95%EB%A6%AC.md)         |
 | Mulgyeol    |          |
-| cse96       |          |
+| cse96       | [Link](https://cse96.github.io/algorithm-Floyd-Warshall/)         |
 
 ---
 
