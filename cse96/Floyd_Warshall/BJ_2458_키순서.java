@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 
-public class BJ_2458_Å°¼ø¼­ {
+public class BJ_2458_Ã…Â°Â¼Ã¸Â¼Â­ {
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -24,10 +24,7 @@ public class BJ_2458_Å°¼ø¼­ {
 			int big = Integer.valueOf(str[1]);
 			tall[small-1][big-1] = 1;
 		}
-//		for(int i = 0; i < N; i++) {
-//			System.out.println(Arrays.toString(tall[i]));
-//		}
-//		System.out.println();
+		//floyd
 		for(int k = 0; k < N; k++) {
 			for(int i = 0; i < N; i++) {
 				if(i == k) continue;
@@ -39,9 +36,6 @@ public class BJ_2458_Å°¼ø¼­ {
 				}
 			}
 		}
-//		for(int i = 0; i < N; i++) {
-//			System.out.println(Arrays.toString(tall[i]));
-//		}
 		int ans = 0;
 		for(int i = 0; i < N; i++) {
 			int cnt = 0;
@@ -51,7 +45,7 @@ public class BJ_2458_Å°¼ø¼­ {
 					if(tall[j][i] == INF) cnt=1;
 				}
 			}
-			if(cnt == 0) {
+			if(cnt == 0) {//ì´ë¶€ë¶„ì„ ì‹¤ìˆ˜ í•´ì„œ ê³„ì† í‹€ë ¸ë‹¤
 				ans++;
 			}
 		}
