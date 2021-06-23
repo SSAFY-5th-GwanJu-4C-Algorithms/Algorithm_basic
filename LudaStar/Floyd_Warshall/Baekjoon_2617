@@ -9,6 +9,8 @@ public class Baekjoon_2617_구슬찾기 {
 
 	static int N, M, mid;
 	static ArrayList<Integer>[] list;
+	static boolean[] visited;
+	static int[][] arr;
 	
 	public static void main(String[] args) throws Exception {
 		
@@ -18,19 +20,40 @@ public class Baekjoon_2617_구슬찾기 {
 		M = Integer.parseInt(st.nextToken());	
 		mid = (N+1) / 2;
 		
-		list = new ArrayList[N+1];
+		arr = new int[100][2]; // 가벼운 구슬, 무거운 구슬 순으로 넣자
+		list = new ArrayList[100];
 		for(int i = 1; i < N+1; i++)
 			list[i] = new ArrayList<Integer>();
 		
-		for(int i = 1; i < N+1; i++) {
+		for(int i = 0; i < M; i++) {
 			st = new StringTokenizer(br.readLine(), " ");
 			int a = Integer.parseInt(st.nextToken());
 			int b = Integer.parseInt(st.nextToken());
 			list[a].add(b); // => a가 b보다 큼
 		}
 		
+		for(int i = 1; i < N+1; i++) {
+			visited = new boolean[100];
+			dfs(i,i);
+		}
 		
-		
+		int result = 0;
+		for(int i = 1; i < N+1; i++) {
+			if(arr[i][0] >= mid || arr[i][1] >= mid)
+				result++;
+		}
+		System.out.println(result);
+	}
+
+	private static void dfs(int current, int start) {
+		visited[current] = true;
+		for(int next : list[current]) {
+			if(visited[next]) continue;
+			arr[start][0]++;
+			arr[next][1]++;
+			dfs(next, start);
+			
+		}
 		
 	}
 
