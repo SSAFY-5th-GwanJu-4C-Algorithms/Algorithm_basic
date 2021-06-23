@@ -46,7 +46,7 @@
 | 개념정리 |  [Link](Dijkstra/Dijkstra정리.md)    |
 | 문제1    |  [Link](Dijkstra/BJ_1504_특정한최단경로.java)    |
 | 문제2    |  [보류한문제](Dijkstra/BJ_9370_미확인도착지.java)    |
-| 문제3    |      |
+| 문제3    |  [BJ_5972_택배배송](Dijkstra/BJ_5972_택배배송.java)    |
 
 ---
 
@@ -57,7 +57,7 @@
 | 개념정리 | [Link](Floyd_Warshall/Floyd_Warshall정리.md)     |
 | 문제1    | [Link](Floyd_Warshall/BJ_11404_플로이드.java)     |
 | 문제2    | [Link](Floyd_Warshall/BJ_2458_키순서.java)     |
-| 문제3    |      |
+| 문제3    | [BJ_2617_구스찾기](Floyd_Warshall/BJ_2617_구슬찾기.java)     |
 
 ---
 
