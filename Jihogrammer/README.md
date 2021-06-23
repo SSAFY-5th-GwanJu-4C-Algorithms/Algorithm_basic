@@ -111,23 +111,23 @@
 
 ## :pushpin: Dijkstra
 
-| 구분                               | 링크                                         |
-| ---------------------------------- | -------------------------------------------- |
-| 개념정리                           |                                              |
-| BOJ 1916 최소비용 구하기           | [Code](./src/jiho/algo/ps/boj1916/Main.java) |
-| BOJ 1261 알고스팟                  | [Code](./src/jiho/algo/ps/boj1261/Main.java) |
-| BOJ 4485 녹색 옷 입은 애가 젤다지? | [Code](./src/jiho/algo/ps/boj4485/Main.java) |
+| 구분                               | 링크                                       |
+| ---------------------------------- | ------------------------------------------ |
+| 개념정리                           | [Blog](https://jihogrammer.tistory.com/1)  |
+| BOJ 1916 최소비용 구하기           | [Code](src/jiho/algo/ps/boj1916/Main.java) |
+| BOJ 1261 알고스팟                  | [Code](src/jiho/algo/ps/boj1261/Main.java) |
+| BOJ 4485 녹색 옷 입은 애가 젤다지? | [Code](src/jiho/algo/ps/boj4485/Main.java) |
 
 ---
 
 ## :pushpin: Floyd Warshall
 
-| 구분     | 링크 |
-| -------- | ---- |
-| 개념정리 |      |
-| 문제1    |      |
-| 문제2    |      |
-| 문제3    |      |
+| 구분                              | 링크                                         |
+| --------------------------------- | -------------------------------------------- |
+| 개념정리                          | [Blog](https://jihogrammer.tistory.com/2)    |
+| BOJ 11404 플로이드                | [Code](src/jiho/algo/ps/boj11404/Floyd.java) |
+| BOJ 11403 경로 찾기               | [Code](src/jiho/algo/ps/boj11403/Main.java)  |
+| BOJ 1389 케빈 베이컨의 6단계 법칙 | [Code](src/jiho/algo/ps/boj1389/Main.java)   |
 
 ---
 
