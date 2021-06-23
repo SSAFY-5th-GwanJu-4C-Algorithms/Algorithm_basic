@@ -57,7 +57,7 @@
 | 개념정리 | [플로이드-와샬 개념, 구현, 시간복잡도](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/seongaeee/Floyd-Warshall/Floyd-Warshall%20%EC%A0%95%EB%A6%AC.md)     |
 | 문제1    | [백준_실버1_경로찾기](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/seongaeee/Floyd-Warshall/%EB%B0%B1%EC%A4%80_%EC%8B%A4%EB%B2%841_%EA%B2%BD%EB%A1%9C%EC%B0%BE%EA%B8%B0.md)     |
 | 문제2    | [백준_골드4_키순서](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/seongaeee/Floyd-Warshall/%EB%B0%B1%EC%A4%80_%EA%B3%A8%EB%93%9C4_%ED%82%A4%EC%88%9C%EC%84%9C.md)     |
-| 문제3    |      |
+| 문제3    | [백준_골드3_역사](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/seongaeee/Floyd-Warshall/%EB%B0%B1%EC%A4%80_%EA%B3%A8%EB%93%9C3_%EC%97%AD%EC%82%AC.md)     |
 
 ---
 
