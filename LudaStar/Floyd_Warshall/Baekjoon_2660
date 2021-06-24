@@ -1,0 +1,76 @@
+package Floyd_Warshall;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.StringTokenizer;
+
+public class Baekjoon_2660_회장뽑기 {
+	
+	public static void main(String[] args) throws Exception {
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = null;
+		
+		int N = Integer.parseInt(br.readLine());
+		int[][] arr = new int[N+1][N+1];
+		
+		for(int i = 1; i < N+1; i++) {
+			for(int j = 1; j < N+1; j++) {
+				if(i != j)
+					arr[i][j] = 987654321; // 이 부분을 Integer.MAX_VALUE로 하면 틀림. 밑에서 더하는 과정을 하므로
+			}
+		}
+		while(true) {
+			st = new StringTokenizer(br.readLine(), " ");
+			int a = Integer.parseInt(st.nextToken());
+			int b = Integer.parseInt(st.nextToken());
+			
+			if(a == -1 && b == -1) break; // 종료조건
+			arr[a][b] = arr[b][a] = 1;
+		}
+		
+        // 플로이드 와샬 알고리즘 수행 (모든 정점들의 경로를 알아야되므로)
+        for (int k = 1; k <= N; k++) { // 경유지
+            for (int i = 1; i <= N; i++) { // 출발지
+                for (int j = 1; j <= N; j++) { // 도착지
+                    if (arr[i][j] > arr[i][k] + arr[k][j]) {
+                        arr[i][j] = arr[i][k] + arr[k][j];
+                    }
+                }
+            }
+        }
+//        for (int k = 1; k <= N; k++) { 
+//            for (int i = 1; i <= N; i++) { 
+//            	System.out.print(arr[k][i]);
+//            }
+//        	System.out.println();
+//        }
+        
+        int[] score = new int[N+1]; // 각 회원들의 점수 담아두는 배열 (arr의 각 행의 최대값)
+        
+        int min = Integer.MAX_VALUE;
+        for(int i = 1; i < N+1; i++) {
+        	int max = 0;
+        	for(int j = 1; j < N+1; j++) {
+        		if(arr[i][j] > max) 
+        			max = arr[i][j];
+        	}
+        	score[i] = max;
+        	if(min > score[i]) {
+        		min = score[i];
+        	}
+        }
+        //for(int j : score) System.out.println(j);
+        
+        ArrayList<Integer> list = new ArrayList<>();
+        for(int i = 1; i < N+1; i++) {
+        	if(min == score[i])
+        		list.add(i);
+        }
+        
+        System.out.println(min + " " + list.size());
+		for(int i : list) System.out.print(i+" ");
+	}
+
+}
