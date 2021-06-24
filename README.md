@@ -73,7 +73,7 @@
 | LudaStar    |          |
 | seongaeee   | [Link](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/seongaeee/Sliding%20Window/Sliding%20Window%20%EC%A0%95%EB%A6%AC.md)         |
 | Mulgyeol    |          |
-| cse96       |          |
+| cse96       | [Link](https://cse96.github.io/algorithm-SlidingWindow/)         |
 
 ---
 
@@ -85,7 +85,7 @@
 | LudaStar    |          |
 | seongaeee   |          |
 | Mulgyeol    |          |
-| cse96       |          |
+| cse96       | [Link](https://cse96.github.io/algorithm-TowPointer/)         |
 
 ---
 
