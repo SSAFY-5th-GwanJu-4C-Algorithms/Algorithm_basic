@@ -77,7 +77,7 @@
 | 구분     | 링크 |
 | -------- | ---- |
 | 개념정리 |   [Link](https://ludastar.tistory.com/65)    |
-| 문제1    |      |
+| 문제1    |   [백준 2018 두 수들의 합](./Two_Pointers/Baekjoon_2018)   |
 | 문제2    |      |
 | 문제3    |      |
 
