@@ -66,7 +66,7 @@
 | 구분     | 링크                                                                              |
 | -------- | --------------------------------------------------------------------------------- |
 | 개념정리 | [Link](https://mulgyeol.github.io/TIL/algorithms/Two_Pointer_Sliding_Window.html) |
-| 문제1    |                                                                                   |
+| 문제1    | [백준 10025 - 게으른 백곰](./Sliding_Window/Acmicpc_10025_게으름백곰.java)        |
 | 문제2    |                                                                                   |
 | 문제3    |                                                                                   |
 
