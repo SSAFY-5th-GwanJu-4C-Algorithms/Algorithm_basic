@@ -133,12 +133,12 @@
 
 ## :pushpin: Sliding Window
 
-| 구분              | 링크                                      |
-| ----------------- | ----------------------------------------- |
-| 개념정리          |                                           |
-| BOJ 2906 내려가기 | [Link](https://jihogrammer.tistory.com/3) |
-| 문제2             |                                           |
-| 문제3             |                                           |
+| 구분                  | 링크                                      |
+| --------------------- | ----------------------------------------- |
+| 개념정리              |                                           |
+| BOJ 2906 내려가기     | [Link](https://jihogrammer.tistory.com/3) |
+| BOJ 3078 좋은 친구    | [Link](https://jihogrammer.tistory.com/5) |
+| BOJ 10025 게으른 백곰 | [Link](https://jihogrammer.tistory.com/6) |
 
 ---
 
