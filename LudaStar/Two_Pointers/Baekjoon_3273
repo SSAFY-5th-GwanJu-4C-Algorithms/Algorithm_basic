@@ -23,14 +23,13 @@ public class Baekjoon_3273_두수의합 {
 		int cnt = 0;
 		
 		while(true) {
-			if(start > end) break;
+			if(start >= end) break;
 			
 			if(arr[start]+arr[end] > x) {
 				end--;
 			}
 			else if(arr[start]+arr[end] < x) start++;
 			else {
-				System.out.println(arr[start] + " " + arr[end]);
 				cnt++;
 				start++;
 				end--;
