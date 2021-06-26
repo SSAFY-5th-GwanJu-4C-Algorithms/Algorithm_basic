@@ -67,7 +67,7 @@
 | -------- | ---- |
 | 개념정리 | [슬라이딩 윈도우 개념, 구현, 시간복잡도](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/seongaeee/Sliding%20Window/Sliding%20Window%20%EC%A0%95%EB%A6%AC.md)     |
 | 문제1    | [백준_실버2_소가길을건너간이유](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/seongaeee/Sliding%20Window/%EB%B0%B1%EC%A4%80_%EC%8B%A4%EB%B2%842_%EC%86%8C%EA%B0%80%EA%B8%B8%EC%9D%84%EA%B1%B4%EB%84%88%EA%B0%84%EC%9D%B4%EC%9C%A0.md)     |
-| 문제2    | [백준_골드5_문자열게임_](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/seongaeee/Sliding%20Window/%EB%B0%B1%EC%A4%80_%EA%B3%A8%EB%93%9C5_%EB%AC%B8%EC%9E%90%EC%97%B4%EA%B2%8C%EC%9E%84_%EC%8B%9C%EA%B0%84%EC%B4%88%EA%B3%BC.md)     |
+| 문제2    | [백준_골드5_문자열게임_시간초과](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/seongaeee/Sliding%20Window/%EB%B0%B1%EC%A4%80_%EA%B3%A8%EB%93%9C5_%EB%AC%B8%EC%9E%90%EC%97%B4%EA%B2%8C%EC%9E%84_%EC%8B%9C%EA%B0%84%EC%B4%88%EA%B3%BC.md)     |
 | 문제3    |      |
 
 ---
