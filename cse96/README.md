@@ -67,7 +67,7 @@
 | -------- | ---- |
 | 개념정리 | [Link](https://cse96.github.io/algorithm-SlidingWindow/)     |
 | 문제1    | [백준_12847_꿀아르바이트](SlidingWindow/BJ_12847_꿀알바.java)     |
-| 문제2    |      |
+| 문제2    | [백준_10025_게으른백곰](SlidingWindow/BJ_10025_게으른백곰.java)     |
 | 문제3    |      |
 
 ---
