@@ -66,7 +66,7 @@
 | 구분     | 링크 |
 | -------- | ---- |
 | 개념정리 |   [Link](https://ludastar.tistory.com/65)   |
-| 문제1    |      |
+| 문제1    |  [백준 2531 회전초밥](./Sliding_Window/Baekjoon_2531)    |
 | 문제2    |      |
 | 문제3    |      |
 
