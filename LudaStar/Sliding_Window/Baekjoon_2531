@@ -1,4 +1,4 @@
-package Two_Pointers;
+package Sliding_Window;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -19,14 +19,14 @@ public class Baekjoon_2531_회전초밥 {
 		int c = Integer.parseInt(st.nextToken()); // 쿠폰번호
 		
 		int[] sushi = new int[N];
-		boolean[] visited = new boolean[N+1];
+		boolean[] visited = new boolean[d+1];
 		for(int i = 0; i < N; i++) {
 			sushi[i] = Integer.parseInt(br.readLine());
 		}
 		
-		int result = Integer.MAX_VALUE;
+		int result = Integer.MIN_VALUE;
 		for(int i = 0; i < N; i++) {
-			int cnt = 0;
+			int cnt = 1;
 			Arrays.fill(visited, false);
 			
 			for(int j = i; j < (i+k); j++) {
@@ -37,8 +37,8 @@ public class Baekjoon_2531_회전초밥 {
 					if(sushi[j%N] == c) cnt--;
  				}
 			}
-			if(cnt == k) {
-				result = cnt+1;
+			if(cnt == k+1) {
+				result = cnt;
 				break;
 			}
 			result = Math.max(result, cnt);
