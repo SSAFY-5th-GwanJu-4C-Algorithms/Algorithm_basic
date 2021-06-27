@@ -78,7 +78,7 @@
 | -------- | ---- |
 | 개념정리 |   [Link](https://ludastar.tistory.com/65)    |
 | 문제1    |   [백준 2018 수들의 합5](./Two_Pointers/Baekjoon_2018)   |
-| 문제2    |      |
+| 문제2    |  [백준 3273 두 수의 합](./Two_Pointers/Baekjoon_3273)  |
 | 문제3    |      |
 
 ---
