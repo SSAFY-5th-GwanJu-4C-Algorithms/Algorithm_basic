@@ -83,7 +83,7 @@
 | ----------- | --------------------------------------------------------------------------------- |
 | Jihogrammer |                                                                                   |
 | LudaStar    | [Link](https://ludastar.tistory.com/65)                                           |
-| seongaeee   |                                                                                   |
+| seongaeee   | [Link](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/seongaeee/Two%20Pointer/Two%20Pointer%20%EC%A0%95%EB%A6%AC.md)  |
 | Mulgyeol    | [Link](https://mulgyeol.github.io/TIL/algorithms/Two_Pointer_Sliding_Window.html) |
 | cse96       | [Link](https://cse96.github.io/algorithm-TowPointer/)                             |
 
