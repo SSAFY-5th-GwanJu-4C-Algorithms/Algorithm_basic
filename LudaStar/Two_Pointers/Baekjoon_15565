@@ -1,0 +1,40 @@
+package Two_Pointers;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.StringTokenizer;
+
+public class Baekjoon_15565_귀여운라이언 {
+	
+	static int N, k;
+	static int[] arr;
+
+	public static void main(String[] args) throws Exception {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+		N = Integer.parseInt(st.nextToken());
+		k = Integer.parseInt(st.nextToken());
+		
+		arr = new int[N];
+		ArrayList<Integer> lion = new ArrayList<>();
+		st = new StringTokenizer(br.readLine(), " ");
+		for(int i = 0; i < N; i++) {
+			arr[i] = Integer.parseInt(st.nextToken());
+			if(arr[i]==1) lion.add(i);
+		}
+		
+		int ans = Integer.MAX_VALUE;
+		if(lion.size() < k) {
+			System.out.println(-1);
+		}
+		else {
+			for(int i = 0; i <= lion.size() - k; i++) {
+				ans = Math.min(ans, lion.get(i+k-1) - lion.get(i)+1);
+			}
+			
+			System.out.println(ans);
+		}
+		
+	}	
+}
