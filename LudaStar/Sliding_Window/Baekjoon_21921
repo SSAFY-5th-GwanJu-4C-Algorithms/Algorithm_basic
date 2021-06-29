@@ -1,10 +1,55 @@
 package Sliding_Window;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.StringTokenizer;
+
 public class Baekjoon_21921 {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		
-
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+		int N = Integer.parseInt(st.nextToken());
+		int X = Integer.parseInt(st.nextToken());
+		int[] arr = new int[N];
+		
+		st = new StringTokenizer(br.readLine(), " ");
+		for(int i = 0; i < N; i++) {
+			arr[i] = Integer.parseInt(st.nextToken());
+		}
+		
+		int start = 1, end = X;
+		int max = 0;
+		ArrayList<Integer> list = new ArrayList<>();
+		
+		// max 초기값 설정
+		for(int i = 0 ; i < X; i++) {
+			max += arr[i];
+		}
+		list.add(max);
+		
+		for(int i = 0; i < N - X; i++) {
+			max = max - arr[start-1] + arr[end];
+			start++;
+			end++;
+			list.add(max);
+		
+		}
+		Collections.sort(list); 
+		if(list.get(list.size()-1) == 0) 
+			System.out.println("SAD");
+		else {
+			System.out.println(list.get(list.size()-1));
+			int cnt = 0;
+			for(int i : list) {
+				if(i == list.get(list.size()-1))
+					cnt++;
+			}
+			System.out.println(cnt);
+		}
 	}
 
 }
