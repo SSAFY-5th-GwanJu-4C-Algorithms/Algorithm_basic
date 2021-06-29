@@ -78,7 +78,7 @@
 | -------- | ---- |
 | 개념정리 | [Link](https://cse96.github.io/algorithm-TowPointer/)     |
 | 문제1    | [백준_1806_부분합](TwoPointer/BJ_1806_부분합.java)     |
-| 문제2    | [백준_1644_소수의합](TwoPointer/BJ_1644_소수의합.java)     |
+| 문제2    | [백준_1644_소수의합](TwoPointer/BJ_1644_소수의연속합.java)     |
 | 문제3    |      |
 
 ---
