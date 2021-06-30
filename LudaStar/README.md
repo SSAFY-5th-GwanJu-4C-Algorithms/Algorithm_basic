@@ -67,8 +67,8 @@
 | -------- | ---- |
 | 개념정리 |   [Link](https://ludastar.tistory.com/65)   |
 | 문제1    |  [백준 2531 회전초밥](./Sliding_Window/Baekjoon_2531)    |
-| 문제2    |      |
-| 문제3    |      |
+| 문제2    |   [백준 21921 블로그](./Sliding_Window/Baekjoon_21921)    |
+| 문제3    |  [백준 16472 고냥이](./Sliding_Window/Baekjoon_16472)    |
 
 ---
 
