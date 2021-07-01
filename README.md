@@ -94,7 +94,7 @@
 | 구분        | 바로가기 |
 | ----------- | -------- |
 | Jihogrammer |          |
-| LudaStar    |          |
+| LudaStar    |  [Link](https://ludastar.tistory.com/74) |
 | seongaeee   |          |
 | Mulgyeol    |          |
 | cse96       |          |
@@ -106,7 +106,7 @@
 | 구분        | 바로가기 |
 | ----------- | -------- |
 | Jihogrammer |          |
-| LudaStar    |          |
+| LudaStar    | [Link](https://ludastar.tistory.com/74)         |
 | seongaeee   |          |
 | Mulgyeol    |          |
 | cse96       |          |
