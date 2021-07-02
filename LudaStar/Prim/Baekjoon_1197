@@ -1,0 +1,79 @@
+package Prim;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.ArrayDeque;
+import java.util.ArrayList;
+import java.util.Deque;
+import java.util.PriorityQueue;
+import java.util.StringTokenizer;
+
+public class Baekjoon_1197_최소스패닝트리 {
+	
+	static class Info implements Comparable<Info>{
+		int idx;
+		long val;
+		
+		public Info(int idx, long val) {
+			this.idx = idx;
+			this.val = val;
+		}
+		@Override
+		public int compareTo(Info o) {		
+			return Long.compare(this.val, o.val);
+		}
+	}
+
+	public static void main(String[] args) throws Exception {
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+		int V = Integer.parseInt(st.nextToken()); // 노드
+		int E = Integer.parseInt(st.nextToken()); // 간선
+		
+		boolean[] visited = new boolean[V+1];
+		ArrayList<Info> list[] = new ArrayList[V+1];
+		
+		for(int i = 1; i <= V; i++) {
+			list[i] = new ArrayList<>();
+		}
+		
+		for(int i = 0; i < E; i++) {
+			st = new StringTokenizer(br.readLine(), " ");
+			int start = Integer.parseInt(st.nextToken());
+			int target = Integer.parseInt(st.nextToken());
+			long val = Integer.parseInt(st.nextToken());
+			list[start].add(new Info(target,val));
+			list[target].add(new Info(start,val));
+			
+		}
+		long result = 0;
+		PriorityQueue<Info> q = new PriorityQueue<>();
+		Deque<Integer> dq = new ArrayDeque<>(); 
+		dq.offer(1);
+		while(!dq.isEmpty()) {
+			int cidx = dq.poll();
+			visited[cidx]=true;
+			for(int i=0;i<list[cidx].size();i++) {
+				int next = list[cidx].get(i).idx;
+				long nv = list[cidx].get(i).val;
+				if(!visited[next]) {
+					q.offer(new Info(next,nv));
+				}
+			}
+			while(!q.isEmpty()) {
+				int next = q.peek().idx;
+				long nv = q.peek().val;
+				q.poll();
+				if(!visited[next]) {
+					visited[next]=true;
+					dq.add(next);
+					result+=nv;
+					break;
+				}
+			}		
+		}
+		System.out.println(result);
+	}
+
+}
