@@ -1,60 +1,60 @@
-package jiho.algo.ps.boj1197;
+package jiho.algo.ps.boj1197.prim;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.PriorityQueue;
 
-class Main {
+class MyClass {
 
     public static void main(String[] args) throws Exception {
 
         int N = read();
         int E = read();
 
-        List<List<int[]>> graph = new ArrayList<>(N + 1);
+        List<List<Edge>> graph = new ArrayList<>(N + 1);
         for (int i = 0; i <= N; i++)
             graph.add(new ArrayList<>());
 
-        for (int i = 0; i < N; i++) {
+        while (E-- > 0) {
 
             int v = read();
             int w = read();
             int c = read();
 
-            graph.get(v).add(new int[] { w, c });
+            graph.get(v).add(new Edge(w, c));
+            graph.get(w).add(new Edge(v, c));
 
         }
 
-        long mst = prim(N, graph);
+        int mst = prim(N, graph);
 
         System.out.print(mst);
 
     }
 
-    private static long prim(int N, List<List<int[]>> graph) {
+    private static int prim(int N, List<List<Edge>> graph) {
 
-        long mst = 0;
+        int mst = 0;
 
-        PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> a[1] - b[1]);
+        PriorityQueue<Edge> pq = new PriorityQueue<>((a, b) -> a.c - b.c);
         boolean[] visited = new boolean[N + 1];
 
-        pq.offer(new int[] { 1, 0 });
+        pq.offer(new Edge(1, 0));
 
         while (!pq.isEmpty()) {
 
-            int[] state = pq.poll();
-            int v = state[0];
+            Edge state = pq.poll();
+            int v = state.v;
 
             if (visited[v])
                 continue;
 
             visited[v] = true;
 
-            mst += state[1];
+            mst += state.c;
 
-            for (int[] s : graph.get(v))
-                if (!visited[s[0]])
-                    pq.offer(s);
+            for (Edge s : graph.get(v))
+                pq.offer(s);
 
         }
 
@@ -72,6 +72,17 @@ class Main {
         if (c == 13)
             System.in.read();
         return isNegative ? ~n + 1 : n;
+    }
+
+}
+
+class Edge {
+
+    int v, c;
+
+    Edge(int v, int c) {
+        this.v = v;
+        this.c = c;
     }
 
 }
