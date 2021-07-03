@@ -156,12 +156,12 @@
 
 ## :pushpin: Prim
 
-| 구분     | 링크 |
-| -------- | ---- |
-| 개념정리 |      |
-| 문제1    |      |
-| 문제2    |      |
-| 문제3    |      |
+| 구분                      | 링크                                            |
+| ------------------------- | ----------------------------------------------- |
+| 개념정리                  |                                                 |
+| BOJ 1197 최소 스패닝 트리 | [Code](src/jiho/algo/ps/boj1197/prim/Main.java) |
+| BOJ 1922 네트워크 연결    | [Link](https://jihogrammer.tistory.com/13)      |
+| BOJ 1647 도시 분할 계획   | [Link](https://jihogrammer.tistory.com/14)      |
 
 ---
 
