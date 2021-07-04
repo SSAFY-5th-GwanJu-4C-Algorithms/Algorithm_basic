@@ -10,19 +10,17 @@ import java.util.StringTokenizer;
 
 public class Baekjoon_1197_최소스패닝트리 {
 	
-	static class Info implements Comparable<Info>{
-		int idx;
-		long val;
+	public static class Edge implements Comparable<Edge> {
+		int node; double width; 
 		
-		public Info(int idx, long val) {
-			this.idx = idx;
-			this.val = val;
+		public Edge(int node, double width) {
+			this.node = node; this.width = width; 
 		}
-		@Override
-		public int compareTo(Info o) {		
-			return Long.compare(this.val, o.val);
+		
+		@Override 
+		public int compareTo(Edge o) {
+			return Double.compare(this.width, o.width); }
 		}
-	}
 
 	public static void main(String[] args) throws Exception {
 		
@@ -32,9 +30,9 @@ public class Baekjoon_1197_최소스패닝트리 {
 		int E = Integer.parseInt(st.nextToken()); // 간선
 		
 		boolean[] visited = new boolean[V+1];
-		ArrayList<Info> list[] = new ArrayList[V+1];
+		ArrayList<Edge> list[] = new ArrayList[V+1];
 		
-		for(int i = 1; i <= V; i++) {
+		for(int i = 0; i <= V; i++) {
 			list[i] = new ArrayList<>();
 		}
 		
@@ -42,38 +40,35 @@ public class Baekjoon_1197_최소스패닝트리 {
 			st = new StringTokenizer(br.readLine(), " ");
 			int start = Integer.parseInt(st.nextToken());
 			int target = Integer.parseInt(st.nextToken());
-			long val = Integer.parseInt(st.nextToken());
-			list[start].add(new Info(target,val));
-			list[target].add(new Info(start,val));
+			int width = Integer.parseInt(st.nextToken());
+			list[start].add(new Edge(target,width));
+			list[target].add(new Edge(start,width));
 			
 		}
-		long result = 0;
-		PriorityQueue<Info> q = new PriorityQueue<>();
-		Deque<Integer> dq = new ArrayDeque<>(); 
-		dq.offer(1);
-		while(!dq.isEmpty()) {
-			int cidx = dq.poll();
-			visited[cidx]=true;
-			for(int i=0;i<list[cidx].size();i++) {
-				int next = list[cidx].get(i).idx;
-				long nv = list[cidx].get(i).val;
-				if(!visited[next]) {
-					q.offer(new Info(next,nv));
-				}
+
+		PriorityQueue<Edge> q = new PriorityQueue<>();
+		q.add(new Edge(1,0));
+		
+		int cnt = 0, ans = 0;
+		while(!q.isEmpty()) {
+			
+			if(cnt == V) break;
+			
+			Edge edge = q.poll();
+			
+			if(visited[edge.node]) continue;
+			visited[edge.node] = true;
+			
+			ans += edge.width; // 가중치 증가
+			
+			// 방문하지 않은 노드 큐에 넣어줌
+			for(Edge next : list[edge.node]) {
+				if(!visited[next.node]) 
+					q.add(next);
 			}
-			while(!q.isEmpty()) {
-				int next = q.peek().idx;
-				long nv = q.peek().val;
-				q.poll();
-				if(!visited[next]) {
-					visited[next]=true;
-					dq.add(next);
-					result+=nv;
-					break;
-				}
-			}		
 		}
-		System.out.println(result);
+		
+		System.out.println(ans);
 	}
 
 }
