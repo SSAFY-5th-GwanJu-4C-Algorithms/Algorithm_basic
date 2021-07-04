@@ -11,15 +11,15 @@ import java.util.StringTokenizer;
 public class Baekjoon_1197_최소스패닝트리 {
 	
 	public static class Edge implements Comparable<Edge> {
-		int node; double width; 
+		int node; double dis; 
 		
-		public Edge(int node, double width) {
-			this.node = node; this.width = width; 
+		public Edge(int node, double dis) {
+			this.node = node; this.dis = dis; 
 		}
 		
 		@Override 
 		public int compareTo(Edge o) {
-			return Double.compare(this.width, o.width); }
+			return Double.compare(this.dis, o.dis); }
 		}
 
 	public static void main(String[] args) throws Exception {
@@ -32,7 +32,7 @@ public class Baekjoon_1197_최소스패닝트리 {
 		boolean[] visited = new boolean[V+1];
 		ArrayList<Edge> list[] = new ArrayList[V+1];
 		
-		for(int i = 0; i <= V; i++) {
+		for(int i = 1; i <= V; i++) {
 			list[i] = new ArrayList<>();
 		}
 		
@@ -40,35 +40,18 @@ public class Baekjoon_1197_최소스패닝트리 {
 			st = new StringTokenizer(br.readLine(), " ");
 			int start = Integer.parseInt(st.nextToken());
 			int target = Integer.parseInt(st.nextToken());
-			int width = Integer.parseInt(st.nextToken());
-			list[start].add(new Edge(target,width));
-			list[target].add(new Edge(start,width));
+			int val = Integer.parseInt(st.nextToken());
+			list[start].add(new Edge(target,val));
+			list[target].add(new Edge(start,val));
 			
 		}
-
+		long result = 0;
 		PriorityQueue<Edge> q = new PriorityQueue<>();
-		q.add(new Edge(1,0));
+		q.add(new Edge(0,0)); // 임의의 정점에서 시작
 		
-		int cnt = 0, ans = 0;
-		while(!q.isEmpty()) {
-			
-			if(cnt == V) break;
-			
-			Edge edge = q.poll();
-			
-			if(visited[edge.node]) continue;
-			visited[edge.node] = true;
-			
-			ans += edge.width; // 가중치 증가
-			
-			// 방문하지 않은 노드 큐에 넣어줌
-			for(Edge next : list[edge.node]) {
-				if(!visited[next.node]) 
-					q.add(next);
-			}
-		}
 		
-		System.out.println(ans);
+
+		System.out.println(result);
 	}
 
 }

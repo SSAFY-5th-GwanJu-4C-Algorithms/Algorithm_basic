@@ -1,0 +1,77 @@
+package Prim;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.PriorityQueue;
+import java.util.StringTokenizer;
+
+public class Baekjoon_1922_네트워크연결 {
+	
+	public static class Node implements Comparable<Node> {
+		int node; double width; 
+		
+		public Node(int node, double width) {
+			this.node = node; this.width = width; 
+		}
+		
+		@Override 
+		public int compareTo(Node o) {
+			return Double.compare(this.width, o.width); 
+		}
+	}
+
+
+	public static void main(String[] args) throws Exception {
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = null;
+		int N = Integer.parseInt(br.readLine()); // 노드
+		int M = Integer.parseInt(br.readLine()); // 간선
+		
+		boolean[] visited = new boolean[N+1];
+		ArrayList<Node> list[] = new ArrayList[N+1];
+		
+		for(int i = 0; i <= N; i++) {
+			list[i] = new ArrayList<>();
+		}
+		
+		for(int i = 0; i < M; i++) {
+			st = new StringTokenizer(br.readLine(), " ");
+			int start = Integer.parseInt(st.nextToken());
+			int target = Integer.parseInt(st.nextToken());
+			int width = Integer.parseInt(st.nextToken());
+			list[start].add(new Node(target,width));
+			list[target].add(new Node(start,width));
+		}
+		
+		
+		// 현재 연결된 정점들 중에 가장 가중치 적은 간선 고를 수 있음
+		PriorityQueue<Node> q = new PriorityQueue<>(); 
+		q.add(new Node(1,0)); // 첫번째 노드부터 시작(가중치 없음)
+		
+		int cnt = 0, ans = 0;
+		while(!q.isEmpty()) {
+			
+			if(cnt == N) break;
+			
+			Node n = q.poll();
+			
+			if(visited[n.node]) continue;
+			visited[n.node] = true;
+			
+			ans += n.width; // 가중치 증가
+			
+			// 방문하지 않은 노드 큐에 넣어줌
+			for(Node next : list[n.node]) {
+				if(!visited[next.node]) 
+					q.add(next);
+			}
+		}
+		
+		System.out.println(ans);
+		
+		
+	}
+
+}
