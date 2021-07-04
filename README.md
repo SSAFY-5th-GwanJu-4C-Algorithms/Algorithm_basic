@@ -2,18 +2,18 @@
 
 ## List
 
-- [DFS](#pushpin-dfs)
-- [BFS](#pushpin-bfs)
-- [Dijkstra](#pushpin-dijkstra)
-- [Floyd-Warshall](#pushpin-floyd-warshall)
-- [Sliding Window](#pushpin-sliding-window)
-- [Two Point](#pushpin-tow-point)
-- [Prim](#pushpin-prim)
-- [Kruskal](#pushpin-kruskal)
-- [Binary Search](#pushpin-binary-search)
-- [Heap](#pushpin-heap)
-- [DP](#pushpin-dp)
-- [Bracktracking](#pushpin-backtracking)
+-   [DFS](#pushpin-dfs)
+-   [BFS](#pushpin-bfs)
+-   [Dijkstra](#pushpin-dijkstra)
+-   [Floyd-Warshall](#pushpin-floyd-warshall)
+-   [Sliding Window](#pushpin-sliding-window)
+-   [Two Point](#pushpin-tow-point)
+-   [Prim](#pushpin-prim)
+-   [Kruskal](#pushpin-kruskal)
+-   [Binary Search](#pushpin-binary-search)
+-   [Heap](#pushpin-heap)
+-   [DP](#pushpin-dp)
+-   [Bracktracking](#pushpin-backtracking)
 
 ---
 
@@ -69,7 +69,7 @@
 
 | 구분        | 바로가기                                                                                                                                                |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Jihogrammer |                                                                                                                                                         |
+| Jihogrammer | [Link](https://jihogrammer.tistory.com/11)                                                                                                              |
 | LudaStar    | [Link](https://ludastar.tistory.com/65)                                                                                                                 |
 | seongaeee   | [Link](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/seongaeee/Sliding%20Window/Sliding%20Window%20%EC%A0%95%EB%A6%AC.md) |
 | Mulgyeol    | [Link](https://mulgyeol.github.io/TIL/algorithms/Two_Pointer_Sliding_Window.html)                                                                       |
@@ -79,13 +79,13 @@
 
 ## :pushpin: Two Point
 
-| 구분        | 바로가기                                                                          |
-| ----------- | --------------------------------------------------------------------------------- |
-| Jihogrammer |                                                                                   |
-| LudaStar    | [Link](https://ludastar.tistory.com/65)                                           |
-| seongaeee   | [Link](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/seongaeee/Two%20Pointer/Two%20Pointer%20%EC%A0%95%EB%A6%AC.md)  |
-| Mulgyeol    | [Link](https://mulgyeol.github.io/TIL/algorithms/Two_Pointer_Sliding_Window.html) |
-| cse96       | [Link](https://cse96.github.io/algorithm-TowPointer/)                             |
+| 구분        | 바로가기                                                                                                                                          |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Jihogrammer | [Link](https://jihogrammer.tistory.com/12)                                                                                                        |
+| LudaStar    | [Link](https://ludastar.tistory.com/65)                                                                                                           |
+| seongaeee   | [Link](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/seongaeee/Two%20Pointer/Two%20Pointer%20%EC%A0%95%EB%A6%AC.md) |
+| Mulgyeol    | [Link](https://mulgyeol.github.io/TIL/algorithms/Two_Pointer_Sliding_Window.html)                                                                 |
+| cse96       | [Link](https://cse96.github.io/algorithm-TowPointer/)                                                                                             |
 
 ---
 
@@ -94,7 +94,7 @@
 | 구분        | 바로가기 |
 | ----------- | -------- |
 | Jihogrammer |          |
-| LudaStar    |          |
+| LudaStar    |  [Link](https://ludastar.tistory.com/74) |
 | seongaeee   |          |
 | Mulgyeol    |          |
 | cse96       |          |
@@ -106,7 +106,7 @@
 | 구분        | 바로가기 |
 | ----------- | -------- |
 | Jihogrammer |          |
-| LudaStar    |          |
+| LudaStar    | [Link](https://ludastar.tistory.com/74)         |
 | seongaeee   |          |
 | Mulgyeol    |          |
 | cse96       |          |

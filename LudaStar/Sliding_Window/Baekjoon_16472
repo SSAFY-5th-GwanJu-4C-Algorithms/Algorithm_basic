@@ -1,0 +1,41 @@
+package Sliding_Window;
+
+import java.util.Scanner;
+
+public class Baekjoon_16472_고냥이 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int N = sc.nextInt();
+		String str = sc.next();
+		
+		int start = 0, end = 0;
+		int cnt = 0, max = 1;
+
+		int[] check = new int[26]; // 알파벳 갯수 체크		
+		check[str.charAt(0)-'a']++;
+		cnt++;
+
+		while(true) {
+			end++;
+			
+			if(end == str.length()) break;
+			int num = str.charAt(end) - 'a';
+			check[num]++;
+			
+			if(check[num] == 1) cnt++; // 알파벳 처음 나온 상황
+			
+			while(cnt > N) {
+				int num2 = str.charAt(start) - 'a';
+				check[num2]--;
+				
+				if(check[num2] == 0) cnt--;
+				
+				start++;
+			}
+			max = Math.max(max, end-start+1);
+		}
+		System.out.println(max);
+	}
+
+}

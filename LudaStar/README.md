@@ -67,8 +67,8 @@
 | -------- | ---- |
 | 개념정리 |   [Link](https://ludastar.tistory.com/65)   |
 | 문제1    |  [백준 2531 회전초밥](./Sliding_Window/Baekjoon_2531)    |
-| 문제2    |      |
-| 문제3    |      |
+| 문제2    |   [백준 21921 블로그](./Sliding_Window/Baekjoon_21921)    |
+| 문제3    |  [백준 16472 고냥이](./Sliding_Window/Baekjoon_16472)    |
 
 ---
 
@@ -87,8 +87,8 @@
 
 | 구분     | 링크 |
 | -------- | ---- |
-| 개념정리 |      |
-| 문제1    |      |
+| 개념정리 |  [Link](https://ludastar.tistory.com/74)  |
+| 문제1    | [백준 1197 최소 스패닝 트리](./Prim/Baekjoon_1197)    |
 | 문제2    |      |
 | 문제3    |      |
 
@@ -98,8 +98,8 @@
 
 | 구분     | 링크 |
 | -------- | ---- |
-| 개념정리 |      |
-| 문제1    |      |
+| 개념정리 |   [Link](https://ludastar.tistory.com/74)  |
+| 문제1    |   [백준 1197 최소 스패닝 트리](./Kruskal/Baekjoon_1197)   |
 | 문제2    |      |
 | 문제3    |      |
 

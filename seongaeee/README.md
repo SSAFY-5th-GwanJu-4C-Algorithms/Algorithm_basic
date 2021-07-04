@@ -77,8 +77,8 @@
 | 구분     | 링크 |
 | -------- | ---- |
 | 개념정리 | [투 포인터 개념, 구현](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/seongaeee/Two%20Pointer/Two%20Pointer%20%EC%A0%95%EB%A6%AC.md)     |
-| 문제1    |      |
-| 문제2    |      |
+| 문제1    | [백준_실버1_회문](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/seongaeee/Two%20Pointer/%EB%B0%B1%EC%A4%80_%EC%8B%A4%EB%B2%841_%ED%9A%8C%EB%AC%B8_%ED%8B%80%EB%A0%B8.md)     |
+| 문제2    | [백준_골드3_고냥이](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/seongaeee/Two%20Pointer/%EB%B0%B1%EC%A4%80_%EA%B3%A8%EB%93%9C3_%EA%B3%A0%EB%83%A5%EC%9D%B4_%EC%8B%9C%EA%B0%84%EC%B4%88%EA%B3%BC.md)     |
 | 문제3    |      |
 
 ---
@@ -87,9 +87,9 @@
 
 | 구분     | 링크 |
 | -------- | ---- |
-| 개념정리 |      |
-| 문제1    |      |
-| 문제2    |      |
+| 개념정리 | [프림 개념, 구현](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/seongaeee/Prim/Prim%20%EC%A0%95%EB%A6%AC.md)     |
+| 문제1    | [백준_골드4_최소스패닝트리](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/seongaeee/Prim/%EB%B0%B1%EC%A4%80_%EA%B3%A8%EB%93%9C4_%EC%B5%9C%EC%86%8C%EC%8A%A4%ED%8C%A8%EB%8B%9D%ED%8A%B8%EB%A6%AC_%EB%A9%94%EB%AA%A8%EB%A6%AC%EC%B4%88%EA%B3%BC.md)     |
+| 문제2    | [백준_골드4_네트워크연결](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/seongaeee/Prim/%EB%B0%B1%EC%A4%80_%EA%B3%A8%EB%93%9C4_%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%EC%97%B0%EA%B2%B0_%ED%8B%80%EB%A0%B8.md)     |
 | 문제3    |      |
 
 ---
@@ -98,7 +98,7 @@
 
 | 구분     | 링크 |
 | -------- | ---- |
-| 개념정리 |      |
+| 개념정리 | [크루스칼 개념, 구현](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/seongaeee/Kruskal/Kruskal%20%EC%A0%95%EB%A6%AC.md)     |
 | 문제1    |      |
 | 문제2    |      |
 | 문제3    |      |
