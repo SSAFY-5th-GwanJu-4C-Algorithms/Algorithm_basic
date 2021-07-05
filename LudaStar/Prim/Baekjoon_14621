@@ -1,0 +1,80 @@
+package Prim;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.PriorityQueue;
+import java.util.StringTokenizer;
+
+public class Baekjoon_14621_나만안되는연애 {
+	
+	public static class Univ implements Comparator<Univ> {
+
+		int node, weight;
+		char sex;
+		
+		public Univ(int node, int weight, char sex) {
+			this.node = node;
+			this.weight = weight;
+			this.sex = sex;
+		}
+
+		@Override
+		public int compare(Univ o1, Univ o2) {
+			return o1.weight - o2.weight;
+		}
+	}
+
+	public static void main(String[] args) throws Exception {
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+		int N = Integer.parseInt(st.nextToken());
+		int M = Integer.parseInt(st.nextToken());
+		
+		char[] univercity = new char[N+1];
+		st = new StringTokenizer(br.readLine(), " ");
+		for(int i = 1; i <= N; i++) {
+			univercity[i] = st.nextToken().charAt(0);
+		}
+		
+		boolean[] visited = new boolean[N+1];
+		ArrayList<Univ> list[] = new ArrayList[N+1];
+		
+		for(int i = 0; i <= N; i++) {
+			list[i] = new ArrayList<>();
+		}
+		
+		for(int i = 0; i < M; i++) {
+			st = new StringTokenizer(br.readLine(), " ");
+			int start = Integer.parseInt(st.nextToken());
+			int target = Integer.parseInt(st.nextToken());
+			int dis = Integer.parseInt(st.nextToken());
+			list[start].add(new Univ(target, dis, univercity[start]));
+			list[target].add(new Univ(start, dis, univercity[target]));
+		}
+		
+		for(int i = 0; i < N+1; i++) {
+			System.out.println();
+			for(int j = 0; j < list[i].size(); j++) {
+				System.out.print(list[i].get(j).node);
+				System.out.print(" ");
+			}
+		}
+		
+		// 현재 연결된 정점들 중에 가장 가중치 적은 간선 고를 수 있음
+		PriorityQueue<Univ> q = new PriorityQueue<>(); 
+		q.add(new Univ(list[1].get(0).node, list[1].get(0).weight, list[1].get(0).sex));
+		visited[list[1].get(0).node] = true;
+		
+		int cnt = 0, ans = 0;
+		while(!q.isEmpty()) {
+			
+			if(cnt == N) break;
+			
+		}
+		
+	}
+
+}
