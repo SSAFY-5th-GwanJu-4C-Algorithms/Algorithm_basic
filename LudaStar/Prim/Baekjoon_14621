@@ -90,6 +90,11 @@ public class Baekjoon_14621_나만안되는연애 {
 			}
 			
 		}
+				for(int i = 1; i < N+1; i++) {
+			if(visited[i] == true) continue;
+			System.out.println(-1);
+			return;
+		}
 		System.out.println(ans);
 		
 	}
