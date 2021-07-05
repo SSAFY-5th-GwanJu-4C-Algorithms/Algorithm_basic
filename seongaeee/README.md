@@ -99,7 +99,7 @@
 | 구분     | 링크 |
 | -------- | ---- |
 | 개념정리 | [크루스칼 개념, 구현](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/seongaeee/Kruskal/Kruskal%20%EC%A0%95%EB%A6%AC.md)     |
-| 문제1    |      |
+| 문제1    | [백준_골드4_최소스패닝트리](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/seongaeee/Kruskal/%EB%B0%B1%EC%A4%80_%EA%B3%A8%EB%93%9C4_%EC%B5%9C%EC%86%8C%EC%8A%A4%ED%8C%A8%EB%8B%9D%ED%8A%B8%EB%A6%AC.md)     |
 | 문제2    |      |
 | 문제3    |      |
 

@@ -169,8 +169,8 @@
 
 | 구분     | 링크 |
 | -------- | ---- |
-| 개념정리 |      |
-| 문제1    |      |
+| BOJ 14621 나만 안 되는 연애 |[Link](https://jihogrammer.tistory.com/18)|
+| BOJ 1774 우주신과의 교감    | [Link](https://jihogrammer.tistory.com/17) |
 | 문제2    |      |
 | 문제3    |      |
 
