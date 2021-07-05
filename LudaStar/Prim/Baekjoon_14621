@@ -9,7 +9,7 @@ import java.util.StringTokenizer;
 
 public class Baekjoon_14621_나만안되는연애 {
 	
-	public static class Univ implements Comparator<Univ> {
+	public static class Univ implements Comparable<Univ> {
 
 		int node, weight;
 		char sex;
@@ -21,8 +21,8 @@ public class Baekjoon_14621_나만안되는연애 {
 		}
 
 		@Override
-		public int compare(Univ o1, Univ o2) {
-			return o1.weight - o2.weight;
+		public int compareTo(Univ o) {
+			return this.weight - o.weight;
 		}
 	}
 
@@ -33,10 +33,10 @@ public class Baekjoon_14621_나만안되는연애 {
 		int N = Integer.parseInt(st.nextToken());
 		int M = Integer.parseInt(st.nextToken());
 		
-		char[] univercity = new char[N+1];
+		char[] university = new char[N+1];
 		st = new StringTokenizer(br.readLine(), " ");
 		for(int i = 1; i <= N; i++) {
-			univercity[i] = st.nextToken().charAt(0);
+			university[i] = st.nextToken().charAt(0);
 		}
 		
 		boolean[] visited = new boolean[N+1];
@@ -51,29 +51,46 @@ public class Baekjoon_14621_나만안되는연애 {
 			int start = Integer.parseInt(st.nextToken());
 			int target = Integer.parseInt(st.nextToken());
 			int dis = Integer.parseInt(st.nextToken());
-			list[start].add(new Univ(target, dis, univercity[start]));
-			list[target].add(new Univ(start, dis, univercity[target]));
+			list[start].add(new Univ(target, dis, university[target]));
+			list[target].add(new Univ(start, dis, university[start]));
 		}
 		
-		for(int i = 0; i < N+1; i++) {
-			System.out.println();
-			for(int j = 0; j < list[i].size(); j++) {
-				System.out.print(list[i].get(j).node);
-				System.out.print(" ");
-			}
-		}
+//		for(int i = 0; i < N+1; i++) {
+//			System.out.println();
+//			for(int j = 0; j < list[i].size(); j++) {
+//				System.out.print(list[i].get(j).node + " " + list[i].get(j).sex);
+//				System.out.print(" ");
+//			}
+//		}
 		
 		// 현재 연결된 정점들 중에 가장 가중치 적은 간선 고를 수 있음
 		PriorityQueue<Univ> q = new PriorityQueue<>(); 
-		q.add(new Univ(list[1].get(0).node, list[1].get(0).weight, list[1].get(0).sex));
-		visited[list[1].get(0).node] = true;
+		// 1번 노드 넣어주자
+		q.add(new Univ(1,0,university[1]));
 		
-		int cnt = 0, ans = 0;
+		int ans = 0;
 		while(!q.isEmpty()) {
 			
-			if(cnt == N) break;
+			Univ univ = q.poll();
+			//System.out.println(univ.node);
+			
+			// 방문했으면 패스
+			if(visited[univ.node]) continue;
+			visited[univ.node] = true;
+			
+			ans += univ.weight; // 가중치 증가
+			
+			// 방문하지 않은 노드 큐에 넣어줌
+			for(Univ next : list[univ.node]) {
+				
+				if(!visited[next.node] && next.sex != univ.sex) {
+					//System.out.println(next.sex + " " +univ.sex);
+					q.offer(next);
+				}
+			}
 			
 		}
+		System.out.println(ans);
 		
 	}
 
