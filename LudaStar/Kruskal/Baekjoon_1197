@@ -1,27 +1,31 @@
-package Prim;
+package Kruskal;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.util.ArrayDeque;
-import java.util.ArrayList;
-import java.util.Deque;
 import java.util.PriorityQueue;
 import java.util.StringTokenizer;
 
 public class Baekjoon_1197_최소스패닝트리 {
-	
-	public static class Edge implements Comparable<Edge> {
-		int node; double dis; 
-		
-		public Edge(int node, double dis) {
-			this.node = node; this.dis = dis; 
-		}
-		
-		@Override 
-		public int compareTo(Edge o) {
-			return Double.compare(this.dis, o.dis); }
+
+	static class Node implements Comparable<Node> {
+		int from; 
+		int to;
+		int weight; 
+
+		public Node(int from, int to, int weight) {
+			this.from = from;
+			this.to = to;
+			this.weight = weight;
 		}
 
+		@Override 
+		public int compareTo(Node o) {
+			return Integer.compare(this.weight, o.weight); 
+		}
+	}
+	
+	static int[] parent;
+	
 	public static void main(String[] args) throws Exception {
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -29,29 +33,45 @@ public class Baekjoon_1197_최소스패닝트리 {
 		int V = Integer.parseInt(st.nextToken()); // 노드
 		int E = Integer.parseInt(st.nextToken()); // 간선
 		
-		boolean[] visited = new boolean[V+1];
-		ArrayList<Edge> list[] = new ArrayList[V+1];
-		
-		for(int i = 1; i <= V; i++) {
-			list[i] = new ArrayList<>();
-		}
+		PriorityQueue<Node> q = new PriorityQueue<>();
+		parent = new int[V+1];
+		for(int i = 1; i <=V; i++) parent[i] = i;
 		
 		for(int i = 0; i < E; i++) {
 			st = new StringTokenizer(br.readLine(), " ");
 			int start = Integer.parseInt(st.nextToken());
 			int target = Integer.parseInt(st.nextToken());
-			int val = Integer.parseInt(st.nextToken());
-			list[start].add(new Edge(target,val));
-			list[target].add(new Edge(start,val));
-			
+			int weight = Integer.parseInt(st.nextToken());
+			q.offer(new Node(start, target, weight));
 		}
-		long result = 0;
-		PriorityQueue<Edge> q = new PriorityQueue<>();
-		q.add(new Edge(0,0)); // 임의의 정점에서 시작
 		
+		int sum = 0;
 		
+		while(!q.isEmpty()) {
+			Node node = q.poll();
+			
+			int parentS = find(node.from);
+			int parentE = find(node.to);
+			
+			if(parentS != parentE) {
+				union(parentS, parentE);
+				sum += node.weight;
+			}
+		}
+		
+		System.out.println(sum);
+		
+	}
 
-		System.out.println(result);
+
+	private static void union(int a, int b) {
+		parent[a] = b;
+	}
+
+
+	private static int find(int x) {
+		if(parent[x] == x) return x;
+		else return parent[x] = find(parent[x]);
 	}
 
 }
