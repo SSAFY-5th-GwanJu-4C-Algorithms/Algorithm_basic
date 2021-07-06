@@ -158,7 +158,6 @@
 
 | 구분                      | 링크                                            |
 | ------------------------- | ----------------------------------------------- |
-
 | BOJ 1197 최소 스패닝 트리 | [Code](src/jiho/algo/ps/boj1197/prim/Main.java) |
 | BOJ 1922 네트워크 연결    | [Link](https://jihogrammer.tistory.com/13)      |
 | BOJ 1647 도시 분할 계획   | [Link](https://jihogrammer.tistory.com/14)      |
