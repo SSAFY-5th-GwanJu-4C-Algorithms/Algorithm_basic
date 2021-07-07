@@ -1,0 +1,102 @@
+package Kruskal;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.StringTokenizer;
+
+public class Baekjoon_14621_나만안되는연애 {
+	
+	public static class Univ implements Comparable<Univ> {
+
+		int from, to, weight;
+
+		public Univ(int from, int to, int weight) {
+			this.from = from;
+			this.to = to;
+			this.weight = weight;
+		}
+
+		@Override
+		public int compareTo(Univ o) {
+			return this.weight - o.weight;
+		}	
+	}
+	
+	static int[] parent;
+	static ArrayList<Univ> edgeList;
+			
+	public static void main(String[] args) throws Exception {
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+		int N = Integer.parseInt(st.nextToken());
+		int M = Integer.parseInt(st.nextToken());
+		
+		char[] university = new char[N+1];
+		st = new StringTokenizer(br.readLine(), " ");
+		for(int i = 1; i <= N; i++) {
+			university[i] = st.nextToken().charAt(0);
+		}
+
+		edgeList = new ArrayList<>();
+		for(int i = 0; i < M; i++) {
+			st = new StringTokenizer(br.readLine(), " ");
+			int start = Integer.parseInt(st.nextToken());
+			int target = Integer.parseInt(st.nextToken());
+			int weight = Integer.parseInt(st.nextToken());
+			edgeList.add(new Univ(start, target, weight));
+		}
+
+		parent = new int[N+1];
+		for(int i = 1; i <= N; i++) parent[i] = i;
+		
+//		for(int i = 0; i < N+1; i++) {
+//			System.out.println();
+//			for(int j = 0; j < list[i].size(); j++) {
+//				System.out.print(list[i].get(j).node + " " + list[i].get(j).sex);
+//				System.out.print(" ");
+//			}
+//		}
+
+		Collections.sort(edgeList);
+		
+		int ans = 0, cnt = 0;
+		for(int i = 0; i < edgeList.size(); i++) {
+			Univ univ = edgeList.get(i);
+			
+			if(find(univ.from) != find(univ.to)) {
+				
+				if(university[univ.from] != university[univ.to]) {
+					cnt++;
+					ans += univ.weight;
+					
+					union(univ.from, univ.to);
+				}
+			}
+		}
+		
+		// cnt는 N-1개가 있어야 최소신장트리를 만들 수 있음
+		if(cnt != N-1)
+			System.out.println("-1");
+
+		else System.out.println(ans);
+		
+	}
+
+	private static void union(int from, int to) {
+		int x = find(from);
+		int y = find(to);
+		
+		if(x != y) parent[y] = x;
+		
+	}
+
+	private static int find(int x) {
+		if(x == parent[x]) return x;
+		
+		return parent[x] = find(parent[x]);
+	}
+
+}

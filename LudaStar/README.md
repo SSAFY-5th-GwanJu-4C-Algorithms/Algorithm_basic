@@ -90,7 +90,7 @@
 | 개념정리 |  [Link](https://ludastar.tistory.com/74)  |
 | 문제1    | [백준 1197 최소 스패닝 트리](./Prim/Baekjoon_1197)    |
 | 문제2    |   [백준 1922 네트워크 ](./Prim/Baekjoon_1922)    |
-| 문제3    | [백준 1922 네트워크 ](./Prim/Baekjoon_14621)   |
+| 문제3    | [백준 14621 나만 안되는 연애 ](./Prim/Baekjoon_14621)   |
 
 ---
 
@@ -100,7 +100,7 @@
 | -------- | ---- |
 | 개념정리 |   [Link](https://ludastar.tistory.com/74)  |
 | 문제1    |   [백준 1197 최소 스패닝 트리](./Kruskal/Baekjoon_1197)   |
-| 문제2    |      |
+| 문제2    |   [백준 14621 나만 안되는 연애 ](./Kruskal/Baekjoon_14621)    |
 | 문제3    |      |
 
 ---
