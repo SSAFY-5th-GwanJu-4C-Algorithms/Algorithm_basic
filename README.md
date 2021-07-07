@@ -93,7 +93,7 @@
 
 | 구분        | 바로가기 |
 | ----------- | -------- |
-| Jihogrammer |          |
+| Jihogrammer | [Link](https://jihogrammer.tistory.com/20) |
 | LudaStar    |  [Link](https://ludastar.tistory.com/74) |
 | seongaeee   |          |
 | Mulgyeol    |          |
@@ -105,7 +105,7 @@
 
 | 구분        | 바로가기 |
 | ----------- | -------- |
-| Jihogrammer |          |
+| Jihogrammer | [Link](https://jihogrammer.tistory.com/20) |
 | LudaStar    | [Link](https://ludastar.tistory.com/74)         |
 | seongaeee   |          |
 | Mulgyeol    |          |
