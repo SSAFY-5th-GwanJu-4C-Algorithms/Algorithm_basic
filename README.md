@@ -97,7 +97,7 @@
 | LudaStar    |  [Link](https://ludastar.tistory.com/74) |
 | seongaeee   |          |
 | Mulgyeol    |          |
-| cse96       |          |
+| cse96       |  [Prim](https://cse96.github.io/algorithm-MST/)        |
 
 ---
 
@@ -109,7 +109,7 @@
 | LudaStar    | [Link](https://ludastar.tistory.com/74)         |
 | seongaeee   |          |
 | Mulgyeol    |          |
-| cse96       |          |
+| cse96       |  [Link](https://cse96.github.io/algorithm-MST/)        |
 
 ---
 
