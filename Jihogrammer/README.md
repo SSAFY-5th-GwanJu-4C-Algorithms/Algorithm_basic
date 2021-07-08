@@ -191,8 +191,8 @@
 
 | 구분     | 링크 |
 | -------- | ---- |
-| 개념정리 |      |
-| 문제1    |      |
+| 개념정리 | [Link](https://jihogrammer.tistory.com/7) |
+| BOJ 2075 N번째 큰 수 | [Link](https://jihogrammer.tistory.com/25) |
 | 문제2    |      |
 | 문제3    |      |
 
