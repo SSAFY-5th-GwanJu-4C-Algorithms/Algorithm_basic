@@ -93,11 +93,11 @@
 
 | 구분        | 바로가기 |
 | ----------- | -------- |
-| Jihogrammer |          |
+| Jihogrammer | [Link](https://jihogrammer.tistory.com/20) |
 | LudaStar    |  [Link](https://ludastar.tistory.com/74) |
 | seongaeee   |          |
 | Mulgyeol    |          |
-| cse96       |          |
+| cse96       |  [Prim](https://cse96.github.io/algorithm-MST/)        |
 
 ---
 
@@ -105,11 +105,11 @@
 
 | 구분        | 바로가기 |
 | ----------- | -------- |
-| Jihogrammer |          |
+| Jihogrammer | [Link](https://jihogrammer.tistory.com/20) |
 | LudaStar    | [Link](https://ludastar.tistory.com/74)         |
 | seongaeee   |          |
 | Mulgyeol    |          |
-| cse96       |          |
+| cse96       |  [Link](https://cse96.github.io/algorithm-MST/)        |
 
 ---
 

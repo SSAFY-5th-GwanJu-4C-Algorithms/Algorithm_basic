@@ -1,0 +1,92 @@
+package Kruskal;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.StringTokenizer;
+
+public class Baekjoon_1368_물대기 {
+	
+	public static class Non implements Comparable<Non> {
+
+		int from, to, weight;
+
+		public Non(int from, int to, int weight) {
+			this.from = from;
+			this.to = to;
+			this.weight = weight;
+		}
+
+		@Override
+		public int compareTo(Non o) {
+			return this.weight - o.weight;
+		}	
+	}
+	
+	static int[] parent;
+	static ArrayList<Non> edgeList;
+
+	public static void main(String[] args) throws Exception {
+		
+		BufferedReader br= new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = null;
+		
+		int N = Integer.parseInt(br.readLine()); // 논의 수
+		int[] cost = new int[N]; // i번째 논에 우물을 팔 때 드는 비용
+		for(int i = 0; i < N; i++) {
+			int a = Integer.parseInt(br.readLine());
+			cost[i] = a;
+		}
+		
+		edgeList = new ArrayList<>();
+		int[][] arr = new int[N][N];
+		for(int i = 0; i < N; i++) {
+			st = new StringTokenizer(br.readLine(), " ");
+			for(int j = 0; j < N; j++) {
+				arr[i][j] = Integer.parseInt(st.nextToken());
+				if(j > i)
+					edgeList.add(new Non(i+1,j+1,arr[i][j]));
+			}
+		}
+		// 데이터 입력 끝
+
+		parent = new int[N+1];
+		for(int i = 1; i <= N; i++) parent[i] = i;
+		
+		Collections.sort(edgeList);
+		
+		int ans = 0;
+		for(int i = 0; i < edgeList.size(); i++) {
+			Non non = edgeList.get(i);
+			//System.out.println(non.from+ " "+ non.to);
+			
+			if(find(non.from) != find(non.to)) {
+				
+				if(non.weight <= cost[non.from-1]) 
+					ans += non.weight;
+				else
+					ans += cost[non.from-1];
+				
+				union(non.from, non.to);
+			}
+		}
+		System.out.println(ans);
+	}
+	
+	// 대표자가 다른 경우 합쳐주는 함수
+	private static void union(int from, int to) {
+		int x = find(from);
+		int y = find(to);
+		
+		if(x != y) parent[y] = x;
+		
+	}
+
+	// 대표자 찾아주는 함수
+	private static int find(int x) {
+		if(x == parent[x]) return x;
+		
+		return parent[x] = find(parent[x]);
+	}
+}

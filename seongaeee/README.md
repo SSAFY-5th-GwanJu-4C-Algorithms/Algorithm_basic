@@ -90,7 +90,7 @@
 | 개념정리 | [프림 개념, 구현](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/seongaeee/Prim/Prim%20%EC%A0%95%EB%A6%AC.md)     |
 | 문제1    | [백준_골드4_최소스패닝트리](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/seongaeee/Prim/%EB%B0%B1%EC%A4%80_%EA%B3%A8%EB%93%9C4_%EC%B5%9C%EC%86%8C%EC%8A%A4%ED%8C%A8%EB%8B%9D%ED%8A%B8%EB%A6%AC_%EB%A9%94%EB%AA%A8%EB%A6%AC%EC%B4%88%EA%B3%BC.md)     |
 | 문제2    | [백준_골드4_네트워크연결](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/seongaeee/Prim/%EB%B0%B1%EC%A4%80_%EA%B3%A8%EB%93%9C4_%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%EC%97%B0%EA%B2%B0_%ED%8B%80%EB%A0%B8.md)     |
-| 문제3    |      |
+| 문제3    | [백준_골드2_물대기](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/seongaeee/Prim/%EB%B0%B1%EC%A4%80_%EA%B3%A8%EB%93%9C2_%EB%AC%BC%EB%8C%80%EA%B8%B0.md)     |
 
 ---
 
@@ -100,7 +100,7 @@
 | -------- | ---- |
 | 개념정리 | [크루스칼 개념, 구현](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/seongaeee/Kruskal/Kruskal%20%EC%A0%95%EB%A6%AC.md)     |
 | 문제1    | [백준_골드4_최소스패닝트리](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/seongaeee/Kruskal/%EB%B0%B1%EC%A4%80_%EA%B3%A8%EB%93%9C4_%EC%B5%9C%EC%86%8C%EC%8A%A4%ED%8C%A8%EB%8B%9D%ED%8A%B8%EB%A6%AC.md)     |
-| 문제2    |      |
+| 문제2    | [백준_골드1_행성터널](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/seongaeee/Kruskal/%EB%B0%B1%EC%A4%80_%EA%B3%A8%EB%93%9C1_%ED%96%89%EC%84%B1%ED%84%B0%EB%84%90_%EB%A9%94%EB%AA%A8%EB%A6%AC%EC%B4%88%EA%B3%BC.md)     |
 | 문제3    |      |
 
 ---
