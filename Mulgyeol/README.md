@@ -90,7 +90,7 @@
 | 개념정리 | [Link](https://mulgyeol.github.io/TIL/Algorithm/06_Kruskal_Prim.html)                                                                                           |
 | 문제1    | [백준 1197 - 최소스패닝트리](./Prim/Acmicpc_1197_최소스패닝트리.java)                                                                                           |
 | 문제2    | [백준 1992 - 네트워크 연결](./Prim/Acmicpc_1992_네트워크연결.java)<br>[백준 1992 - 네트워크 연결(우선순위큐)](./Prim/Acmicpc_1992_네트워크연결_우선순위큐.java) |
-| 문제3    |                                                                                                                                                                 |
+| 문제3    | [백준 1368 - 물대기](./Prim/Acmicpc_1368_물대기.java)                                                                                                           |
 
 ---
 
