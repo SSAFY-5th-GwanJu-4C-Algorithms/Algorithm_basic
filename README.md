@@ -129,7 +129,7 @@
 
 | 구분        | 바로가기 |
 | ----------- | -------- |
-| Jihogrammer |          |
+| Jihogrammer | [Link](https://jihogrammer.tistory.com/7) |
 | LudaStar    |          |
 | seongaeee   |          |
 | Mulgyeol    |          |
