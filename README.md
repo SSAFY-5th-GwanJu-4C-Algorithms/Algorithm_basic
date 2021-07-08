@@ -2,18 +2,18 @@
 
 ## List
 
--   [DFS](#pushpin-dfs)
--   [BFS](#pushpin-bfs)
--   [Dijkstra](#pushpin-dijkstra)
--   [Floyd-Warshall](#pushpin-floyd-warshall)
--   [Sliding Window](#pushpin-sliding-window)
--   [Two Point](#pushpin-tow-point)
--   [Prim](#pushpin-prim)
--   [Kruskal](#pushpin-kruskal)
--   [Binary Search](#pushpin-binary-search)
--   [Heap](#pushpin-heap)
--   [DP](#pushpin-dp)
--   [Bracktracking](#pushpin-backtracking)
+- [DFS](#pushpin-dfs)
+- [BFS](#pushpin-bfs)
+- [Dijkstra](#pushpin-dijkstra)
+- [Floyd-Warshall](#pushpin-floyd-warshall)
+- [Sliding Window](#pushpin-sliding-window)
+- [Two Point](#pushpin-tow-point)
+- [Prim](#pushpin-prim)
+- [Kruskal](#pushpin-kruskal)
+- [Binary Search](#pushpin-binary-search)
+- [Heap](#pushpin-heap)
+- [DP](#pushpin-dp)
+- [Bracktracking](#pushpin-backtracking)
 
 ---
 
@@ -91,37 +91,37 @@
 
 ## :pushpin: Prim
 
-| 구분        | 바로가기 |
-| ----------- | -------- |
-| Jihogrammer | [Link](https://jihogrammer.tistory.com/20) |
-| LudaStar    |  [Link](https://ludastar.tistory.com/74) |
-| seongaeee   |          |
-| Mulgyeol    |          |
-| cse96       |  [Prim](https://cse96.github.io/algorithm-MST/)        |
+| 구분        | 바로가기                                                              |
+| ----------- | --------------------------------------------------------------------- |
+| Jihogrammer |                                                                       |
+| LudaStar    | [Link](https://ludastar.tistory.com/74)                               |
+| seongaeee   |                                                                       |
+| Mulgyeol    | [Link](https://mulgyeol.github.io/TIL/Algorithm/06_Kruskal_Prim.html) |
+| cse96       |                                                                       |
 
 ---
 
 ## :pushpin: Kruskal
 
-| 구분        | 바로가기 |
-| ----------- | -------- |
-| Jihogrammer | [Link](https://jihogrammer.tistory.com/20) |
-| LudaStar    | [Link](https://ludastar.tistory.com/74)         |
-| seongaeee   |          |
-| Mulgyeol    |          |
-| cse96       |  [Link](https://cse96.github.io/algorithm-MST/)        |
+| 구분        | 바로가기                                                              |
+| ----------- | --------------------------------------------------------------------- |
+| Jihogrammer |                                                                       |
+| LudaStar    | [Link](https://ludastar.tistory.com/74)                               |
+| seongaeee   |                                                                       |
+| Mulgyeol    | [Link](https://mulgyeol.github.io/TIL/Algorithm/06_Kruskal_Prim.html) |
+| cse96       |                                                                       |
 
 ---
 
 ## :pushpin: Binary Search
 
-| 구분        | 바로가기 |
-| ----------- | -------- |
-| Jihogrammer |          |
-| LudaStar    |          |
-| seongaeee   |          |
-| Mulgyeol    |          |
-| cse96       |          |
+| 구분        | 바로가기                                                               |
+| ----------- | ---------------------------------------------------------------------- |
+| Jihogrammer |                                                                        |
+| LudaStar    |                                                                        |
+| seongaeee   |                                                                        |
+| Mulgyeol    | [Link](https://mulgyeol.github.io/TIL/Algorithm/07_Binary_Search.html) |
+| cse96       |                                                                        |
 
 ---
 
