@@ -121,7 +121,7 @@
 | LudaStar    |          |
 | seongaeee   |          |
 | Mulgyeol    |          |
-| cse96       |          |
+| cse96       |  [Link](https://cse96.github.io/algorithm-BinartySearch/)        |
 
 ---
 
@@ -133,7 +133,7 @@
 | LudaStar    |          |
 | seongaeee   |          |
 | Mulgyeol    |          |
-| cse96       |          |
+| cse96       | [Link](https://cse96.github.io/algorithm-Heap/)         |
 
 ---
 
