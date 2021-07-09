@@ -110,7 +110,7 @@
 | 구분     | 링크 |
 | -------- | ---- |
 | 개념정리 | [이진탐색 개념, 구현, 시간복잡도](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/seongaeee/Binary%20Search/Binary%20Search%20%EC%A0%95%EB%A6%AC.md)     |
-| 문제1    |      |
+| 문제1    | [백준_실버4_수찾기](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/seongaeee/Binary%20Search/%EB%B0%B1%EC%A4%80_%EC%8B%A4%EB%B2%844_%EC%88%98%EC%B0%BE%EA%B8%B0.md)     |
 | 문제2    |      |
 | 문제3    |      |
 
