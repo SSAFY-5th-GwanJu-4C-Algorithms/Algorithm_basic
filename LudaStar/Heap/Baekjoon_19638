@@ -1,0 +1,65 @@
+package Heap;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.PriorityQueue;
+import java.util.StringTokenizer;
+
+public class Baekjoon_19638_센티와마법의뿅망치 {
+
+	static class Node implements Comparable<Node>{
+		int x;
+		
+		public Node(int x) {
+			this.x = x;
+		}
+
+		@Override
+		public int compareTo(Node o) {
+			return o.x - this.x;
+		}
+	}
+	public static void main(String[] args) throws Exception {
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+		int N = Integer.parseInt(st.nextToken()); // 인구 수
+		int H = Integer.parseInt(st.nextToken()); // 센티의 키
+		int T = Integer.parseInt(st.nextToken()); // 뿅망치 회수
+		PriorityQueue<Node> pq = new PriorityQueue<>();
+		
+		for(int i = 0 ; i <N; i++) {
+			int a = Integer.parseInt(br.readLine());
+			pq.offer(new Node(a));
+		}
+		
+		int cnt = 0;
+		for(int i = 0; i < T; i++) {
+			if(pq.peek().x < H) break;
+			if(pq.peek().x == 1) continue;
+			
+			Node node = pq.poll();
+			int height = node.x/2;
+			
+			cnt++;
+			pq.offer(new Node(height));
+		}
+		
+		for(int i = 0; i < pq.size(); i++) {
+			int height = pq.poll().x;
+			if(height >= H) {
+				System.out.println("NO");
+				System.out.println(height);
+				return;
+			}
+			else {
+				System.out.println("YES");
+				System.out.println(cnt);
+				return;
+			}
+		}
+		
+
+	}
+
+}
