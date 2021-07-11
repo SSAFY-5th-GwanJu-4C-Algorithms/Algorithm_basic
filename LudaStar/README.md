@@ -123,7 +123,7 @@
 | 개념정리 |  [Link](https://ludastar.tistory.com/85)    |
 | 문제1    |  [백준 11270 최대 힙](./Heap/Baekjoon_11279) |
 | 문제2    |  [백준 19638 센티와 마법의 뿅망치](./Heap/Baekjoon_19638)|
-| 문제3    |      |
+| 문제3    | [백준 19598 최소회의실개수](./Heap/Baekjoon_19598)  |
 
 ---
 
