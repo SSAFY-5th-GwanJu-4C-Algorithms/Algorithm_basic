@@ -1,0 +1,57 @@
+package Heap;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.PriorityQueue;
+import java.util.StringTokenizer;
+
+public class Baekjoon_19598_최소회의실개수 {
+	
+	public static class Meeting implements Comparable<Meeting>{
+		int start, end;
+		
+		public Meeting(int start, int end) {
+			this.start = start;
+			this.end = end;
+		}
+		
+		// 끝나는 시간을 기준으로 우선 정렬
+		@Override
+		public int compareTo(Meeting m) {
+			if(this.end == m.end) return this.start - m.start;
+			return this.end - m.end;
+		}
+	}
+
+	public static void main(String[] args) throws Exception {
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = null;
+		
+		int N = Integer.parseInt(br.readLine());
+		ArrayList<Meeting> list = new ArrayList<>();
+		
+		for(int i = 0; i < N; i++) {
+			st = new StringTokenizer(br.readLine(), " ");
+			int a = Integer.parseInt(st.nextToken());
+			int b = Integer.parseInt(st.nextToken());
+			list.add(new Meeting(a,b));
+		}
+		Collections.sort(list);
+		
+		int room = 0;
+		int max_endTime = 0;
+		for(int i = 0; i < N; i++) {
+			
+			if(max_endTime <= list.get(i).start) {
+				max_endTime = list.get(i).end;
+				room++;
+			}
+		}
+		System.out.println(room);
+
+	}
+
+}
