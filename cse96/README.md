@@ -110,7 +110,7 @@
 | 구분     | 링크 |
 | -------- | ---- |
 | 개념정리 |  [Link](https://cse96.github.io/algorithm-BinartySearch/)    |
-| 문제1    |      |
+| 문제1    |  [백준_1920_수찾기](BinarySearch/BJ_1920_수찾기.md)    |
 | 문제2    |      |
 | 문제3    |      |
 
