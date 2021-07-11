@@ -1,0 +1,100 @@
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.util.Collections;
+import java.util.PriorityQueue;
+
+public class Main {
+
+	public static void main(String[] args) throws NumberFormatException, IOException {
+		BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+		PriorityQueue<Integer> minq = new PriorityQueue<Integer>(Collections.reverseOrder());
+		PriorityQueue<Integer> maxq = new PriorityQueue<Integer>();
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		int num1 = 0, num2 = 0, num3 = 0;
+		int N = Integer.valueOf(bf.readLine());
+		
+		num1 = Integer.valueOf(bf.readLine());
+		bw.write(num1 + "\n");
+		if(N == 1) {
+			bw.flush();
+			bf.close();
+			bw.close();
+			return;
+		}
+		num2 = Integer.valueOf(bf.readLine());
+		if(N == 2) {
+			bw.write(Math.min(num1,num2) + "\n");
+			bw.flush();
+			bf.close();
+			bw.close();
+			return;
+		}
+		bw.write(Math.min(num1, num2) + "\n");
+		int big = Math.max(num1, num2);
+		maxq.add(big);
+		int lit = Math.min(num1, num2);
+		minq.add(lit);
+		for(int i = 2; i < N; i++) {
+			num1 = minq.peek();
+			num2 = maxq.peek();
+			num3 = Integer.valueOf(bf.readLine());
+			
+			int minqsize = minq.size();
+			int maxqsize = maxq.size();
+			
+			//먼저 세 수의 크기 비교
+			if(minqsize == maxqsize){//q가 사이즈 같을때 세 수중 중간값을 출력
+				if(num3 < num1) {//입력된 값이 최소로 들어갈때
+					bw.write(num1 + "\n");
+					minq.add(num3);
+				}
+				else if(num3 > num2) { //입력된 값이 최대로 들어갈 때
+					bw.write(num2 + "\n");
+					maxq.add(num3);
+				}else {//입력된값이 같거나 사이일때
+					bw.write(num3 + "\n");
+					int mid = (num1+num2)/2;
+					if(num3 > mid) maxq.add(num3);
+					else minq.add(num3);
+				}
+			}
+			else if(minqsize > maxqsize) {//minq크기가 더 클때
+				if(num3 < num1) {//입력된 값이 최소로 들어갈때
+					num1 = minq.poll();
+					bw.write(Math.max(num3, minq.peek()) + "\n");
+					maxq.add(num1);//minq값 하나 maxq로 이동
+					minq.add(num3);//입력된 값은 minq로
+				}
+				else if(num3 > num2) { //입력된 값이 최대로 들어갈 때
+					bw.write(num1 + "\n");
+					maxq.add(num3);
+				}else {//입력된값이 같거나 사이일때
+					bw.write(num1 + "\n");
+					maxq.add(num3);
+				}
+			}
+			else {//maxq크기가 더 클때
+				if(num3 < num1) {//입력된 값이 최소로 들어갈때
+					bw.write(num1 + "\n");
+					minq.add(num3);
+				}
+				else if(num3 > num2) { //입력된 값이 최대로 들어갈 때
+					num2 = maxq.poll();
+					bw.write(Math.min(num2, maxq.peek()) + "\n");
+					minq.add(num2);
+					maxq.add(num3);
+				}else {//입력된값이 같거나 사이일때
+					bw.write(num3 + "\n");
+					minq.add(num3);
+				}
+			}
+			
+		}
+		bw.flush();
+		bf.close();
+		bw.close();
+	}
+}
