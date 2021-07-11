@@ -112,7 +112,7 @@
 | 개념정리 | [Link](https://mulgyeol.github.io/TIL/Algorithm/07_Binary_Search.html) |
 | 문제1    | [백준 1920 - 수찾기](./BinarySearch/Acmicpc_1920_수찾기.java)          |
 | 문제2    | [백준 1654 - 랜선자르기](./BinarySearch/Acmicpc_1654_랜선자르기.java)  |
-| 문제3    |                                                                        |
+| 문제3    | [백준 10815 - 숫자카드](./BinarySearch/Acmicpc_10815_숫자카드.java)                                                                       |
 
 ---
 
