@@ -120,7 +120,7 @@
 
 | 구분     | 링크 |
 | -------- | ---- |
-| 개념정리 |      |
+| 개념정리 | [다이나믹 프로그래밍 개념, 구현](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/seongaeee/Dynamic%20Programming/Dynaminc%20Programming%20%EC%A0%95%EB%A6%AC.md)     |
 | 문제1    |      |
 | 문제2    |      |
 | 문제3    |      |
