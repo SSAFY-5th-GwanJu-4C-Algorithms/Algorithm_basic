@@ -73,7 +73,7 @@
 | LudaStar    |          |
 | seongaeee   |          |
 | Mulgyeol    |          |
-| cse96       | [Link](https://cse96.github.io/algorithm-SlidingWindow/)         |
+| cse96       |          |
 
 ---
 
@@ -85,7 +85,7 @@
 | LudaStar    |          |
 | seongaeee   |          |
 | Mulgyeol    |          |
-| cse96       | [Link](https://cse96.github.io/algorithm-TowPointer/)         |
+| cse96       |          |
 
 ---
 
@@ -97,7 +97,7 @@
 | LudaStar    |          |
 | seongaeee   |          |
 | Mulgyeol    |          |
-| cse96       |  [Prim](https://cse96.github.io/algorithm-MST/)        |
+| cse96       |          |
 
 ---
 
@@ -109,7 +109,7 @@
 | LudaStar    |          |
 | seongaeee   |          |
 | Mulgyeol    |          |
-| cse96       |  [Link](https://cse96.github.io/algorithm-MST/)        |
+| cse96       |          |
 
 ---
 
