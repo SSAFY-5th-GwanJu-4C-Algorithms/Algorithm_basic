@@ -180,10 +180,10 @@
 
 | 구분     | 링크 |
 | -------- | ---- |
-| 개념정리 |      |
+| 개념정리              | [Link]()  |
 | BOJ 1300 K번째 수     | [Link](https://jihogrammer.tistory.com/26) |
 | BOJ 2143 두 배열의 합 | [Link](https://jihogrammer.tistory.com/27) |
-| 문제3    |      |
+| BOJ 1365 꼬인 전깃줄  | [Link](https://jihogrammer.tistory.com/29) |
 
 ---
 
