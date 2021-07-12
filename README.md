@@ -73,7 +73,7 @@
 | LudaStar    |          |
 | seongaeee   |          |
 | Mulgyeol    |          |
-| cse96       | [Link](https://cse96.github.io/algorithm-SlidingWindow/)         |
+| cse96       | [Link](https://cse96.github.io/algorithm-SlidingWindow/)          |
 
 ---
 
@@ -85,7 +85,7 @@
 | LudaStar    |          |
 | seongaeee   |          |
 | Mulgyeol    |          |
-| cse96       | [Link](https://cse96.github.io/algorithm-TowPointer/)         |
+| cse96       | [Link](https://cse96.github.io/algorithm-TowPointer/)          |
 
 ---
 
