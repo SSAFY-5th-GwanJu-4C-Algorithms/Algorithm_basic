@@ -121,7 +121,7 @@
 | 구분     | 링크 |
 | -------- | ---- |
 | 개념정리 | [다이나믹 프로그래밍 개념, 구현](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/seongaeee/Dynamic%20Programming/Dynaminc%20Programming%20%EC%A0%95%EB%A6%AC.md)     |
-| 문제1    |      |
+| 문제1    | [백준_실버3_1로만들기](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/seongaeee/Dynamic%20Programming/%EB%B0%B1%EC%A4%80_%EC%8B%A4%EB%B2%843_1%EB%A1%9C%EB%A7%8C%EB%93%A4%EA%B8%B0.md)     |
 | 문제2    |      |
 | 문제3    |      |
 
