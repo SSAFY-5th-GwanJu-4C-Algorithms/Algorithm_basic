@@ -112,18 +112,18 @@
 | 개념정리 | [Link](https://mulgyeol.github.io/TIL/Algorithm/07_Binary_Search.html) |
 | 문제1    | [백준 1920 - 수찾기](./BinarySearch/Acmicpc_1920_수찾기.java)          |
 | 문제2    | [백준 1654 - 랜선자르기](./BinarySearch/Acmicpc_1654_랜선자르기.java)  |
-| 문제3    | [백준 10815 - 숫자카드](./BinarySearch/Acmicpc_10815_숫자카드.java)                                                                       |
+| 문제3    | [백준 10815 - 숫자카드](./BinarySearch/Acmicpc_10815_숫자카드.java)    |
 
 ---
 
 ## :pushpin: Heap
 
-| 구분     | 링크 |
-| -------- | ---- |
-| 개념정리 |      |
-| 문제1    |      |
-| 문제2    |      |
-| 문제3    |      |
+| 구분     | 링크                                                    |
+| -------- | ------------------------------------------------------- |
+| 개념정리 |                                                         |
+| 문제1    | [백준 11279 - 최대힙](./Heap/Acmicpc_11279_최대힙.java) |
+| 문제2    |                                                         |
+| 문제3    |                                                         |
 
 ---
 
