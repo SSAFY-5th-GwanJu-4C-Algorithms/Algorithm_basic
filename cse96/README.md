@@ -112,7 +112,7 @@
 | 개념정리 |  [Link](https://cse96.github.io/algorithm-BinartySearch/)    |
 | 문제1    |  [백준_1920_수찾기](BinarySearch/BJ_1920_수찾기.md)    |
 | 문제2    | [백준_2428_표절](BinarySearch/BJ_2428_표절.md)     |
-| 문제3    |      |
+| 문제3    | [백준_7795_먹을것인가먹힐것인가](BinarySearch/BJ_7795_먹을것인가먹힐것인가.java)     |
 
 ---
 
