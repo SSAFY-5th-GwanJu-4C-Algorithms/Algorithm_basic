@@ -112,7 +112,7 @@
 | 개념정리 |  [Link](https://ludastar.tistory.com/86)    |
 | 문제1    |  [백준 2417 정수 제곱근](./Binary_Search/Baekjoon_2417)    |
 | 문제2    | [백준 10815 숫자카드](./Binary_Search/Baekjoon_10815)      |
-| 문제3    |      |
+| 문제3    | [백준 7795 먹을 것 인가 먹힐 것 인가](./Binary_Search/Baekjoon_7795)    |
 
 ---
 
