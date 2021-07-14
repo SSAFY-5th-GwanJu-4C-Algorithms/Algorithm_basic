@@ -93,7 +93,7 @@
 
 | 구분        | 바로가기                                                              |
 | ----------- | --------------------------------------------------------------------- |
-| Jihogrammer |                                                                       |
+| Jihogrammer | [Link](https://jihogrammer.tistory.com/20)                            |
 | LudaStar    | [Link](https://ludastar.tistory.com/74)                               |
 | seongaeee   |                                                                       |
 | Mulgyeol    | [Link](https://mulgyeol.github.io/TIL/Algorithm/06_Kruskal_Prim.html) |
@@ -105,7 +105,7 @@
 
 | 구분        | 바로가기                                                              |
 | ----------- | --------------------------------------------------------------------- |
-| Jihogrammer |                                                                       |
+| Jihogrammer | [Link](https://jihogrammer.tistory.com/20)                            |
 | LudaStar    | [Link](https://ludastar.tistory.com/74)                               |
 | seongaeee   |                                                                       |
 | Mulgyeol    | [Link](https://mulgyeol.github.io/TIL/Algorithm/06_Kruskal_Prim.html) |
@@ -117,7 +117,7 @@
 
 | 구분        | 바로가기                                                               |
 | ----------- | ---------------------------------------------------------------------- |
-| Jihogrammer |                                                                        |
+| Jihogrammer | [Link](https://jihogrammer.tistory.com/31)                             |
 | LudaStar    |                                                                        |
 | seongaeee   |                                                                        |
 | Mulgyeol    | [Link](https://mulgyeol.github.io/TIL/Algorithm/07_Binary_Search.html) |
