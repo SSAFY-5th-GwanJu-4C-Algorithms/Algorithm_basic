@@ -214,8 +214,8 @@
 | 구분     | 링크 |
 | -------- | ---- |
 | 개념정리 |      |
-| BOJ 15654 N과 M (5) | [기수정렬을 활용한 풀이](http://boj.kr/17cb54e20d4a46a194428e65145c34ed) |
-| 문제2    |      |
+| BOJ 15654 N과 M (5) | [radix sort](http://boj.kr/17cb54e20d4a46a194428e65145c34ed) |
+| BOJ 15655 N과 M (6) | [quick sort](http://boj.kr/84d597397dcd4fb09e3536e0dd7ff9f8) |
 | 문제3    |      |
 
 ---
