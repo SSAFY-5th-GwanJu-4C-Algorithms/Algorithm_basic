@@ -143,7 +143,7 @@
 | 구분     | 링크 |
 | -------- | ---- |
 | 개념정리 | [Link](https://cse96.github.io/algorithm-Backtracking/)     |
-| 문제1    |      |
+| 문제1    | [백준_15649_N과M(1)](Backtracking/BJ_15649_NM1.java)     |
 | 문제2    |      |
 | 문제3    |      |
 
