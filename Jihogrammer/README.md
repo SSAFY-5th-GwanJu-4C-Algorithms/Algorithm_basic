@@ -203,9 +203,10 @@
 | 구분     | 링크 |
 | -------- | ---- |
 | 개념정리 |      |
-| BOJ 11066 파일 합치기 | [Knuth's Optimazation](http://boj.kr/ed9bb8c63ecb45c8848a3595e7a953ef) |
-| 문제2    |      |
-| 문제3    |      |
+| BOJ 11066 파일 합치기   | [Knuth's Optimazation](http://boj.kr/ed9bb8c63ecb45c8848a3595e7a953ef) |
+| BOJ 9095 1, 2, 3 더하기 | [Bottom Up](http://boj.kr/90bcc6d8ebe14d5d9057aa34ae4a030d) |
+| BOJ 2193 이친수         | [Top Down](http://boj.kr/b1e937f6a55541e9baaf1a09c5c99f8a) |
+| BOJ 14501 퇴사          | [Bottom Up](http://boj.kr/13c10debbc8d419ea1d646f236749a23) |
 
 ---
 
