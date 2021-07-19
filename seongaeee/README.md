@@ -121,7 +121,7 @@
 | 구분     | 링크 |
 | -------- | ---- |
 | 개념정리 | [힙 개념, 구현](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/seongaeee/Heap/Heap%20%EC%A0%95%EB%A6%AC.md)     |
-| 문제1    |      |
+| 문제1    | [백준_N번째큰수](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/seongaeee/Heap/%EB%B0%B1%EC%A4%80_%EA%B3%A8%EB%93%9C5_N%EB%B2%88%EC%A7%B8%ED%81%B0%EC%88%98.md)     |
 | 문제2    |      |
 | 문제3    |      |
 
