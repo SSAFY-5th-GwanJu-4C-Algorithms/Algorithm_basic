@@ -215,7 +215,7 @@
 
 | 구분                | 링크                                                          |
 | ------------------- | ------------------------------------------------------------- |
-| 개념정리            |                                                               |
+| 개념정리            | [Link](https://jihogrammer.tistory.com/42)                    |
 | BOJ 15654 N과 M (5) | [radix sort](http://boj.kr/17cb54e20d4a46a194428e65145c34ed)  |
 | BOJ 15655 N과 M (6) | [quick sort](http://boj.kr/84d597397dcd4fb09e3536e0dd7ff9f8)  |
 | BOJ 15656 N과 M (7) | [radix sort](http://boj.kr/836988f441f343c480a90689a1c0aba9)  |
