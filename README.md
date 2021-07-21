@@ -142,7 +142,7 @@
 
 | 구분        | 바로가기 |
 | ----------- | -------- |
-| Jihogrammer |          |
+| Jihogrammer | [Note](https://jihogrammer.tistory.com/41) |
 | LudaStar    |          |
 | seongaeee   |          |
 | cse96       |          |
@@ -153,7 +153,7 @@
 
 | 구분        | 바로가기 |
 | ----------- | -------- |
-| Jihogrammer |          |
+| Jihogrammer | [Note](https://jihogrammer.tistory.com/42) |
 | LudaStar    |          |
 | seongaeee   |          |
 | cse96       |          |
