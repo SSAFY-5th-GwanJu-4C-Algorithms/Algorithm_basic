@@ -1,4 +1,4 @@
-# Algorithm basic - LudaStar
+# Algorithm basic - hyeoncheol
 
 ## List
 
