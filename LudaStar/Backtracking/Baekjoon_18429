@@ -1,0 +1,45 @@
+package Backtracking;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
+
+public class Baekjoon_18429 {
+    static int N, K;
+    static int answer;
+    static int[] arr;
+    static boolean[] visited;
+
+    public static void main(String[] args) throws Exception {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+        N = Integer.parseInt(st.nextToken()); // 운동키트 수
+        K = Integer.parseInt(st.nextToken()); // 하루마다 감소하는 중량
+        arr = new int[N];
+        visited = new boolean[N];
+        answer = 0;
+
+        st = new StringTokenizer(br.readLine(), " ");
+        for(int i = 0 ; i < N ; i++) {
+            arr[i] = Integer.parseInt(st.nextToken());
+        }
+        dfs(500, 0);
+        System.out.println(answer);
+
+    }
+    static void dfs(int w, int day) {
+        if(day == N) {
+            answer++;
+            return;
+        }
+        for(int i = 0; i < N; i++) {
+            if(visited[i]) continue;
+            visited[i] = true;
+            if(w - K + arr[i] >= 500) {
+                dfs(w-K+arr[i], day+1);
+            }
+            visited[i] = false;
+        }
+    }
+
+}
