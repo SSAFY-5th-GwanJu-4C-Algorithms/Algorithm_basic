@@ -14,6 +14,7 @@
 - [Heap](#pushpin-heap)
 - [DP](#pushpin-dp)
 - [Bracktracking](#pushpin-backtracking)
+- [String](#pushpin-string)
 
 ---
 
