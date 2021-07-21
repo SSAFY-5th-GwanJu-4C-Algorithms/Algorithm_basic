@@ -145,6 +145,6 @@
 | 개념정리 | [Link](https://cse96.github.io/algorithm-Backtracking/)     |
 | 문제1    | [백준_15649_N과M(1)](Backtracking/BJ_15649_NM1.java)     |
 | 문제2    | [백준_15650_N과M(2)](Backtracking/BJ_15650_NM2.java)     |
-| 문제3    |      |
+| 문제3    | [백준_18429_근손실.java](Backtracking/BJ_18429_근손실.java)     |
 
 ---
