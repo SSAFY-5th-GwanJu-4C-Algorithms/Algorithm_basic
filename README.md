@@ -14,6 +14,7 @@
 - [Heap](#pushpin-heap)
 - [DP](#pushpin-dp)
 - [Bracktracking](#pushpin-backtracking)
+- [String](#pushpin-string)
 
 ---
 
@@ -144,7 +145,6 @@
 | Jihogrammer |          |
 | LudaStar    |          |
 | seongaeee   |          |
-| Mulgyeol    |          |
 | cse96       |          |
 
 ---
@@ -156,7 +156,18 @@
 | Jihogrammer |          |
 | LudaStar    |          |
 | seongaeee   |          |
-| Mulgyeol    |          |
 | cse96       |          |
+
+---
+
+## :pushpin: String
+
+| 구분        | 바로가기 |
+| ----------- | -------- |
+| Jihogrammer |          |
+| LudaStar    |          |
+| seongaeee   |          |
+| cse96       |          |
+| hyeoncheol  |          |
 
 ---
