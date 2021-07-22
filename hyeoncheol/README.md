@@ -168,7 +168,7 @@
 | --------- | ---- |
 | 개념정리  |      |
 | 공통 문제 |      |
-| 문제1     |  [Link](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/tree/main/hyeoncheol/String)    |
+| 문제1     |  [Link](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/String/Back_14425.java)    |
 | 문제2     |      |
 | 문제3     |      |
 
