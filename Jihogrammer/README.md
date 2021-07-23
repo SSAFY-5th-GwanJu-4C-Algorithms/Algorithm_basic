@@ -226,11 +226,11 @@
 
 ## :pushpin: String
 
-| 구분      | 링크 |
-| --------- | ---- |
-| 개념정리  |      |
-| 공통 문제 | [BOJ 5430 AC](https://jihogrammer.tistory.com/44) |
-| 문제1     |      |
+| 구분            | 링크 |
+| --------------- | ---- |
+| 개념정리        |      |
+| 공통 문제       | [BOJ 5430 AC](https://jihogrammer.tistory.com/44) |
+| BOJ 1764 듣보잡 | [Blog](https://jihogrammer.tistory.com/45)        |
 | 문제2     |      |
 | 문제3     |      |
 
