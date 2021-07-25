@@ -229,9 +229,9 @@
 | 구분            | 링크 |
 | --------------- | ---- |
 | 개념정리        |      |
-| 공통 문제       | [BOJ 5430 AC](https://jihogrammer.tistory.com/44) |
-| BOJ 1764 듣보잡 | [Blog](https://jihogrammer.tistory.com/45)        |
-| 문제2     |      |
+| 공통 문제       | [BOJ 5430 AC](https://jihogrammer.tistory.com/44)      |
+| BOJ 1764 듣보잡 | [Blog](https://jihogrammer.tistory.com/45)             |
+| BOJ 9012 괄호   | [Code](http://boj.kr/4520db4fbd7a4715824732db200431df) |
 | 문제3     |      |
 
 ---
