@@ -166,7 +166,7 @@
 
 | 구분      | 링크 |
 | --------- | ---- |
-| 개념정리  |      |
+| 개념정리  |  [String 메소드 간단 정리](https://codingtalk.tistory.com/210)    |
 | 공통 문제 |  [백준5430 AC](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/String/Back_5430.java)    |
 | 문제1     |  [백준14425 문자열 ](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/String/Back_14425.java)    |
 | 문제2     |  [백준19583 싸이버개강총회](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/String/Back_19583.java)    |
