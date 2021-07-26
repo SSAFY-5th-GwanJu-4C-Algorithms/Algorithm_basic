@@ -171,6 +171,7 @@
 | 문제1     |  [백준14425 문자열 ](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/String/Back_14425.java)    |
 | 문제2     |  [백준19583 싸이버개강총회](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/String/Back_19583.java)    |
 | 문제3     |  [백준17609 회문](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/String/Back_17609.java)    |
+| 문제4     |  [백준5525 IOIOI](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/String/Back_17609.java)    |
 
 ---
 
