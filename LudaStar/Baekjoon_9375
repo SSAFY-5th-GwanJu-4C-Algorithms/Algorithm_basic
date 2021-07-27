@@ -1,0 +1,45 @@
+package String;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.StringTokenizer;
+
+public class Baekjoon_9375 {
+
+	public static void main(String[] args) throws Exception {
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = null;
+		int T = Integer.parseInt(br.readLine());
+		for(int tc = 0; tc < T; tc++) {
+
+			HashMap<String, Integer> map = new HashMap<>();
+			int n = Integer.parseInt(br.readLine());
+			for(int i = 0; i < n; i++) {
+				st = new StringTokenizer(br.readLine());
+				String str1 = st.nextToken();
+				String str2 = st.nextToken();
+
+				if(map.containsKey(str2)) 
+					map.put(str2, map.get(str2)+1);
+				
+				else
+					map.put(str2, 1);
+
+			}
+			
+			int result = 1;
+			for(int i : map.values()) {
+				result *= (i + 1);
+			}
+			
+			System.out.println(result-1);
+
+		}// tc for
+
+	}
+
+}
