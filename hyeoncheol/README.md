@@ -192,8 +192,8 @@
 | --------- | ---- |
 | 개념정리  |      |
 | 공통 문제 |      |
-| 문제1     |      |
-| 문제2     |      |
+| 문제1     |  [백준_11650 좌표 정렬하기](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/Sort/Back_11650.java)    |
+| 문제2     |  [백준_2751 좌표 정렬하기](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/Sort/Back_2751.java)    |
 | 문제3     |      |
 
 ---
