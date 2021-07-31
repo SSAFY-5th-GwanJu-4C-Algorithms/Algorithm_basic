@@ -175,17 +175,7 @@
 | 문제4     |  [백준5525 IOIOI](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/String/Back_5525.java)    |
 
 ---
-## :pushpin: Sort
 
-| 구분      | 링크 |
-| --------- | ---- |
-| 개념정리  |      |
-| 공통 문제 |      |
-| 문제1     |      |
-| 문제2     |      |
-| 문제3     |      |
-
----
 ## :pushpin: Sort
 
 | 구분      | 링크 |
