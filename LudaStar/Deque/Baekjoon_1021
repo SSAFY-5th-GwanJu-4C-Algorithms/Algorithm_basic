@@ -1,0 +1,68 @@
+package Deque;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.Deque;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.StringTokenizer;
+
+public class Baekjoon_1021_회전하는큐 {
+
+	public static void main(String[] args) throws Exception {
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+		int N = Integer.parseInt(st.nextToken()); // 큐의 크기
+		Deque<Integer> dq = new LinkedList<>();
+		for(int i = 0; i < N; i++) {
+			dq.offerLast(i+1);
+		}
+		
+		int M = Integer.parseInt(st.nextToken()); // 뽑아내는 수의 개수
+		int[] arr = new int[M];
+		
+		st = new StringTokenizer(br.readLine(), " ");
+		for(int i = 0; i < M; i++) {
+			arr[i] = Integer.parseInt(st.nextToken());
+		}
+	
+		int count = 0;
+
+		for(int i = 0; i < M; i++) {
+			
+			
+			while(true) {
+				
+				// 가장 앞에 원하는 숫자가 있다면 삭제
+				if(dq.peekFirst() == arr[i]) {
+					dq.pollFirst();
+					break;
+				}
+				
+				// 원하는 숫자가 Deque에 어디 들어있는 지 확인
+				int index = 0;
+				Iterator<Integer> it = dq.iterator();
+				while(it.hasNext()) {
+					if(it.next() == arr[i])
+						break;
+					index++;
+				}
+
+				if(index > dq.size() / 2) {
+					dq.offerFirst(dq.pollLast());
+					count++;
+				}
+				else {
+					dq.offerLast(dq.pollFirst());
+					count++;
+				}
+
+			}
+
+		}
+		System.out.println(count);
+		
+	}
+
+}
