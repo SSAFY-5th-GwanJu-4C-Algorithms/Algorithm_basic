@@ -195,7 +195,7 @@
 | 구분      | 링크 |
 | --------- | ---- |
 | 개념정리  |      |
-| 공통 문제 |      |
+| 공통 문제 |  [백준 3190 뱀](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/Deque/Back_3190_2.java)    |
 | 문제1     |      |
 | 문제2     |      |
 | 문제3     |      |
