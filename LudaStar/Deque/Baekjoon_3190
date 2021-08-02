@@ -1,0 +1,111 @@
+package Deque;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.Deque;
+import java.util.LinkedList;
+import java.util.StringTokenizer;
+
+public class Baekjoon_3190_뱀 {
+	
+	static class Snake {
+		int sec;
+		char dir;
+		
+		public Snake(int sec, char dir) {
+			this.sec = sec;
+			this.dir = dir;
+		}
+	}
+	
+	static class Point {
+		int x, y;
+		
+		public Point(int x, int y) {
+			this.x = x;
+			this.y = y;
+		}
+	}
+	
+	static int[] dr = {0,1,0,-1}; // 동남서북
+	static int[] dc = {1,0,-1,0}; 
+
+	public static void main(String[] args) throws Exception {
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = null;
+		int N = Integer.parseInt(br.readLine()); // 보드크기
+		int[][] map = new int[N+1][N+1];
+		int K = Integer.parseInt(br.readLine()); // 사과개수
+		
+		for(int i = 0; i < K; i++) {
+			st = new StringTokenizer(br.readLine(), " ");
+			int a = Integer.parseInt(st.nextToken());
+			int b = Integer.parseInt(st.nextToken());
+			map[a][b] = 1; // 사과는 1, 빈 곳은 0
+		}
+		
+		int L = Integer.parseInt(br.readLine()); // 뱀의 방향변환 개수
+		
+		ArrayList<Snake> list = new ArrayList<>();
+		for(int i = 0; i < L; i++) {
+			st = new StringTokenizer(br.readLine(), " ");
+			int a = Integer.parseInt(st.nextToken());
+			char b = st.nextToken().charAt(0);
+			list.add(new Snake(a,b));
+		}
+		
+		// 뱀은 1행1열에서 시작
+		map[1][1] = 2; 
+		
+		Deque<Point> dq = new LinkedList<>();
+		dq.offer(new Point(1,1));
+		
+		int i = 0, ans = 0;
+		int row = 1, col = 1, dir = 0; // 시작은 (1,1)에서 동쪽방향
+		while(true) {
+			if(i < L && ans == list.get(i).sec) {
+				if(list.get(i).dir == 'D') 
+					dir = (dir + 1) % 4;
+				else if (list.get(i).dir == 'L') 
+					dir = (dir + 3) % 4;
+				
+				i++;
+			}
+			int next_r = row + dr[dir];
+			int next_c = col + dc[dir];
+
+			
+			dq.offerFirst(new Point(next_r, next_c));
+			
+			if(next_r <= 0 || next_c <= 0 || next_r > N || next_c > N) {
+				ans++;
+				break;
+			}
+			
+			// 사과
+			if(map[next_r][next_c] == 1) { // 사과있음
+				map[next_r][next_c] = 2; // 뱀
+			}
+			else if(map[next_r][next_c] == 0) {// 사과없음
+				map[next_r][next_c] = 2;
+				map[dq.peekLast().x][dq.peekLast().y] = 0; // 사과 비워짐
+				dq.pollLast();
+			}
+			else { // 자신과 부딪히는 경우
+				ans++;
+				break;
+			}
+			
+			row = next_r;
+			col = next_c;
+			ans++;
+			
+		}
+		
+		System.out.println(ans);
+
+	}
+
+}
