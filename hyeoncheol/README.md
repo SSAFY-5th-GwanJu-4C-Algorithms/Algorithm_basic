@@ -1,4 +1,4 @@
-# Algorithm basic - hyeoncheol
+# Algorithm basic - hyeoncheol's
 
 ## List
 
