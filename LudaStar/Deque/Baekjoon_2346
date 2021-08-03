@@ -1,0 +1,58 @@
+package Deque;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.Deque;
+import java.util.LinkedList;
+import java.util.StringTokenizer;
+
+public class Baekjoon_2346_풍선터뜨리기 {
+	static class Num {
+		int num, idx;
+		
+		public Num(int num, int idx) {
+			this.num = num;
+			this.idx = idx;
+		}
+	}
+
+	public static void main(String[] args) throws Exception {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		int N = Integer.parseInt(br.readLine());
+		Deque<Num> dq = new LinkedList<>();
+		
+		StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+		for(int i = 0; i < N; i++) {
+			int a = Integer.parseInt(st.nextToken());
+			dq.offerLast(new Num(a,i+1));
+		}
+		
+		StringBuilder sb = new StringBuilder();
+		// 시작은 1번 풍선부터!! 
+		while(!dq.isEmpty()) {
+			
+			Num n = dq.pollFirst();
+			System.out.println(n.idx + " " + n.num);
+			sb.append(n.idx).append(" ");
+			int next = n.num;
+
+			// 양수
+			if(next > 0) {
+				next = next - 1;
+				for(int i = 0; i < next; i++) {
+					dq.offerLast(dq.pollFirst());
+				}
+			}
+			// 음수
+			else {
+				for(int i = 0; i < Math.abs(next); i++) {
+					dq.offerFirst(dq.pollLast());
+				}
+			}
+		}
+	
+		System.out.println(sb.toString());
+
+	}
+
+}
