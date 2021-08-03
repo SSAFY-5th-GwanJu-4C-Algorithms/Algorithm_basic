@@ -169,7 +169,7 @@
 | 개념정리  |   [Link](https://ludastar.tistory.com/104)   |
 | 공통 문제 | [백준 3190 뱀](./Deque/Baekjoon_3190)  |
 | 문제1     | [백준 1021 회전하는 큐](./Deque/Baekjoon_1021)  |
-| 문제2     |   |
+| 문제2     | [백준 2346 풍선 터뜨리기](./Deque/Baekjoon_2346)  |
 | 문제3     |  |
 
 ---
