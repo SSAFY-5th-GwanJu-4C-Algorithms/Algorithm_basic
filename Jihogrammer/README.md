@@ -235,3 +235,18 @@
 | BOJ 11718 그대로 출력하기     | [Code](http://boj.kr/0bd0597e0857454198153e8819368097) |
 
 ---
+
+## 📌 Deque
+
+> 미리 2문제 풀었었는데, 미리 push를 못했습니다...
+> 더 개선된 모습 보여드리려 노력하겠습니다.
+> [커밋 기록](https://github.com/JihoAlgorithm/BOJ/commits/main)
+> 질문 있으시다면 아래 링크 들어오셔서 댓글 달아주세요...!
+> 그리고 파이썬으로 풀다 보니 자율 문제는 난이도를 많이 낮췄습니다...
+
+| 구분            | 링크 |
+| --------------- | ---- |
+| 공통 문제       | [BOJ 3190 뱀](https://github.com/JihoAlgorithm/BOJ/commit/f9a9bf22e72195914b9b611f967df2884a7a7938)      |
+| BOJ 10866 덱 | [code](https://github.com/JihoAlgorithm/BOJ/commit/891bc4a7b0eb9101e32378c794d020d18edbc9fe)             |
+| BOJ 1021 회전하는 큐   | [code](https://github.com/JihoAlgorithm/BOJ/commit/272064fd2eadeacb3f84257401c427ca6bef9cf6) |
+| BOJ 2161 카드1     | [code](https://github.com/JihoAlgorithm/BOJ/commit/72b5486cce2ed78bbabd9b3293e571a2f9472bb4) |
