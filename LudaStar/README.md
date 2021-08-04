@@ -15,6 +15,7 @@
 -   [DP](#pushpin-dp)
 -   [Bracktracking](#pushpin-backtracking)
 -   [String](#pushpin-string)
+-   [Deque](#pushpin-Deque)
 
 ---
 
