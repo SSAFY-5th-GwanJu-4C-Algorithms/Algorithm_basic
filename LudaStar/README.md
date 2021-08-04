@@ -16,7 +16,7 @@
 -   [Bracktracking](#pushpin-backtracking)
 -   [String](#pushpin-string)
 -   [Deque](#pushpin-Deque)
-
+-   [Recursive](#pushpin-Recursive)
 ---
 
 ## :pushpin: DFS
@@ -172,5 +172,17 @@
 | 문제1     | [백준 1021 회전하는 큐](./Deque/Baekjoon_1021)  |
 | 문제2     | [백준 2346 풍선 터뜨리기](./Deque/Baekjoon_2346)  |
 | 문제3     | [백준 11656 접미사 배열](./String/Baekjoon_11656) |
+
+---
+
+## :pushpin: Recursive
+
+| 구분      | 링크 |
+| --------- | ---- |
+| 개념정리  |    |
+| 공통 문제 | [백준 4902 삼각형의 값] |
+| 문제1     |  |
+| 문제2     | |
+| 문제3     | |
 
 ---
