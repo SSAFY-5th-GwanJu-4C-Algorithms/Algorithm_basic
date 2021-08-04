@@ -1,0 +1,62 @@
+package Recursive;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
+
+public class Baekjoon_2630_색종이만들기 {
+	static int blueCount = 0, whiteCount = 0;
+	static int[][] map;
+	static int N;
+	
+	public static void main(String[] args) throws Exception {
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		N = Integer.parseInt(br.readLine());
+		map = new int[N][N];
+	
+		for(int i = 0; i < N; i++) {
+			StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+			for(int j = 0; j < N; j++) {
+				map[i][j] = Integer.parseInt(st.nextToken());
+			} 
+		}
+		
+		divMap(0, 0, N);
+		
+		System.out.println(whiteCount);
+		System.out.println(blueCount);
+		
+	}
+	
+	private static void divMap(int row, int col, int size) {
+		if(checkColor(row, col, size)) {
+			if(map[row][col] == 1) blueCount++;
+			else whiteCount++;
+			
+			return;
+		}
+		
+		int newSize = size/2;
+		
+		divMap(row, col, newSize);
+		divMap(row, col+newSize, newSize);
+		divMap(row+newSize, col, newSize);
+		divMap(row+newSize, col+newSize, newSize);
+		
+	}
+	
+	
+	private static boolean checkColor(int startRow, int startCol, int size) {
+		int first = map[startRow][startCol];
+		
+		for(int i = startRow; i < startRow + size; i++) {
+			for(int j = startCol; j < startCol + size; j++) {
+				if(map[i][j] != first) 
+					return false;
+			}
+		}
+		return true;
+	}
+
+}
