@@ -222,7 +222,7 @@
 | 개념정리  |      |
 | 공통 문제 |      |
 | 문제1     |   [백준 2630 색종이 만들기 ](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/Recursion/Back_2630.java)   |
-| 문제2     |      |
+| 문제2     |   [백준 1780 종이의 갯수]   |
 | 문제3     |      |
 
 ---
