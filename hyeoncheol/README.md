@@ -199,7 +199,7 @@
 | --------- | ---- |
 | 개념정리  |      |
 | 공통 문제 |  [백준 3190 뱀](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/Deque/Back_3190_2.java)    |
-| 문제1     |      |
+| 문제1     |  [백준 2346 풍선 터뜨리기](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/Deque/Back_2346.java)    |
 | 문제2     |      |
 | 문제3     |      |
 
