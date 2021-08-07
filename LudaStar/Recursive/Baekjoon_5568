@@ -1,0 +1,50 @@
+package Recursive;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.HashSet;
+
+public class Baekjoon_5568_카드놓기 {
+	static int n, k;
+	static String[] arr;
+	static HashSet<String> set;
+	static boolean[] visited;
+	static String str;
+	
+	public static void main(String[] args) throws Exception {
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		n = Integer.parseInt(br.readLine());
+		k = Integer.parseInt(br.readLine());
+		
+		arr = new String[n+1];
+		for(int i = 1; i < n+1; i++) {
+			arr[i] = br.readLine();
+		}
+		
+		visited = new boolean[n+1];
+		set = new HashSet<>();
+
+		dfs(k,1,"");
+		
+		System.out.println(set.size());
+
+	}
+	
+	private static void dfs(int k, int idx, String str) {
+		if(k == 0) {
+			set.add(str);
+			return;
+		}
+		if(idx > n) return;
+		
+		for(int i = 1; i <= n; i++) {
+			if(!visited[i]) {
+				visited[i] = true;
+				dfs(k-1, i, str + arr[i]);
+				visited[i] = false;
+			}
+		}
+		
+	}
+}
