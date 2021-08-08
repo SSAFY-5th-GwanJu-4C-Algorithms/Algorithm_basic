@@ -233,7 +233,7 @@
 | --------- | ---- |
 | 개념정리  |      |
 | 공통 문제 |      |
-| 문제1     |      |
+| 문제1     |   [백준 1991 트리 순회](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/Tree/Back_1991.java)   |
 | 문제2     |      |
 | 문제3     |      |
 
