@@ -182,6 +182,6 @@
 | 공통 문제 | [백준 4902 삼각형의 값](./Recursive/Baekjoon_4902) |
 | 문제1     | [백준 5568 카드 놓기](./Recursive/Baekjoon_5568)  |
 | 문제2     |[백준 10994 별찍기-19](./Recursive/Baekjoon_10994) |
-| 문제3     | |
+| 문제3     |[백준 1992 쿼드트리](./Recursive/Baekjoon_1992) |
 
 ---
