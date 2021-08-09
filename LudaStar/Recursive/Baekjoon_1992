@@ -1,0 +1,62 @@
+package Recursive;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
+
+public class Baekjoon_1992_쿼드트리 {
+	static int N;
+	static char[][] arr;
+	static StringBuilder sb;
+
+	public static void main(String[] args) throws Exception {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		sb = new StringBuilder();
+		N = Integer.parseInt(br.readLine());
+		arr = new char[N][N];
+
+		for(int i = 0; i < N; i++) {
+			String str = br.readLine();
+			for(int j = 0; j < N; j++) {
+				arr[i][j] = str.charAt(j);
+			}
+		}
+		
+		divArr(0,0,N);
+		System.out.println(sb.toString());
+		
+	}
+	
+	private static void divArr(int row, int col, int size) {
+		
+		if(checkColor(row, col, size)) {
+			sb.append(arr[row][col]);
+		}
+		
+		else {
+			int newSize = size/2;
+			sb.append("(");
+			divArr(row, col, newSize);
+			divArr(row, col+newSize, newSize);
+			divArr(row+newSize, col, newSize);
+			divArr(row+newSize, col+newSize, newSize);
+			sb.append(")");
+		}
+		
+		
+		
+	}
+
+	private static boolean checkColor(int startRow, int startCol, int size) {
+		char first = arr[startRow][startCol];
+		
+		for(int i = startRow; i < startRow + size; i++) {
+			for(int j = startCol; j < startCol + size; j++) {
+				if(arr[i][j] != first) 
+					return false;
+			}
+		}
+		return true;
+	}
+
+}
