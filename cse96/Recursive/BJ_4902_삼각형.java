@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class BJ_4902_»ï°¢Çü {
+public class BJ_4902_ì‚¼ê°í˜• {
 	static int N;
 	static int[][] arr,sum;
 	public static void main(String[] args) throws IOException {
@@ -33,6 +33,8 @@ public class BJ_4902_»ï°¢Çü {
 					}
 				}
 			}
+			
+			System.out.println(max);
 		}
 	}
 
