@@ -20,7 +20,7 @@
 - [Simulation](#pushpin-Simulation)
 - [Recursion](#pushpin-Recursion)
 - [Tree](#pushpin-Tree)
-- [Prefix Sum](#pushin-Prefix Sum)
+- [Prefix Sum](#pushin-Prefix-Sum)
 ---
 
 ## :pushpin: DFS
