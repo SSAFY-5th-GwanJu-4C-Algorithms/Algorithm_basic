@@ -250,3 +250,22 @@
 | BOJ 10866 덱 | [code](https://github.com/JihoAlgorithm/BOJ/commit/891bc4a7b0eb9101e32378c794d020d18edbc9fe)             |
 | BOJ 1021 회전하는 큐   | [code](https://github.com/JihoAlgorithm/BOJ/commit/272064fd2eadeacb3f84257401c427ca6bef9cf6) |
 | BOJ 2161 카드1     | [code](https://github.com/JihoAlgorithm/BOJ/commit/72b5486cce2ed78bbabd9b3293e571a2f9472bb4) |
+
+## 📌 Recursive
+
+| 구분            | 링크 |
+| --------------- | ---- |
+| 공통 문제로 착각한 문제| [BOJ 2630 색종이 만들기](https://github.com/JihoAlgorithm/BOJ/blob/main/src/recursive/boj2630/Main.py) |
+| BOJ 10870 피보나치 수 5 | [code](https://github.com/JihoAlgorithm/BOJ/blob/main/src/recursive/boj10870/Main.py) |
+| BOJ 10872 팩토리얼   | [code](https://github.com/JihoAlgorithm/BOJ/commit/cd5a75f155465df1e0da72bec0c4f3b0b3469f46) |
+| BOJ 11729 하노이     | [code](https://github.com/JihoAlgorithm/BOJ/commit/0b943eab19c0cb60f761d3c67499e33419489b8f) |
+
+## 📌 Greedy
+
+| 구분            | 링크 |
+| --------------- | ---- |
+| 만나서 같이 푼 문제 | [BOJ 13305 주유소](https://github.com/JihoAlgorithm/BOJ/blob/main/src/greedy/boj13305/Main.py) |
+| 공통 문제 | [BOJ 11000 강의실 배정]() |
+| BOJ | [code]() |
+| BOJ | [code]() |
+| BOJ | [code]() |
