@@ -258,7 +258,7 @@
 | --------- | ---- |
 | 개념정리  |      |
 | 공통 문제 |      |
-| 문제1     |   [백준 13305 주유소](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/DP/Back_13305.java)   |
+| 문제1     |   [백준 13305 주유소](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/Greedy/Back_13305.java)   |
 | 문제2     |      |
 | 문제3     |      |
 
