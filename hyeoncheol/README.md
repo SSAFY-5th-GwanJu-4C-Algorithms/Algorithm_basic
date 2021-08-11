@@ -21,6 +21,7 @@
 - [Recursion](#pushpin-Recursion)
 - [Tree](#pushpin-Tree)
 - [Prefix Sum](#pushin-Prefix-Sum)
+- [Greedy](#pushin-Greedy)
 ---
 
 ## :pushpin: DFS
@@ -149,7 +150,7 @@
 | --------- | ---- |
 | 개념정리  |      |
 | 공통 문제 |      |
-| 문제1     |  [백준 13305 주유소](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/DP/Back_13305.java)    |
+| 문제1     |      |
 | 문제2     |      |
 | 문제3     |      |
 
@@ -246,6 +247,18 @@
 | 개념정리  |      |
 | 공통 문제 |      |
 | 문제1     |  [백준_11659 구간 합 구하기 4](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/Prefix%20Sum/Back_11659.java)    |
+| 문제2     |      |
+| 문제3     |      |
+
+---
+
+## :pushpin: Greedy
+
+| 구분      | 링크 |
+| --------- | ---- |
+| 개념정리  |      |
+| 공통 문제 |      |
+| 문제1     |   [백준 13305 주유소](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/DP/Back_13305.java)   |
 | 문제2     |      |
 | 문제3     |      |
 
