@@ -261,5 +261,7 @@
 | 문제1     |   [백준 13305 주유소](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/Greedy/Back_13305.java)   |
 | 문제2     |   [백준 11497 통나무 건너뛰기](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/Greedy/Back_11497.java)   |
 | 문제3     |   [백준 1080 행렬](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/Greedy/Back_1080.java)   |
+| 문제4     |   [백준 2012 등수 매기기]()   |
+
 
 ---
