@@ -22,7 +22,7 @@
 - [Tree](#pushpin-Tree)
 - [Prefix Sum](#pushin-Prefix-Sum)
 - [Greedy](#pushin-Greedy)
-- [Data Structures](#pushin-data-structures)
+- [Data Structures](#pushin-Data-Structures)
 ---
 
 ## :pushpin: DFS
