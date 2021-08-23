@@ -268,7 +268,7 @@
 
 ---
 
-## 📌 Data Structures
+## :pushpin: Data Structures
 
 
 | 구분      | 링크 |
