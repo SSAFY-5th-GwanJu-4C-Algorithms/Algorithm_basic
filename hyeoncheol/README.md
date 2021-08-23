@@ -22,6 +22,7 @@
 - [Tree](#pushpin-Tree)
 - [Prefix Sum](#pushin-Prefix-Sum)
 - [Greedy](#pushin-Greedy)
+- [Data Structures](#pushin-data-structures)
 ---
 
 ## :pushpin: DFS
@@ -264,5 +265,18 @@
 | 문제4     |   [백준 2012 등수 매기기](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/Greedy/Back_2012.java)   |
 | 문제5     |   [백준 2012 크게 만들기](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/Greedy/Back_2812.java)   |
 
+
+---
+
+## 📌 Data Structures
+
+
+| 구분      | 링크 |
+| --------- | ---- |
+| 개념정리  |      |
+| 공통 문제 |      |
+| 문제1     |   [백준 11286]()    |
+| 문제2     |      |
+| 문제3     |      |
 
 ---
