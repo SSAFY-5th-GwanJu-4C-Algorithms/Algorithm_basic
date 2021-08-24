@@ -287,7 +287,7 @@
 | --------- | ---- |
 | 개념정리  |      |
 | 공통 문제 |      |
-| 문제1     |   [백준 1475 방번호]()   |
+| 문제1     |   [백준 1475 방번호](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/Implementation/Back_1475.java)   |
 | 문제2     |      |
 | 문제3     |      |
 
