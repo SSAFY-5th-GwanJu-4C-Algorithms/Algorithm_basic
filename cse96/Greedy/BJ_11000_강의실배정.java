@@ -5,7 +5,6 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.Comparator;
-import java.util.LinkedList;
 import java.util.PriorityQueue;
 
 public class BJ_11000_강의실배정 {
@@ -13,15 +12,6 @@ public class BJ_11000_강의실배정 {
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int N = Integer.valueOf(br.readLine());
-		LinkedList<Class> l = new LinkedList<Class>();
-//		for(int i = 0; i < N; i++) {
-//			String str[] = br.readLine().split(" ");
-//			l.add(new Class(Integer.valueOf(str[0]),Integer.valueOf(str[1])));
-//		}//입력 끝
-		
-//		Collections.sort(l, (o1,o2)->{
-//			return o1.start - o2.start;
-//		});//정렬
 		int[][] arr = new int[N][2];
 		for(int i = 0; i < N; i++) {
 			String str[] = br.readLine().split(" ");
@@ -36,59 +26,23 @@ public class BJ_11000_강의실배정 {
 			}
 		});
 		
-//		for(int i = 0; i < N; i++) {
-//			System.out.println(Arrays.toString(arr[i]));
-//		}
-		
-		int count = 1;
-		int tmp = 0;
 		
 		PriorityQueue<Integer> pq = new PriorityQueue<Integer>();
+		//정렬 후 첫 강의 종료시간 우선순위 큐에 넣어줌
 		pq.offer(arr[0][1]);
 		
 		for(int i = 1; i < N; i++) {
+			//현재 탐색하는 강의의 종료시간
 			int end = arr[i][1];
-			
+			//비어있지않고 강의 종료시간보다 시작시간이 크거나 같으면
 			if(!pq.isEmpty() && pq.peek() <=  arr[i][0]) {
-				pq.poll();
+				pq.poll();//해당 종료시간을 없앰, 이 강의가 이뤄진 강의실에서 현재 강의가 이뤄짐
 			}
+			//지금 강의의 종료시간을 넣어줌
 			pq.offer(end);
-		
-//		for(int i = 1; i < N; i++) {
-//			if(l.get(tmp).end <= l.get(i).start) {
-//				count++;
-//				tmp = i;
-//			}
-//		}
-//		for(int i = 1; i < N; i++) {
-//			//강의 끝나는 시간보다 강의 시작시간이 더 빠르면
-//			if(arr[tmp][1] > arr[i][0]) {
-//				//강의실 개수 증가
-//				count++;
-////				tmp = i;
-//			}
-//			else if(arr[tmp][1] == arr[i][0]) {
-//				tmp = i;
-//			}
-			
 		}
 		System.out.println(pq.size());
 
 	}
-
 }
 
-//class Class implements Comparator<Class>{
-//	int start;
-//	int end;
-//	
-//	Class(int start, int end){
-//		this.start = start;
-//		this.end = end;
-//	}
-//
-//	@Override
-//	public int compare(Class o1, Class o2) {
-//		return o1.start - o2.start;
-//	}
-//}
