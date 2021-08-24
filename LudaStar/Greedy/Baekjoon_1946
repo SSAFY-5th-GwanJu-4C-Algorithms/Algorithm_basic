@@ -1,0 +1,47 @@
+package Greedy;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.StringTokenizer;
+
+public class Baekjoon_1946_신입사원 {
+
+	public static void main(String[] args) throws Exception {
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		int T = Integer.parseInt(br.readLine());
+		for(int tc = 0; tc < T; tc++) {
+			int N = Integer.parseInt(br.readLine());
+			int[][] arr = new int[N][2];
+			int count = 1;
+			
+			for(int i = 0; i < N; i++) {
+				StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+				arr[i][0] = Integer.parseInt(st.nextToken());
+				arr[i][1] = Integer.parseInt(st.nextToken());
+			} 
+			
+			// 서류순으로 오름차순
+			Arrays.sort(arr, new Comparator<int[]>(){
+				@Override
+				public int compare(int[] arr1, int[] arr2) {
+					return Integer.compare(arr1[0], arr2[0]);
+				}
+			});
+			
+			int stand = arr[0][1];
+			for(int i =1; i < N; i++) {
+				if(arr[i][1] < stand) {
+					stand = arr[i][1];
+					count++;
+				}
+			}
+			
+			System.out.println(count);
+			
+		} // tc for
+	}
+
+}
