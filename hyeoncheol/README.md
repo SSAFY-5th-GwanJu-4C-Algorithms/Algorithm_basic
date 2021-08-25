@@ -288,7 +288,7 @@
 | 개념정리  |      |
 | 공통 문제 |      |
 | 문제1     |   [백준 1475 방번호](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/Implementation/Back_1475.java)   |
-| 문제2     |   [백준 18111 마인크래프트]()   |
+| 문제2     |   [백준 18111 마인크래프트](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/Implementation/Back_18111.java)   |
 | 문제3     |      |
 
 ---
