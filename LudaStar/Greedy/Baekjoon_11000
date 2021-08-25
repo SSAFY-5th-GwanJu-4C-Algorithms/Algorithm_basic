@@ -1,0 +1,59 @@
+package Greedy;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.PriorityQueue;
+import java.util.StringTokenizer;
+
+public class Baekjoon_11000_강의실배정 {
+	
+	static class Class {
+		int start, end;
+		
+		public Class(int start, int end) {
+			this.start = start;
+			this.end = end;
+		}
+
+	}
+
+	public static void main(String[] args) throws Exception {
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		int N = Integer.parseInt(br.readLine());
+		Class[] arr = new Class[N]; 
+		
+		for(int i = 0; i < N; i++) {
+			StringTokenizer st = new StringTokenizer(br.readLine()," ");
+			int a = Integer.parseInt(st.nextToken());
+			int b = Integer.parseInt(st.nextToken());
+			arr[i] = new Class(a,b);
+		}
+		
+		Arrays.sort(arr, new Comparator<Class>() {
+
+			@Override
+			public int compare(Class o1, Class o2) {
+				return o1.start - o2.start;
+			}
+			
+		});
+		
+//		for(int i = 0; i < N; i++) {
+//			System.out.println(arr[i].start);
+//		}
+		
+		PriorityQueue<Integer> pq = new PriorityQueue<>();
+		pq.add(arr[0].end);
+		
+		for(int i = 1; i < N; i++) {
+			if(pq.peek() <= arr[i].start) pq.poll();
+			
+			pq.add(arr[i].end);
+		}
+		System.out.println(pq.size());
+	}
+
+}
