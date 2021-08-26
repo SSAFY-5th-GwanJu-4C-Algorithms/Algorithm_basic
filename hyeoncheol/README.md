@@ -265,7 +265,7 @@
 | 문제3     |   [백준 1080 행렬](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/Greedy/Back_1080.java)   |
 | 문제4     |   [백준 2012 등수 매기기](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/Greedy/Back_2012.java)   |
 | 문제5     |   [백준 2012 크게 만들기](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/Greedy/Back_2812.java)   |
-
+| 문제6     |   [백준 2437 저울](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/Greedy/Back_2437.java)   |
 
 ---
 
