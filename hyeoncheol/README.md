@@ -32,7 +32,7 @@
 | --------- | ---- |
 | 개념정리  |   [LINK](https://codingtalk.tistory.com/228)   |
 | 공통 문제 |      |
-| 문제1     |   [백준 11724 연결 요소의 개수]   |
+| 문제1     |   [백준 11724 연결 요소의 개수](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/DFS/Back_11724.java)   |
 | 문제2     |      |
 | 문제3     |      |
 
