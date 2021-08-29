@@ -17,6 +17,8 @@
 -   [String](#pushpin-string)
 -   [Deque](#pushpin-Deque)
 -   [Recursive](#pushpin-Recursive)
+-   [Greedy](#pushpin-Greedy)
+-   [정규표현식](#pushpin-정규표현식)
 ---
 
 ## :pushpin: DFS
@@ -188,6 +190,18 @@
 ---
 
 ## :pushpin: Greedy
+
+| 구분         | 링크 |
+| ------------ | ---- |
+| 공통 문제    | [백준 11000 강의실 배정](./Greedy/Baekjoon_11000) |
+| 같이 푼 문제 | [백준 13305 주유소](./Greedy/Baekjoon_13305) |
+| 문제1        | [백준 11399 ATM](./Greedy/Baekjoon_11399)|
+| 문제2        | [백준 1946 신입사원](./Greedy/Baekjoon_1946)|
+| 문제3        | [백준 1080 행렬](./Greedy/Baekjoon_1080)|
+
+---
+
+## :pushpin: 정규표현식
 
 | 구분         | 링크 |
 | ------------ | ---- |
