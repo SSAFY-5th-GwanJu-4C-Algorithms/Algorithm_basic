@@ -153,7 +153,7 @@
 | 개념정리  |      |
 | 공통 문제 |      |
 | 문제1     |   [백준 9095 1, 2, 3 더하기](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/DP/Back_9095.java)   |
-| 문제2     |      |
+| 문제2     |   [백준 1912 연속합](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/DP/Back_1912.java)   |
 | 문제3     |      |
 
 ---
