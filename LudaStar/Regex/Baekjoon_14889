@@ -1,0 +1,74 @@
+package Regex;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
+
+public class Baekjoon_14889_스타트와링크 {
+	
+	static int N;
+	static int[][] arr;
+	static boolean[] check;
+	static int[] start, link;
+	static int min;
+
+	public static void main(String[] args) throws Exception {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		N = Integer.parseInt(br.readLine());
+		arr = new int[N][N];
+		check = new boolean[N];
+		
+		for(int i = 0; i < N; i++) {
+			StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+			for(int j = 0; j < N; j++) {
+				arr[i][j] = Integer.parseInt(st.nextToken());
+			}
+		}
+		
+		min = Integer.MAX_VALUE;
+		
+		combi(0,0);
+		System.out.println(min);
+
+	}
+	static void combi(int index, int count) {
+		if(count == N/2) {
+
+			for(int i = 0; i < N; i++) {
+				System.out.print(check[i] + " ");
+			}
+			System.out.println();
+			
+			getTeam();
+			return;
+		}
+		
+		for(int i = index; i < N; i++) {
+			if(check[i]) continue;
+
+			check[i] = true;
+			
+			combi(i+1, count+1);
+			check[i] = false;
+		} 
+	}
+	
+	static void getTeam() {
+		int start = 0;
+		int link = 0;
+		for(int i = 0; i < N; i++) {
+			for(int j = 0; j < N; j++) {
+				if(check[i] && check[j]) {
+					start += arr[i][j];
+				}
+				
+				if(!check[i] && !check[j]) {
+					link += arr[i][j];
+				}
+			}
+		}
+		int tmp = Math.abs(start-link);
+		min = Math.min(min, tmp);
+	}
+
+}
