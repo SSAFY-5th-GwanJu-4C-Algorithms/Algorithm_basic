@@ -154,7 +154,7 @@
 | 공통 문제 |      |
 | 문제1     |   [백준 9095 1, 2, 3 더하기](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/DP/Back_9095.java)   |
 | 문제2     |   [백준 1912 연속합](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/DP/Back_1912.java)   |
-| 문제3     |      |
+| 문제3     |   [백준 1932 정수 삼각형]()   |
 
 ---
 
