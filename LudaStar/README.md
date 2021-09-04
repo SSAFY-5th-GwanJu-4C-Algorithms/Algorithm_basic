@@ -1,5 +1,14 @@
 # Algorithm basic - LudaStar
 
+### 9월 첫째 주
+| 구분         | 링크 |
+| ------------ | ---- |
+| 공통 문제    | [백준 1013 Contact](./Regex/Baekjoon_1013) |
+| 같이 푼 문제 | [프로그래머스 완주하지 못한 선수](./Hash/Programmers 완주하지 못한 선수) |
+| 문제1        | [백준 14501 퇴사](./Regex/Baekjoon_14501)|
+| 문제2        | [백준 13458 시험감독](./Regex/Baekjoon_13458)|
+| 문제3        | [백준 14889 스타트와 링크](./Regex/Baekjoon_14889)|
+
 ## List
 
 -   [DFS](#pushpin-dfs)
