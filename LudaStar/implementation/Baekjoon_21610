@@ -1,0 +1,192 @@
+package m9_w1;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.StringTokenizer;
+
+public class Baekjoon_21610_마법사상어와비바라기 {
+	
+	static class Move {
+		int dir, s;
+		
+		public Move(int dir, int s) {
+			this.dir = dir;
+			this.s = s;
+		}
+	}
+
+	static int N, M;
+	static int[][] map;
+	static boolean[][] cloud;
+	static Move[] move;
+	static int[] dx = {0, 0,-1,-1,-1,0,+1,+1,+1}; // 1~8번
+	static int[] dy = {0, -1,-1,0,+1,+1,+1,0,-1};
+	
+	
+	public static void main(String[] args) throws Exception {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+		N = Integer.parseInt(st.nextToken());
+		M = Integer.parseInt(st.nextToken());
+		
+		map = new int[N][N];
+		cloud = new boolean[N][N];
+		move = new Move[M];
+		
+		for(int i = 0; i < N; i++) {
+			st = new StringTokenizer(br.readLine(), " ");
+			for(int j = 0; j < N; j++) {
+				map[i][j] = Integer.parseInt(st.nextToken());
+			}
+		}
+		
+		for(int i = 0; i < M; i++) {
+			st = new StringTokenizer(br.readLine(), " ");			
+			int d = Integer.parseInt(st.nextToken());
+			int s = Integer.parseInt(st.nextToken());
+			move[i] = new Move(d,s);
+		}
+
+		// 구름 초기 위치
+		cloud[N-2][0] = cloud[N-1][0] = cloud[N-2][1] = cloud[N-1][1] = true;
+		
+		// M번만큼 실행
+		for(int i = 0; i < M; i++) {
+			moveCloud(i);
+			increaseWater();
+			makeCloud();
+			//System.out.println(Arrays.deepToString(cloud));
+		}
+		
+		// 바구니에 담긴 물 구하기
+		int sum = 0;
+		for(int i = 0; i < N; i++) {
+			for(int j = 0; j < N; j++) {
+				sum += map[i][j];
+			}
+		}
+		
+		System.out.println(sum);
+	}
+	// 구름 이동 (몇 번째 이동인지 파라미터로 입력)
+	static void moveCloud(int num) {
+		
+		boolean[][] copyCloud = new boolean[N][N];
+		for(int i = 0; i < N; i++) {
+			for(int j = 0; j < N; j++) {
+				if(cloud[i][j])
+					copyCloud[i][j] = true;
+			}
+		}
+		cloud = new boolean[N][N]; 
+		
+		for(int i = 0; i < N; i++) {
+			for(int j = 0; j < N; j++) {
+				if(copyCloud[i][j] == false) continue;
+				
+				// 구름이라면
+				int direction = move[num].dir;
+				int speed = move[num].s;
+				
+				int x = i;
+				int y = j;
+				int nx = 0, ny = 0;
+				
+				for(int s = 0; s < speed; s++) {
+					nx = x + dx[direction];
+					ny = y + dy[direction];
+					
+					// x좌표와 y좌표가 범위에 잘 들어온다면 
+					if(nx >= 0 && ny >= 0 && nx < N && ny < N) {
+						x = nx;
+						y = ny;
+						continue;
+					}
+					
+					if(nx < 0) {
+						nx = nx + N;
+					}
+					else if(nx >= N) {
+						nx = nx - N;
+					}
+					
+					if(ny < 0) {
+						ny = ny + N;
+					}
+					else if(ny >= N) {
+						ny = ny - N;
+					}
+					
+					x = nx;
+					y = ny;
+				}
+				//System.out.println("nx : " + nx + "  ny : " + ny);
+				// 원래 있는 자리에서 새로운 곳으로 이동
+				cloud[nx][ny] = true;
+				
+				// 구름 있는 칸에 비내리고 구름 사라짐 
+ 				map[nx][ny] += 1;
+			}
+		}
+	}
+	
+	//  대각선 고려해서 물 증가
+	static void increaseWater() {
+		
+		int[] dx = {-1, -1, +1, +1};
+		int[] dy = {-1, +1, -1, +1};
+		
+		int cnt = 0; // 물 있는 바구니 수
+		
+		for(int i = 0; i < N; i++) {
+			for(int j = 0; j < N; j++) {
+				if(cloud[i][j] == false) continue;
+				
+				// 구름만 고려
+				cnt = 0;
+				for(int d = 0; d < 4; d++) {
+					int nx = i + dx[d];
+					int ny = j + dy[d];
+					
+					if(nx < 0 || ny < 0 || ny >= N || nx >= N) continue;
+					
+					// 물이 들어있으면 cnt 증가
+					if(map[nx][ny] > 0) cnt++;
+				}
+				
+				// 바구니 수만큼 물의 양 증가
+				map[i][j] += cnt;
+				
+			}
+		}
+	}
+	
+	// 4. 구름이 없었던 곳들중 물의 양이 2 이상인 모든 칸에 구름이 생기고 물이 2 줄어든다.
+	static void makeCloud() {
+		boolean[][] copyCloud = new boolean[N][N];
+		for(int i = 0; i < N; i++) {
+			for(int j = 0; j < N; j++) {
+				if(cloud[i][j])
+					copyCloud[i][j] = true;
+			}
+		}
+		
+		// 원래 구름맵은 초기화
+		cloud = new boolean[N][N]; 
+		
+		for(int i = 0; i < N; i++) {
+			for(int j = 0; j < N; j++) {
+				// 원래 구름 있던 곳 제외
+				if(copyCloud[i][j]) continue;
+				
+				// 바구니에 담긴 물이 2 이상이면 구름 생김
+				if(map[i][j] >= 2) {
+					cloud[i][j] = true;
+					map[i][j] -= 2;
+				}
+			}
+		}
+	}
+
+}
