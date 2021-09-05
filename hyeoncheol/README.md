@@ -296,12 +296,12 @@
 ---
 
 
-## :pushpin: Dijkstra
+## :pushpin: Hash
 
 | 구분      | 링크 |
 | --------- | ---- |
 | 개념정리  |      |
-| 공통 문제 |      |
+| 공통 문제 |  [베스트 앨범](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/Hash/%EB%B2%A0%EC%8A%A4%ED%8A%B8%EC%95%A8%EB%B2%94.md)    |
 | 문제1     |      |
 | 문제2     |      |
 | 문제3     |      |
