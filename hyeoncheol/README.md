@@ -282,7 +282,7 @@
 | 개념정리  |      |
 | 공통 문제 |      |
 | 문제1     |   [백준 11286 절댓값 힙](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/Data%20Structures/Back_11286.java)    |
-| 문제2     |      |
+| 문제2     |    [백준 4889 안정적인 문자열]  |
 | 문제3     |      |
 
 ---
