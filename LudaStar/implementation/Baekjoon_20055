@@ -1,0 +1,86 @@
+package m9_w2;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.StringTokenizer;
+
+public class Baekjoon_20055_컨베이어벨트위의로봇 {
+
+	static int N, K;
+	static int[] belt;
+	static int step = 0;
+	static boolean[] robot;
+	
+	public static void main(String[] args) throws Exception {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+		N = Integer.parseInt(st.nextToken()); // 컨테이너 벨트 길이
+		K = Integer.parseInt(st.nextToken()); // 내구도가 0인 칸의 개수가 K개 이상이면 과정 종료
+		
+		st = new StringTokenizer(br.readLine(), " ");
+
+		belt = new int[N*2]; // 컨베이어벨트 내구도 가지고 있음
+		for(int i = 0; i < 2*N; i++) {
+			belt[i] = Integer.parseInt(st.nextToken());
+		}
+
+		robot = new boolean[N]; // 로봇이 있는 곳은 true;
+		
+		move();
+
+		System.out.println(step);
+	}
+	
+	// 내구도 체크하고 0인 칸 개수 리턴해주는 함수
+	static int check() {
+		int cnt = 0;
+		for(int i = 0; i < 2*N; i++) {
+			if(belt[i] == 0)
+				cnt++;
+		}
+		return cnt;
+	}
+	
+	
+	// 벨트 + 로봇 회전하는 함수
+	static void move() {
+		while(true) {
+			// 벨트 회전
+			int end = belt[belt.length-1];
+			for(int i = belt.length-2; i >= 0; i--) {
+				belt[i+1] = belt[i];
+			}
+			belt[0] = end;
+			
+			for(int i = N-2; i >= 0; i--) {
+				robot[i+1] = robot[i];
+			}
+			robot[0] = false;
+			
+			
+			// 로봇 이동
+			if(robot[N-1]) robot[N-1] = false; // 내리는 위치
+			
+			for(int i = N-2; i >= 0; i--) {
+				if(robot[i] && !robot[i+1] && belt[i+1] > 0) {
+					robot[i+1] = true;
+					robot[i] = false;
+					belt[i+1]--;
+				}
+			}
+			
+			// 올리는 위치에 올려
+			if(belt[0] > 0 && !robot[0]) {
+				robot[0] = true;
+				belt[0]--;
+			}
+				
+			step++;
+			if(check() >= K) break; // 내구도가 0인 칸이 K개 이상일 때 종료 (여기 ==로 하면 시간초과 남)
+
+		}
+
+	}
+}
