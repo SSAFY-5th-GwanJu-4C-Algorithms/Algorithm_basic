@@ -186,6 +186,7 @@
 | 문제6     |   [백준 1755 크로아티아](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/String/Back_1755.java)   |
 | 문제7     |   [백준 11656 접미사 배열](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/String/Back_11656.java)   |
 | 문제8     |   [백준 1541 잃어버린 암호](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/String/Back_1541.java)   |
+| 문제9     |   [백준 1120 문자열]()   |
 ---
 
 ## :pushpin: Sort
