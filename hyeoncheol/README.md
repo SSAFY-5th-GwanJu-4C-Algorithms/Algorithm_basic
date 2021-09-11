@@ -291,8 +291,9 @@
 
 | 구분      | 링크 |
 | --------- | ---- |
-| 개념정리  |      |
-| 공통 문제 |    [백준 15686 치킨 배달](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/Implementation/Back_15686_2.java)  |
+| 개념정리  |      |백준 14500 테트로미노
+| 공통 문제 |  [백준 14500 테트로미노]    |
+| 공통 문제2 |    [백준 15686 치킨 배달](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/Implementation/Back_15686_2.java)  |
 | 문제1     |   [백준 1475 방번호](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/Implementation/Back_1475.java)   |
 | 문제2     |   [백준 18111 마인크래프트](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/Implementation/Back_18111.java)   |
 | 문제3     |      |
