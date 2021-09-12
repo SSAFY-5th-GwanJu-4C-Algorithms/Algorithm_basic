@@ -1,0 +1,79 @@
+package m9_w2;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.StringTokenizer;
+
+public class Baekjoon_14500_테트로미노 {
+
+	static int[] dx1 = {0,0,0,0,  0,1,2,3};
+	static int[] dy1 = {0,1,2,3,  0,0,0,0};
+	static int[] dx2 = {0,0,1,1};
+	static int[] dy2 = {0,1,0,1};
+	static int[] dx3 = {0,1,1,2,  0,1,1,2,  0,1,1,1,  0,0,0,1};
+	static int[] dy3 = {0,0,1,0,  1,0,1,1,  1,0,1,2,  0,1,2,1};
+	static int[] dx4 = {0,1,2,2,  0,0,1,2,  0,0,0,1,  0,0,0,1,  0,0,1,2,  0,1,2,2,  0,1,1,1,  0,1,1,1};
+	static int[] dy4 = {0,0,0,1,  0,1,0,0,  0,1,2,0,  0,1,2,2,  0,1,1,1,  1,1,1,0,  0,0,1,2,  2,0,1,2};
+	static int[] dx5 = {0,1,1,2,  0,0,1,1,  0,0,1,1,  0,1,1,2};
+	static int[] dy5 = {0,0,1,1,  1,2,0,1,  0,1,1,2,  1,1,0,0};
+
+	public static void main(String[] args) throws Exception {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+		int N = Integer.parseInt(st.nextToken());
+		int M = Integer.parseInt(st.nextToken());
+		int[][] map = new int[N][M];
+		
+		for(int i = 0; i < N; i++) {
+			st = new StringTokenizer(br.readLine(), " ");
+			for(int j = 0; j < M; j++) {
+				map[i][j] = Integer.parseInt(st.nextToken());
+			}
+		}
+		
+		ArrayList<int[]> list = new ArrayList<>();
+		list.add(dx1); list.add(dy1);
+		list.add(dx2); list.add(dy2);
+		list.add(dx3); list.add(dy3);
+		list.add(dx4); list.add(dy4);
+		list.add(dx5); list.add(dy5);
+		
+		int max = Integer.MIN_VALUE;
+		// 테트로미노가 다섯개
+		for(int s = 0; s < 10; s=s+2) {
+			
+			int[] dx = list.get(s);
+			int[] dy = list.get(s+1);
+			int length = dx.length;
+				
+			// map 돌면서 스캔
+			for(int i = 0; i < N; i++) {
+				for(int j = 0; j < M; j++) {
+					int x = i;
+					int y = j;
+
+					// 한 테트로미노가 몇가지 모양으로 나올 수 있는지
+					for(int l = 0; l < length; l=l+4) {
+						
+						// 한 테트로미노
+						int tmp = 0; // 한 테트로미노 끝날 때 마다 초기화
+						boolean flag = false; // 4개의 정사각형 모두 범위내에 들어있을 때 true
+						for(int k = 0; k < 4; k++) {
+							int nx = x + dx[l+k];
+							int ny = y + dy[l+k];
+
+							if(nx >= N || nx < 0 || ny >= M || ny < 0)  break;
+							
+							tmp += map[nx][ny];
+							if(k == 3) flag = true;
+						}
+						
+						if(flag) max = Math.max(max, tmp);
+					}
+				}
+			}
+		}
+		System.out.println(max);
+	}
+}
