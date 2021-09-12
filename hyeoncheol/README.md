@@ -281,7 +281,7 @@
 | 구분      | 링크 |
 | --------- | ---- |
 | 개념정리  |      |
-| 공통 문제 |      |
+| 공통 문제 |    [프로그래머스 다리를 지나는 트럭](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/Data%20Structures/%EB%8B%A4%EB%A6%AC%EB%A5%BC%20%EC%A7%80%EB%82%98%EB%8A%94%20%ED%8A%B8%EB%9F%AD.md)  |
 | 문제1     |   [백준 11286 절댓값 힙](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/Data%20Structures/Back_11286.java)    |
 | 문제2     |   [백준 4889 안정적인 문자열](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/Data%20Structures/Back_4889.java)  |
 | 문제3     |      |
