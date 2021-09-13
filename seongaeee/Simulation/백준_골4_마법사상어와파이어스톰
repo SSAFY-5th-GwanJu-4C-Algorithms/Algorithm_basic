@@ -1,0 +1,219 @@
+
+### 격자 나누기 + 90도 회전
+
+![image](https://user-images.githubusercontent.com/62600984/114732035-2c061100-9d7d-11eb-92ce-8b41d64c3e70.png)
+
+격자안에서 90도 회전을 하기 위해, 격자의 한 테두리씩 회전을 해야한다.  
+  
+[문제보기](https://www.acmicpc.net/problem/20058)   
+   
+<br>
+   
+### 회전하기
+```
+행 => 열(N(격자크기)-1-행)
+열 => 행
+```
+```java
+for (int i = 0; i < size; i++) {
+	for (int j = 0; j < size; j++) {
+		rotationMap[j][size-1-i]=map[i][j];
+	}
+}
+```
+
+<br>
+
+### 격자 회전하기
+
+```java
+private static void rotation(int r, int c, int size) {
+		
+	int[][] rotationMap=new int[size][size];
+
+	for (int i = 0; i < size; i++) {
+		for (int j = 0; j < size; j++) {
+			rotationMap[j][size-1-i]=map[r+i][c+j];
+		}
+	}
+
+	for (int i = 0; i < size; i++) {
+		for (int j = 0; j < size; j++) {
+			map[r+i][c+j]=rotationMap[i][j];
+		}
+	}
+}
+
+```
+
+<br>
+
+### 전체 코드
+
+```java
+public class bj_골4_20058_마법사상어와파이어스톰_PLUS {
+
+	static int N, Q, arr[][], L[], total, subset;
+	static int sum, bigCnt;
+	static int[] dr = {-1,1,0,0};
+	static int[] dc = {0,0,-1,1};
+	static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+	static StringTokenizer st;
+	
+	public static void main(String[] args) throws IOException {
+		
+		st = new StringTokenizer(br.readLine());
+		N = Integer.parseInt(st.nextToken());
+		Q = Integer.parseInt(st.nextToken());
+		total = (int) Math.pow(2, N);
+		arr = new int[total][total];
+		L = new int[Q];
+		
+		for(int i = 0; i<total; i++) {
+			st = new StringTokenizer(br.readLine());
+			for(int j = 0; j<total; j++) {
+				arr[i][j] = Integer.parseInt(st.nextToken());				
+			}
+		}
+		
+		st = new StringTokenizer(br.readLine());
+		for(int i = 0; i<Q; i++) {
+			L[i] = Integer.parseInt(st.nextToken());
+		}
+	
+		process();
+		
+		result();
+		
+		System.out.println(sum);
+		System.out.println(bigCnt);
+	}
+	
+	private static void result() {
+		
+		// 얼음 수
+		for (int i = 0; i < total; i++) {
+			for (int j = 0; j < total; j++) {
+				sum += arr[i][j];
+			}
+		}
+		
+		// 가장 덩어리 칸 개수
+		boolean[][] visit = new boolean[total][total];
+		for (int i = 0; i < total; i++) {
+			for (int j = 0; j < total; j++) {
+				if(arr[i][j] != 0 && visit[i][j] == false) {
+					bfs(i, j, visit);
+				}
+			}
+		}
+	}
+
+	private static void bfs(int i, int j, boolean[][] visit) {
+		
+		int cnt = 0;
+		Queue<int[]> q = new LinkedList<int[]>();
+		
+		q.offer(new int[] {i,j});
+		visit[i][j] = true;
+		cnt++;
+		
+		while(!q.isEmpty()) {
+			
+			int[] tmp = q.poll();
+			int r = tmp[0];
+			int c = tmp[1];
+			
+			for (int d = 0; d < 4; d++) {
+				int nr = r + dr[d];
+				int nc = c + dc[d];
+				
+				if(nr < 0 || nc < 0 || nr >= total || nc >= total) continue;
+				if(visit[nr][nc]) continue;
+				if(arr[nr][nc]==0) continue;
+				
+				q.offer(new int[] {nr, nc});
+				visit[nr][nc]=true;
+				cnt++;
+			}
+		}
+		
+		bigCnt = Math.max(cnt, bigCnt);
+	}
+
+	private static void process() {
+		
+		for (int q = 0; q < Q; q++) {
+			
+			subset = (int) Math.pow(2, L[q]);
+			
+			// 90도 회전
+			step1();
+			
+			// 주변 얼음에 따라 얼음 녹이기
+			step2();
+		}
+	}
+
+	private static void step2() {
+		
+		int[][] newArr = new int[total][total];
+		
+		for (int r = 0; r < total; r++) {
+			for (int c = 0; c < total; c++) {
+				
+				int cnt = 0;
+				
+				for (int d = 0; d < 4; d++) {
+					int nr = r + dr[d];
+					int nc = c + dc[d];
+					
+					if(nr < 0 || nc < 0 || nr >= total || nc >= total) continue;
+					if(arr[nr][nc] > 0) cnt++;
+				}
+				
+				if(cnt <= 2) {
+					newArr[r][c] = arr[r][c] == 0 ? 0 : arr[r][c] - 1;
+				} else {
+					newArr[r][c] = arr[r][c];					
+				}
+			}
+		}
+		
+		arr = newArr;
+	}
+
+	private static void step1() {
+		
+		int cnt = 1;
+		
+		// 전체 부분격자
+		for (int i = 0; i < total; i+=subset) {
+			for (int j = 0; j < total; j+=subset) {
+				
+				// 하나의 부분격자 90도 회전				
+				int[][] newArr = new int[subset][subset];
+				for (int r = 0; r < subset; r++) {
+					for (int c = 0; c < subset; c++) {
+						newArr[c][subset-r-1] = arr[r+i][c+j];
+					}
+				}
+				
+				for (int r = 0; r < subset; r++) {
+					for (int c = 0; c < subset; c++) {
+						arr[r+i][c+j] = newArr[r][c];
+					}
+				}
+			}
+		}
+		
+	}
+}
+```
+
+<br>
+
+### 참고 블로그
+
+- [2차원 배열 회전하기](https://velog.io/@foxrain_gg/Python-2%EC%B0%A8%EC%9B%90-%EB%B0%B0%EC%97%B4-%ED%9A%8C%EC%A0%84-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98#%EC%BD%94%EB%93%9C)
+- [[BOJ][삼성기출] 백준 20058번 - 마법사 상어와 파이어스톰 풀이](https://yjyoon-dev.github.io/boj/2020/11/04/boj-20058/)
