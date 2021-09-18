@@ -1,0 +1,90 @@
+package m9_w3;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
+
+public class Baekjoon_3107_IPv6 {
+
+	public static void main(String[] args) throws Exception {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		String str = br.readLine();
+		StringTokenizer st = new StringTokenizer(str, ":");
+		String[] result = new String[8];
+
+		int index = 0;
+		int cnt = st.countTokens(); // 토큰갯수
+		int count = 0; // :: 위치 파악용
+		boolean flag = true;
+
+		// 원래는 : 기준으로 총 8조각이어야됨
+		while(st.hasMoreTokens()) {
+
+			// 정상적
+			if(cnt == 8) {
+				String one = st.nextToken();
+				String tmp = "";
+
+				if(one.length() == 4) result[index++] = one; // 글자가 4개면 그대로 붙여주면 되고
+				
+				// 그보다 작으면 길이가 4가 될때까지 0을 붙여주면 돼
+				else { 
+					tmp = "";
+					for(int i = 0; i < 4-one.length(); i++) {
+						tmp += "0";
+					}
+					tmp += one;
+					result[index++] = tmp;
+				}
+			}
+			
+			// 0000그룹을 :로 바꾼 상태
+			else {
+
+				int loc = 0; //::가 있는 위치
+				for(int i = 1; i < str.length(); i++) {
+					if(str.charAt(i) == str.charAt(i-1) && str.charAt(i) == ':') {
+							loc = i-1;
+					}
+				}
+				
+				//System.out.println(loc +  " "+ count);
+				
+				if(count >= loc && flag) { // :: 위치에 0000그룹 넣어주기 ><
+					for(int i =0; i < 8-cnt; i++) {
+						result[index++] = "0000";
+					}
+					flag = false;
+				}
+				
+				String one = st.nextToken();
+				String tmp = "";
+				count += one.length();
+				
+				if(one.length() == 4) {
+					result[index++] = one; // 글자가 4개면 그대로 붙여주면 되고
+				}
+				
+				// 그보다 작으면 길이가 4가 될때까지 0을 붙여주면 돼
+				else { 
+					tmp = "";
+					for(int i = 0; i < 4-one.length(); i++) {
+						tmp += "0";
+					}
+					tmp += one;
+					result[index++] = tmp;
+				}
+				count++;
+			}
+		}
+		
+		String answer = "";
+		for(int i = 0; i < 8; i++) {
+			if(result[i] == null) result[i] = "0000"; // 마지막에 ::되어있는 부분은 읽지 못해서 이렇게 해둠
+			answer += result[i];
+			if(i != 7)answer = answer+":";
+		}
+		System.out.println(answer);
+	}
+
+}
