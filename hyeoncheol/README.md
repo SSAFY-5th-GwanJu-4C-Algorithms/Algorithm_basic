@@ -298,7 +298,8 @@
 | 문제1     |   [백준 1475 방번호](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/Implementation/Back_1475.java)   |
 | 문제2     |   [백준 18111 마인크래프트](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/Implementation/Back_18111.java)   |
 | 문제3     |    [백준 1476 날짜 계산](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/Implementation/Back_1476.java)  |
-| 문제3     |    [백준 1476 프린터 큐](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/Implementation/Back_1966.java)  |
+| 문제4     |    [백준 1476 프린터 큐](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/Implementation/Back_1966.java)  |
+| 문제5     |    [백준 1292 쉽게 푸는 문제](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/Implementation/Back_1292.java)  |
 
 ---
 
