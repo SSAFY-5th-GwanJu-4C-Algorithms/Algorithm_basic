@@ -1,0 +1,54 @@
+import java.util.*;
+class Solution {
+    	static class Operation implements Comparable<Operation> {
+		int num;
+		
+		public Operation(int num) {
+			this.num = num;
+		}
+
+		@Override
+		public int compareTo(Operation o) {
+			return this.num - o.num;
+		}
+		
+	}
+    public int[] solution(String[] operations) {
+        int[] answer = new int[2];
+
+        ArrayList<Operation> list = new ArrayList<>();
+		for(int i = 0; i < operations.length; i++) {
+			StringTokenizer st = new StringTokenizer(operations[i], " ");
+			String operation = st.nextToken(); // I or D
+			
+			if(operation.equals("I")) {
+				String str = st.nextToken();
+				list.add(new Operation(Integer.parseInt(str)));
+				Collections.sort(list);
+				//System.out.println(list.get(0).num);
+			}
+			// 명령어가 D인 경우
+			else {
+				if(list.isEmpty()) continue;
+				
+				String str = st.nextToken();
+				if(str.equals("-1")) { // 최솟값 삭제
+					list.remove(0);
+				}
+				else {
+					list.remove(list.size()-1);
+				}
+			}
+		}
+
+		if(list.isEmpty()) {
+			answer[0] = 0; answer[1] = 0;
+		}
+		else {
+			answer[0] = list.get(list.size()-1).num;
+			answer[1] = list.get(0).num;
+		}
+
+        return answer;
+    }
+}
