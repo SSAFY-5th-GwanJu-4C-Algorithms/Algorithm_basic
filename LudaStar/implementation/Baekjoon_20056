@@ -1,0 +1,119 @@
+package m9_w3;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.StringTokenizer;
+
+public class Baekjoon_20056_마법사상어와파이어볼 {
+	
+	static class Fireball {
+		int r, c, m, s, d;
+		
+		public Fireball(int r, int c, int m, int s, int d) {
+			this.r = r; this.c = c;
+			this.m = m; this.s = s;
+			this.d = d;
+		}
+	}
+	
+	static int N, M, K;
+	static int[] dx = {-1, -1, 0, 1, 1, 1, 0, -1}; // 0,1,2,3,4,5,6,7
+	static int[] dy = {0, 1, 1, 1, 0, -1, -1, -1};
+	static ArrayList<Fireball>[][] map;
+	static ArrayList<Fireball> fireball;
+
+	public static void main(String[] args) throws Exception {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+		N = Integer.parseInt(st.nextToken()); // 격자 사이즈
+		M = Integer.parseInt(st.nextToken()); // 파이어볼 개수
+		K = Integer.parseInt(st.nextToken()); // 명령 횟수
+		map = new ArrayList[N][N];// 파이어볼 위치, 갯수 정보 가지고 있음
+		for(int i = 0; i < N; i++) {
+			for(int j = 0; j < N; j++) {
+				map[i][j] = new ArrayList<Fireball>();
+			}
+		}
+		fireball = new ArrayList<>();
+		
+		for(int i = 0; i < M; i++) {
+			st = new StringTokenizer(br.readLine(), " ");
+			int r = Integer.parseInt(st.nextToken())-1; // 행
+			int c = Integer.parseInt(st.nextToken())-1; // 열
+			int m = Integer.parseInt(st.nextToken()); // 질량
+			int s = Integer.parseInt(st.nextToken()); // 속도
+			int d = Integer.parseInt(st.nextToken()); // 방향
+			fireball.add(new Fireball(r, c, m, s, d));
+		}
+
+		for(int k = 0; k < K; k++) {
+			move(); // 1. 파이어볼은 d방향으로 s칸만큼 이동
+			check(); // 2. 이동 후에 2개 이상의 파이어볼이 있는 칸에서는 합쳐치고, 4개로 나누어져 각자 위치에 감 (질량이 0이면 소멸)
+		}
+
+		int result = 0;
+		for(Fireball ball : fireball) {
+			result += ball.m;
+		}
+		System.out.println(result);
+	}
+
+	private static void move() {
+
+		for(Fireball ball : fireball) {
+			int nx = ball.r + dx[ball.d] * ball.s % N;
+			int ny = ball.c + dy[ball.d] * ball.s % N;
+			
+			if(nx >= N) nx = nx % N;
+			else if(nx < 0) nx = N - (Math.abs(nx) % N);
+			if(ny >= N) ny = ny % N;
+			else if(ny < 0) ny = N - (Math.abs(ny) % N);
+			
+			ball.r = nx;
+			ball.c = ny;
+			map[nx][ny].add(ball);
+		}
+	}
+
+	private static void check() {
+		for(int i = 0; i < N; i++) {
+			for(int j = 0; j < N; j++) {
+				if(map[i][j].size() == 1) map[i][j].clear();
+				if(map[i][j].size() < 2) continue;
+				
+				int m = 0, s = 0;
+				boolean even = map[i][j].get(0).d % 2 == 0 ? true : false; // 첫 파이어볼의 방향이 짝수면 true
+				boolean odd = map[i][j].get(0).d % 2 == 1 ? true : false; // 첫 파이어볼의 방향이 홀수면 true
+			
+				for(Fireball ball : map[i][j]) {
+					s += ball.s;
+					m += ball.m;
+					even = even & ball.d % 2 == 0 ? true : false;
+					odd = odd & ball.d % 2 == 1 ? true : false;
+					fireball.remove(ball);
+				}
+				
+				int newM = m/5;
+				int size = map[i][j].size();
+				map[i][j].clear();
+				
+				if(newM == 0) continue;
+				
+				int newS = s/size;
+
+				if(even || odd) {
+					for(int k = 0; k < 8; k += 2) {
+						fireball.add(new Fireball(i, j, newM, newS, k));
+					}
+				}
+				else {
+					for(int k = 1; k < 8; k += 2) {
+						fireball.add(new Fireball(i, j, newM, newS, k));
+					}
+				}
+			}
+		}
+	}
+
+}
