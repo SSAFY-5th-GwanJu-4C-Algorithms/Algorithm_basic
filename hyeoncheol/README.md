@@ -141,8 +141,8 @@
 | --------- | ---- |
 | 개념정리  |      |
 | 공통 문제 |      |
-| 문제1     |  [프로그래머스 더 ](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/Heap/%EB%8D%94%EB%A7%B5%EA%B2%8C.md)    |
-| 문제2     |      |
+| 문제1     |  [프로그래머스 더 맵게](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/Heap/%EB%8D%94%EB%A7%B5%EA%B2%8C.md)    |
+| 문제2     |  [프로그래머스 디스크 컨트롤러](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/Heap/%EB%94%94%EC%8A%A4%ED%81%AC%20%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC.md)   |
 | 문제3     |      |
 
 ---
