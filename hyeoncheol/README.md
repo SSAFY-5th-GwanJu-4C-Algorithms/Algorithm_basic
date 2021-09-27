@@ -140,7 +140,7 @@
 | 구분      | 링크 |
 | --------- | ---- |
 | 개념정리  |      |
-| 공통 문제 |      |
+| 공통 문제 |   [프로그래머스 이중우선순위큐](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/Heap/%EC%9D%B4%EC%A4%91%EC%9A%B0%EC%84%A0%EC%88%9C%EC%9C%84%ED%81%90.md)   |
 | 문제1     |  [프로그래머스 더 맵게](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/Heap/%EB%8D%94%EB%A7%B5%EA%B2%8C.md)    |
 | 문제2     |  [프로그래머스 디스크 컨트롤러](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/Heap/%EB%94%94%EC%8A%A4%ED%81%AC%20%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC.md)   |
 | 문제3     |      |
