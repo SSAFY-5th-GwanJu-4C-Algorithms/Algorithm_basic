@@ -1,0 +1,55 @@
+import java.util.*;
+class Solution {
+    	static class Job {
+		int start, time;
+		
+		public Job(int start, int time) {
+			this.start = start;
+			this.time = time;
+		}
+	}
+    public int solution(int[][] jobs) {
+		// job에 들어있는 일들을 시작순으로 정렬 (대기큐)
+		PriorityQueue<Job> tmp = new PriorityQueue<Job>(new Comparator<Job>() {
+			@Override
+			public int compare(Job o1, Job o2) {
+				return o1.start - o2.start;
+			}
+		});
+		
+		for(int i = 0; i < jobs.length; i++) {
+			tmp.offer(new Job(jobs[i][0], jobs[i][1]));
+		}
+		
+		// 일하는 시간이 적은 순으로 정렬 (작업큐)
+		PriorityQueue<Job> job = new PriorityQueue<Job>(new Comparator<Job>() {
+			@Override
+			public int compare(Job j1, Job j2) {
+				return j1.time - j2.time;
+			}
+		});
+		
+		int time = 0, cnt = 0, sum = 0;
+		while(cnt < jobs.length) {
+			
+			// 대기 큐에 있던 작업이 아직 있고, 해당 시간이 되었을 때 작업 큐에 추가
+			while(!tmp.isEmpty() && time >= tmp.peek().start) {
+				job.offer(tmp.poll());
+			}
+			
+			// 작업큐에 작업이 있으면 작업하고
+			if(!job.isEmpty()) {
+				Job j = job.poll();
+				sum += j.time + (time - j.start);
+				time += j.time;
+				cnt++;
+			}
+			// 없으면 시간만 흐름
+			else {
+				time++;
+			}
+			
+		}
+        return sum/cnt;
+    }
+}
