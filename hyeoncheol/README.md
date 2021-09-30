@@ -301,6 +301,7 @@
 | 문제3     |    [백준 1476 날짜 계산](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/Implementation/Back_1476.java)  |
 | 문제4     |    [백준 1476 프린터 큐](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/Implementation/Back_1966.java)  |
 | 문제5     |    [백준 1292 쉽게 푸는 문제](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/Implementation/Back_1292.java)  |
+| 문제5     |    [백준 9461 파도 반 수열](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/Implementation/Back_9461.java)  |
 
 ---
 
