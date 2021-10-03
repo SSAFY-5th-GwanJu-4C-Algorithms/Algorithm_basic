@@ -325,7 +325,7 @@
 | 구분      | 링크 |
 | --------- | ---- |
 | 개념정리  |      |
-| 공통 문제 |      |
+| 공통 문제 |   [카펫](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/Bruteforcing/%EC%B9%B4%ED%8E%AB.md)   |
 | 문제1     |      |
 | 문제2     |      |
 | 문제3     |      |
