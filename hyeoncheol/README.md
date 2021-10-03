@@ -25,6 +25,7 @@
 - [Data Structures](#pushin-Data-Structures)
 - [Hash](#pushin-Hash)
 - [Implementation](#pushin-Implementation)
+- [Bruteforcing](#pushin-Bruteforcing)
 - ...
 ---
 
@@ -318,3 +319,15 @@
 | 문제2     |      |
 | 문제3     |      |
 
+---
+## 📌 Bruteforcing
+
+| 구분      | 링크 |
+| --------- | ---- |
+| 개념정리  |      |
+| 공통 문제 |      |
+| 문제1     |      |
+| 문제2     |      |
+| 문제3     |      |
+
+---
