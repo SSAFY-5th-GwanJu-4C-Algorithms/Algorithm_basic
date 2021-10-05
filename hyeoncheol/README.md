@@ -225,7 +225,7 @@
 | 개념정리  |      |
 | 공통 문제 |      |
 | 문제1     |   [백준 2947 나무 조각](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/Simulation/Back_2947.java)   |
-| 문제2     |      |
+| 문제2     |   [백준 1713 후보 추천하기](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/Simulation/Back_1713.java)   |
 | 문제3     |      |
 
 ---
