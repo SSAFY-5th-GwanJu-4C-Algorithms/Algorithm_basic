@@ -169,7 +169,7 @@
 | 개념정리  |      |
 | 공통 문제 |      |
 | 문제1     |  [백준 15652 N과 M](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/Bracktracking/Back_15652.java)    |
-| 문제2     |      |
+| 문제2     |   [백준 16198 에너지 ](https://github.com/SSAFY-5th-GwanJu-4C-Algorithms/Algorithm_basic/blob/main/hyeoncheol/Bracktracking/Back_16198.java)   |
 | 문제3     |      |
 
 ---
